@@ -1,0 +1,53 @@
+.site-box {
+  text-align: center;
+  background-image: none;
+  background: black;
+  font-size: 12px;
+  border-radius: 30px;
+}
+
+.site-box .sitefeature {
+  background-image: url(https://nicolas.nekoweb.org/nicolas.nekoweb.org/sitebox.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -10px;
+  border: none;
+}
+
+.site-box .sitefeature img {
+  display: none;
+}
+
+.site-box > a > p {
+  color: rgb(255, 255, 93);
+  font-weight: bold;
+}
+
+.site-box > a > span {
+  color: rgb(255, 255, 93);
+}
+
+.follow {
+  background-color: transparent;
+  border: 3px solid rgb(22, 18, 82);
+  color: red;
+  font-weight: 700;
+  filter: hue-rotate(0deg);
+  font-size: 15px;
+  font-family: "Cascadia Mono", monospace;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .follow {
+    animation: 15s linear infinite both title;
+  }
+}
+
+@keyframes title {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

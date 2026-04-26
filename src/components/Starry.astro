@@ -1,0 +1,225 @@
+---
+const stars = Array.from({ length: 25 }, (_, i) => {
+  const row = Math.floor(i / 5);
+  const col = i % 5;
+  const x = (col * 20 + 10 + ((i * 7 + 3) % 16) - 8).toFixed(1);
+  const y = (row * 20 + 10 + ((i * 11 + 5) % 14) - 7).toFixed(1);
+  const delay = ((i * 0.55) % 4).toFixed(2);
+  const dur = (3.5 + ((i * 0.17) % 1.2)).toFixed(2);
+  return { x, y, delay, dur, special: false };
+});
+
+stars[Math.floor(Math.random() * stars.length)].special = true;
+---
+
+<div class="starry" aria-hidden="true">
+  {
+    stars.map(({ x, y, delay, dur, special }) => (
+      <div
+        class={`star ${special ? "special" : ""}`}
+        style={`left:${x}%;top:${y}%;--d:${delay}s;--dur:${dur}s`}
+      >
+        <span class={`n ${special ? "special" : ""}`} />
+        <span class={`s ${special ? "special" : ""}`} />
+        <span class={`e ${special ? "special" : ""}`} />
+        <span class={`w ${special ? "special" : ""}`} />
+      </div>
+    ))
+  }
+</div>
+
+<style lang="scss">
+  .starry {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .star {
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      left: -2px;
+      top: -2px;
+      background: #fff;
+      animation: var(--dur) linear var(--d) infinite both star-core;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      background: #fff;
+    }
+
+    &.special::before,
+    &.special span {
+      background: rgb(255, 72, 48);
+      animation-delay: 60s;
+    }
+
+    .n {
+      animation: var(--dur) linear var(--d) infinite both arm-n;
+      left: -2px;
+    }
+    .s {
+      animation: var(--dur) linear var(--d) infinite both arm-s;
+      left: -1px;
+    }
+    .e {
+      animation: var(--dur) linear var(--d) infinite both arm-e;
+      top: -2px;
+    }
+    .w {
+      animation: var(--dur) linear var(--d) infinite both arm-w;
+      top: -2px;
+    }
+  }
+
+  @keyframes star-core {
+    0%,
+    33% {
+      opacity: 0;
+    }
+    33%,
+    66% {
+      opacity: 1;
+    }
+    66%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes arm-n {
+    0%,
+    33% {
+      opacity: 0;
+      width: 4px;
+      height: 4px;
+      top: -8px;
+    }
+    33%,
+    66% {
+      opacity: 1;
+      width: 3px;
+      height: 8px;
+      top: -12px;
+    }
+    66%,
+    100% {
+      opacity: 0;
+      height: 4px;
+      top: -8px;
+    }
+  }
+
+  @keyframes arm-s {
+    0%,
+    33% {
+      opacity: 0;
+      width: 4px;
+      height: 4px;
+      bottom: -8px;
+    }
+    33%,
+    66% {
+      opacity: 1;
+      width: 3px;
+      height: 8px;
+      bottom: -12px;
+    }
+    66%,
+    100% {
+      opacity: 0;
+      height: 4px;
+      bottom: -8px;
+    }
+  }
+
+  @keyframes arm-e {
+    0%,
+    33% {
+      opacity: 0;
+      height: 4px;
+      width: 4px;
+      right: -8px;
+    }
+    33%,
+    66% {
+      opacity: 1;
+      height: 3px;
+      width: 8px;
+      right: -12px;
+    }
+    66%,
+    100% {
+      opacity: 0;
+      width: 4px;
+      right: -8px;
+    }
+  }
+
+  @keyframes arm-w {
+    0%,
+    33% {
+      opacity: 0;
+      height: 4px;
+      width: 4px;
+      left: -8px;
+    }
+    33%,
+    66% {
+      opacity: 1;
+      height: 3px;
+      width: 8px;
+      left: -12px;
+    }
+    66%,
+    100% {
+      opacity: 0;
+      width: 4px;
+      left: -8px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .star {
+      &::before,
+      span {
+        animation: none;
+        opacity: 0;
+      }
+    }
+  }
+</style>
+
+<script>
+  import { getRecord, setRecord } from "../scripts/achievementsRecord";
+
+  const star = document.querySelector("div.star.special")!;
+
+  setTimeout(() => {
+    document.addEventListener("click", (e) => {
+      const rect = star.getBoundingClientRect();
+      const pad = 16;
+      if (
+        e.clientX >= rect.left - pad &&
+        e.clientX <= rect.right + pad &&
+        e.clientY >= rect.top - pad &&
+        e.clientY <= rect.bottom + pad
+      ) {
+        if (getRecord("reach_for_the_stars") !== 100) {
+          setRecord("reach_for_the_stars", 100);
+        }
+      }
+    });
+  }, 60000);
+</script>
