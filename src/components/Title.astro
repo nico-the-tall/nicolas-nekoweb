@@ -1,0 +1,49 @@
+---
+const { title, showFollowButton } = Astro.props;
+---
+
+<div id="title">
+  <noscript
+    style={{
+      textAlign: "center",
+    }}
+  >
+    Hey! You seem to have JavaScript turned off. This website should function
+    mostly fine without it, but some features will not work.
+  </noscript>
+
+  <h1>{title}</h1>
+
+  {
+    showFollowButton && (
+      <div
+        set:html={`<!--# follow title="+ Click to follow!" style="border: 0px;" -->`}
+      />
+    )
+  }
+</div>
+
+<style lang="scss">
+  #title {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 4rem;
+      color: red;
+      text-align: center;
+      filter: hue-rotate(0deg);
+      margin: 0;
+
+      @media (prefers-reduced-motion: no-preference) {
+        animation: 15s linear infinite both title;
+      }
+
+      @media (max-width: 520px) {
+        font-size: 3rem;
+      }
+    }
+  }
+</style>

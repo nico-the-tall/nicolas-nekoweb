@@ -1,0 +1,48 @@
+<div id="toast_container"></div>
+
+<style lang="scss">
+  #toast_container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+
+    .toast {
+      background: #2d6a4f;
+      color: #fff;
+      padding: 12px 18px;
+      font-size: 0.85rem;
+      border: 2px solid #1b4332;
+    }
+  }
+</style>
+
+<script>
+  import { achievements } from "../constants/achievements";
+  import { SHOW_TOAST } from "../constants/other";
+
+  const container = document.querySelector("#toast_container")!;
+
+  window.addEventListener(SHOW_TOAST, (e: Event) => {
+    const { id } = (e as CustomEvent<{ id: string }>).detail;
+    const achievement = achievements.find(
+      ({ id: achievementId }) => id === achievementId,
+    )!;
+
+    const toast = document.createElement("div");
+    toast.className = "toast";
+    toast.innerHTML = `
+    <div style="background: white; padding: 20px; border-radius: 10px;">
+      <small style="color: red; display: block;">Achievement unlocked</small>
+      <small style="color: black; display: block;">${achievement.title}</small>
+      <small style="color: black; display: block; font-size: 0.5rem;">${achievement.description}</small>
+    </div>
+    `;
+    toast.dataset.id = id;
+    container.appendChild(toast);
+    setTimeout(() => toast.remove(), 5000);
+  });
+</script>
