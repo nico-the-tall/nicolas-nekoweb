@@ -1,0 +1,35 @@
+name: Deploy to Nekoweb
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: forgejo-runner-local
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24.14.1"
+
+      - name: Install pnpm
+        run: npm install -g pnpm@10.33.0
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile --ignore-scripts
+
+      - name: Build
+        run: pnpm build
+
+      - name: Deploy
+        uses: https://codeberg.org/nico-the-tall/deploy2nekoweb@v1.0.0
+        with:
+          SECRET: ${{ secrets.NEKOWEB_SECRET }}
+          DOMAIN: nicolas.nekoweb.org
+          USERNAME: nicolas
+          DIRECTORY: ./dist
