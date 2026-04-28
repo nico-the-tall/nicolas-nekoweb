@@ -1,5 +1,8 @@
 ---
 import Block from "../components/Block.astro";
+import rawThoughts from "../constants/thoughts";
+
+const thoughts = rawThoughts.toSorted((a, b) => b.timestamp - a.timestamp);
 ---
 
 <Block id="thoughts">
@@ -18,36 +21,22 @@ import Block from "../components/Block.astro";
   >
     (sort of like a rant journal? don't think too much about it)
   </small>
-  <p>
-    <strong>27.04.2026 18:00</strong> - I've migrated this project to Codeberg! If
-    you're on Codeberg, try my adaptation of <a
-      href="https://codeberg.org/nico-the-tall/deploy2nekoweb"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      deploy2nekoweb
-    </a>.
-  </p>
-  <p>
-    <strong>21.04.2026 01:00</strong> - New sitebox is up! Wasn't really sure what
-    to do for it but I'm happy with the final result &lt;3
-  </p>
-  <p>
-    <strong>05.04.2026 06:00</strong> - Achievements are up! Ping me on Discord if
-    you get them all.
-  </p>
-  <p>
-    <strong>03.04.2026 06:40</strong> - Responsive design up! Took a while to fine-tune
-    it.
-  </p>
-  <p>
-    <strong>03.04.2026</strong> - Got a 404 page up! I'm putting quite a bit of time
-    into this thing. Next thing is the responsive design and the sitebox.
-  </p>
-  <p>
-    <strong>01.04.2026</strong> - Finally got a preliminary version up. Responsiveness
-    is still a WIP. Kinda regretting not doing mobile-first design.
-  </p>
+
+  {
+    thoughts.map((thought) => (
+      <p>
+        <strong>
+          {new Date(thought.timestamp).toLocaleString("de-DE").slice(0, -3)}
+        </strong>
+        -
+        {thought.html ? (
+          <span set:html={thought.html} />
+        ) : (
+          <span>{thought.text}</span>
+        )}
+      </p>
+    ))
+  }
 
   <span id="scroll_down"><small>Scroll down ↓</small></span>
   <span id="sentinel"></span>
