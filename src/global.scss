@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+:root {
+  --text-sm: 0.75rem;
+  --text-base: 1.125rem;
+  --text-title: 2rem;
+  --text-title-xl: 3rem;
+}
+
+body,
+html {
+  font-family: "Courier New", Courier, monospace;
+  background: teal;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+body,
+p,
+span,
+a,
+strong {
+  font-size: var(--text-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: var(--text-title-xl);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--text-title);
+}
+
+small {
+  font-size: var(--text-sm);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    margin-left: -1rem;
+    margin: 1rem 0;
+  }
+
+  li::before {
+    content: "* ";
+  }
+}
