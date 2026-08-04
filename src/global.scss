@@ -13,14 +13,25 @@
   --text-base: 1.125rem;
   --text-title: 2rem;
   --text-title-xl: 3rem;
+  --color-k: #000000;
+  --color-w: #ffffff;
+  --color-y: #ffff00;
+  --color-b: #0000aa;
+  --color-gr: #676565;
+  --color-r: #ff1818;
 }
 
 body,
 html {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Share Tech Mono", monospace !important;
   background: teal;
+  color: var(--color-k);
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
+}
+
+html {
+  font-size: 100%;
 }
 
 img,
@@ -30,10 +41,6 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
-}
-
-html {
-  font-size: 100%;
 }
 
 body,
