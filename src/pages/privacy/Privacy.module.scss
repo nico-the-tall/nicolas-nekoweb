@@ -1,15 +1,18 @@
+:global {
+  html,
+  body {
+    background: var(--color-k) !important;
+    margin: 24px 4px;
+  }
+}
+
 .privacy {
-  background: black;
-  color: white;
-  padding: 2rem 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  color: var(--color-w);
 
   a {
-    color: yellow;
-  }
-
-  .content {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
+    color: var(--color-y);
   }
 }
