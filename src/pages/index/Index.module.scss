@@ -1,0 +1,14 @@
+.index {
+  height: 100dvh;
+  padding: 48px 24px;
+  box-sizing: border-box;
+
+  .icons_area {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

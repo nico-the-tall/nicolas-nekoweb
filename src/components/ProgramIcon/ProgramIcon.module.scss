@@ -1,0 +1,25 @@
+.program_icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  padding: 20px 8px;
+
+  &:focus {
+    background: var(--color-b);
+    color: var(--color-w);
+  }
+
+  img {
+    user-select: none;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  span {
+    text-align: center;
+    cursor: default;
+    user-select: none;
+  }
+}
