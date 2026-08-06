@@ -9,7 +9,7 @@ export function WallpaperSelector() {
     <div className={sx.wallpaper_selector}>
       {wallpapers.map(({ title, wallpaper }) => (
         <div
-          id={title}
+          key={title}
           className={sx.wallpaper_selector_row}
           onClick={() => {
             changeWallpaper(wallpaper);
