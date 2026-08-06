@@ -1,0 +1,33 @@
+.window_base_default {
+  background: white;
+  border: 1px solid black;
+  position: relative;
+  pointer-events: auto;
+  min-width: 250px;
+  box-shadow: 4px 4px 16px var(--color-gr);
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+
+    div:last-child {
+      width: 36px;
+      cursor: default;
+      display: flex;
+      justify-content: center;
+    }
+
+    div:last-child:hover {
+      background: var(--color-b);
+      color: var(--color-w);
+    }
+  }
+
+  .content {
+    padding: 8px;
+  }
+}
+
+/* Other custom classes for WindowBase. Import on programs.ts */

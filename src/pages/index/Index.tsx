@@ -1,5 +1,6 @@
 import { ProgramIcon } from "@/components/ProgramIcon/ProgramIcon";
 import { programs } from "@/constants/programs";
+import { Desktop } from "@/layers/Desktop/Desktop";
 import sx from "@/pages/index/Index.module.scss";
 
 export function Index() {
@@ -10,6 +11,8 @@ export function Index() {
           <ProgramIcon key={program.id} program={program} />
         ))}
       </div>
+
+      <Desktop />
     </div>
   );
 }
