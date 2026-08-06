@@ -1,6 +1,8 @@
 import textIcon from "@/assets/icons/text.png";
+import imageIcon from "@/assets/icons/image.png";
 import trophyIcon from "@/assets/icons/trophy.gif";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
+import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
 import type React from "react";
 
 export interface Program {
@@ -31,8 +33,9 @@ export const programs: Program[] = [
     window: ReadMe,
   },
   {
-    id: "readme3",
-    title: "EXAMPLE",
-    window: ReadMe,
+    id: "wallpaper",
+    title: "Wallpaper Select",
+    window: WallpaperSelector,
+    icon: imageIcon,
   },
 ];

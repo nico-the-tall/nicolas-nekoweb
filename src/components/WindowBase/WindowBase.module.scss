@@ -11,10 +11,10 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 8px;
+    cursor: default;
 
     div:last-child {
       width: 36px;
-      cursor: default;
       display: flex;
       justify-content: center;
     }
