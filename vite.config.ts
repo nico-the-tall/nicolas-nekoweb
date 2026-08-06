@@ -1,12 +1,18 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import react, { reactCompilerPreset } from "@vitejs/plugin-react";
 import { fileURLToPath, URL } from "node:url";
+import babel from "@rolldown/plugin-babel";
 
 const fromRoot = (path: string) =>
   fileURLToPath(new URL(path, import.meta.url));
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    babel({
+      presets: [reactCompilerPreset()],
+    }),
+  ],
   resolve: {
     alias: {
       "@": fromRoot("./src"),
