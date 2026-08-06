@@ -1,4 +1,4 @@
-import Bliss from "@/assets/wallpapers/bliss.webp";
+import Bliss from "@/assets/wallpapers/bliss.jpg";
 import Test from "@/assets/wallpapers/test.png";
 
 interface Wallpaper {
