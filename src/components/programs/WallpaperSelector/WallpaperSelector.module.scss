@@ -1,5 +1,7 @@
 .wallpaper_selector {
   min-width: 300px;
+  max-height: 500px;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -10,6 +12,7 @@
     justify-content: space-between;
     height: 150px;
     padding: 0 16px;
+    gap: 20px;
     cursor: pointer;
 
     &:hover {

@@ -1,18 +1,13 @@
-import Bliss from "@/assets/wallpapers/bliss.jpg";
-import Test from "@/assets/wallpapers/test.png";
-
-interface Wallpaper {
-  title: string;
-  wallpaper: string;
-}
-
-export const wallpapers: Wallpaper[] = [
+const wallpaperModules = import.meta.glob(
+  "@/assets/wallpapers/*.{png,jpg,webp}",
   {
-    title: "Bliss",
-    wallpaper: Bliss,
+    eager: true,
+    query: "?url",
+    import: "default",
   },
-  {
-    title: "test",
-    wallpaper: Test,
-  },
-];
+);
+
+export const wallpapers = Object.values(wallpaperModules).map((wallpaper) => ({
+  title: wallpaper.split("/").at(-1),
+  wallpaper,
+}));
