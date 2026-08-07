@@ -99,7 +99,7 @@ export function F88x31() {
             alt="sirkorgo 88x31 button"
           />
         </a>
-        <a href="https://ghostk.id/">
+        <a href="https://ghostk.id/" target="_blank">
           <img
             src="https://ghostk.id/i/88x31.gif"
             width="88"
@@ -107,7 +107,7 @@ export function F88x31() {
             alt="https://ghostk.id button"
           />
         </a>
-        <a href="https://v0idspace.nekoweb.org/">
+        <a href="https://v0idspace.nekoweb.org/" target="_blank">
           <img src="https://v0idspace.nekoweb.org/stamps/v0idbutton.gif" />
         </a>
       </div>
