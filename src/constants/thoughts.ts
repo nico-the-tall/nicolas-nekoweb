@@ -6,6 +6,10 @@ interface Thought {
 
 const thoughts: Thought[] = [
   {
+    timestamp: 1786077929560,
+    text: "I'm currently updating this website. A total revamp with a new idea. Check it out later!"
+  },
+  {
     timestamp: 1777312800000,
     html: 'I\'ve migrated this project to Codeberg! If you\'re on Codeberg, try my adaptation of <a href="https://codeberg.org/nico-the-tall/deploy2nekoweb" target="_blank" rel="noopener noreferrer">deploy2nekoweb</a>.',
   },
