@@ -7,7 +7,7 @@ export function Euro() {
     const container = ref.current!;
     const sources = [
       "https://euroring.neocities.org/scripts/onionring-variables.js",
-      "https://euroring.neocities.org/scripts/minimal.js",
+      "https://euroring.neocities.org/scripts/euroringbanner.js",
     ];
 
     sources.forEach((src) => {
@@ -18,5 +18,5 @@ export function Euro() {
     });
   }, []);
 
-  return <div ref={ref} style={{ fontSize: "0.6rem" }} />;
+  return <div id="euroring" ref={ref} style={{ fontSize: "0.6rem" }} />;
 }

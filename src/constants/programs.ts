@@ -4,10 +4,12 @@ import imageIcon from "@/assets/icons/image.png";
 import trophyIcon from "@/assets/icons/trophy.gif";
 import nicosSpaceIcon from "@/assets/icons/nicos-space.png";
 import F88x31Icon from "@/assets/icons/88x31.png";
+import webringsIcon from "@/assets/icons/webrings.png";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
 import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
 import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
 import { F88x31 } from "@/components/programs/88x31/88x31";
+import { Webrings } from "@/components/programs/Webrings/Webrings";
 
 export interface Program {
   id: string;
@@ -42,8 +44,17 @@ export const programs: Program[] = [
     window: F88x31,
     icon: F88x31Icon,
     defaultProgram: true,
-    defaultX: 800,
+    defaultX: 1400,
     defaultY: 500,
+  },
+  {
+    id: "webrings",
+    title: "Webrings",
+    window: Webrings,
+    icon: webringsIcon,
+    defaultProgram: true,
+    defaultX: 1400,
+    defaultY: 30,
   },
   {
     id: "wallpaper",
