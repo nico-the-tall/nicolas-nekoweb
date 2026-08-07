@@ -19,6 +19,8 @@ export function WallpaperSelector() {
           <img src={wallpaper} alt={`Wallpaper ${title}`} />
         </div>
       ))}
+
+      <div style={{ height: 24 }} />
     </div>
   );
 }

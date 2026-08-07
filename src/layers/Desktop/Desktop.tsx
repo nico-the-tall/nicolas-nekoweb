@@ -2,6 +2,7 @@ import { programs, type Program } from "@/constants/programs";
 import { useWindowStore } from "@/store/window";
 import { Rnd } from "react-rnd";
 import sx from "@/layers/Desktop/Desktop.module.scss";
+import windowBaseSx from "@/components/WindowBase/WindowBase.module.scss";
 import { WindowBase } from "@/components/WindowBase/WindowBase";
 
 export function Desktop() {
@@ -35,6 +36,7 @@ export function Desktop() {
               height: "auto",
               width: "auto",
             }}
+            dragHandleClassName={windowBaseSx.header}
             className={sx.rnd}
           >
             <WindowBase title={title} id={id} className={className}>

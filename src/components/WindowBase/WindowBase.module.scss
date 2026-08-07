@@ -1,5 +1,5 @@
 .window_base_default {
-  background: white;
+  background: var(--color-gr2);
   border: 1px solid black;
   position: relative;
   pointer-events: auto;
@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 8px;
+    background-color: var(--color-gr);
     cursor: default;
 
     div:last-child {
@@ -27,7 +28,9 @@
 
   .content {
     padding: 8px;
+    overflow-y: auto;
+    max-height: 800px;
   }
 }
 
-/* Other custom classes for WindowBase. Import on programs.ts */
+/* Keep other custom classes for WindowBase here. Import on programs.ts */

@@ -83,5 +83,6 @@ ul {
 
   li::before {
     content: "* ";
+    color: var(--color-r);
   }
 }
