@@ -24,12 +24,6 @@ export interface Program {
 
 export const programs: Program[] = [
   {
-    id: "webarchive",
-    title: "WebArchive",
-    window: WebArchive,
-    icon: nicosSpaceIcon,
-  },
-  {
     id: "readme",
     title: "README",
     defaultProgram: true,
@@ -67,5 +61,11 @@ export const programs: Program[] = [
     title: "EXAMPLE",
     icon: trophyIcon,
     window: ReadMe,
+  },
+  {
+    id: "webarchive",
+    title: "WebArchive",
+    window: WebArchive,
+    icon: nicosSpaceIcon,
   },
 ];
