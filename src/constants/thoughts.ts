@@ -7,7 +7,7 @@ interface Thought {
 const thoughts: Thought[] = [
   {
     timestamp: 1786077929560,
-    text: "I'm currently updating this website. A total revamp with a new idea. Check it out later!"
+    text: "I'm currently updating this website. A total revamp with a new idea. Check it out later!",
   },
   {
     timestamp: 1777312800000,
