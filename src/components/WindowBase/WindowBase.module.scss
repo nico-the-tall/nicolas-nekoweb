@@ -11,13 +11,19 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 8px;
-    background-color: var(--color-gr);
+    background: linear-gradient(
+      90deg,
+      var(--color-gr) 25%,
+      var(--color-gr2) 75%,
+      var(--color-w) 100%
+    );
     cursor: default;
 
     div:last-child {
       width: 36px;
       display: flex;
       justify-content: center;
+      background: var(--color-gr);
     }
 
     div:last-child:hover {
@@ -30,6 +36,43 @@
     padding: 8px;
     overflow-y: auto;
     max-height: 800px;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 5px,
+        var(--color-window-base-bg) 5px,
+        var(--color-window-base-bg) 6px,
+        transparent 6px,
+        transparent 15px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 5px,
+        var(--color-window-base-bg) 5px,
+        var(--color-window-base-bg) 6px,
+        transparent 6px,
+        transparent 15px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 10px,
+        var(--color-window-base-bg) 10px,
+        var(--color-window-base-bg) 11px,
+        transparent 11px,
+        transparent 30px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 10px,
+        var(--color-window-base-bg) 10px,
+        var(--color-window-base-bg) 11px,
+        transparent 11px,
+        transparent 30px
+      );
   }
 }
 

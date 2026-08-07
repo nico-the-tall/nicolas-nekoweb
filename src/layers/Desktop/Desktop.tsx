@@ -38,6 +38,7 @@ export function Desktop() {
             }}
             dragHandleClassName={windowBaseSx.header}
             className={sx.rnd}
+            tabIndex={0}
           >
             <WindowBase title={title} id={id} className={className}>
               <ProgramWindow />

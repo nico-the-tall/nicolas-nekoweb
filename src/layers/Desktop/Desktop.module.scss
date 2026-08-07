@@ -10,4 +10,9 @@
   .rnd {
     cursor: auto !important;
   }
+
+  .rnd:focus-within {
+    /* TODO: Due to DOM stacking this doesn't quite work as I want. Should come up with a smarter way. */
+    z-index: 1;
+  }
 }
