@@ -18,10 +18,10 @@ export interface Program {
 
 export const programs: Program[] = [
   {
-    id: "readme1",
-    title: "EXAMPLE",
+    id: "readme",
+    title: "README",
     defaultProgram: true,
-    defaultX: 300,
+    defaultX: 500,
     defaultY: 50,
     icon: textIcon,
     window: ReadMe,
