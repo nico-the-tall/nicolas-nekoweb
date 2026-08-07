@@ -1,9 +1,11 @@
+import type React from "react";
 import textIcon from "@/assets/icons/text.png";
 import imageIcon from "@/assets/icons/image.png";
 import trophyIcon from "@/assets/icons/trophy.gif";
+import nicosSpaceIcon from "@/assets/icons/nicos-space.png";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
 import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
-import type React from "react";
+import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
 
 export interface Program {
   id: string;
@@ -37,5 +39,11 @@ export const programs: Program[] = [
     title: "Wallpaper Select",
     window: WallpaperSelector,
     icon: imageIcon,
+  },
+  {
+    id: "webarchive",
+    title: "WebArchive",
+    window: WebArchive,
+    icon: nicosSpaceIcon,
   },
 ];
