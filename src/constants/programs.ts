@@ -3,9 +3,11 @@ import textIcon from "@/assets/icons/text.png";
 import imageIcon from "@/assets/icons/image.png";
 import trophyIcon from "@/assets/icons/trophy.gif";
 import nicosSpaceIcon from "@/assets/icons/nicos-space.png";
+import F88x31Icon from "@/assets/icons/88x31.png";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
 import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
 import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
+import { F88x31 } from "@/components/programs/88x31/88x31";
 
 export interface Program {
   id: string;
@@ -20,19 +22,28 @@ export interface Program {
 
 export const programs: Program[] = [
   {
+    id: "webarchive",
+    title: "WebArchive",
+    window: WebArchive,
+    icon: nicosSpaceIcon,
+  },
+  {
     id: "readme",
     title: "README",
     defaultProgram: true,
-    defaultX: 500,
+    defaultX: 300,
     defaultY: 50,
     icon: textIcon,
     window: ReadMe,
   },
   {
-    id: "readme2",
-    title: "EXAMPLE",
-    icon: trophyIcon,
-    window: ReadMe,
+    id: "88x31",
+    title: "88x31 Buttons",
+    window: F88x31,
+    icon: F88x31Icon,
+    defaultProgram: true,
+    defaultX: 800,
+    defaultY: 500,
   },
   {
     id: "wallpaper",
@@ -41,9 +52,9 @@ export const programs: Program[] = [
     icon: imageIcon,
   },
   {
-    id: "webarchive",
-    title: "WebArchive",
-    window: WebArchive,
-    icon: nicosSpaceIcon,
+    id: "readme2",
+    title: "EXAMPLE",
+    icon: trophyIcon,
+    window: ReadMe,
   },
 ];

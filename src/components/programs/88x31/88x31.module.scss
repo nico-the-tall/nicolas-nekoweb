@@ -1,0 +1,38 @@
+.f88x31 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  div {
+    display: flex;
+  }
+
+  div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+.nicosSpaceButtonHighlight {
+  position: absolute;
+  pointer-events: none;
+  font-weight: bold;
+  color: var(--color-y);
+  animation: float-up-fade 1s ease-out forwards;
+
+  @keyframes float-up-fade {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-48px);
+    }
+  }
+}
