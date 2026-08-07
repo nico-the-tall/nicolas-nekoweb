@@ -29,6 +29,8 @@ html {
   color: var(--color-k);
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
+  scrollbar-width: none;
+  scrollbar-color: var(--color-gr) var(--color-gr2);
 }
 
 html {
