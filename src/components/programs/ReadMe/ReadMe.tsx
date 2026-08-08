@@ -60,8 +60,8 @@ export function ReadMe() {
         </p>
         <small>
           <em>
-            All the icons for the programs are made by me. I'm not that good at
-            pixel art, but I'm happy with the results.
+            All the icons for the programs (except spinning Omori) are made by
+            me. I'm not that good at pixel art, but I'm happy with the results.
           </em>
         </small>
       </div>
