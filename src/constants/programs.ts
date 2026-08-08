@@ -16,8 +16,8 @@ export interface Program {
   title: string;
   window: React.FC;
   defaultProgram?: boolean;
-  defaultX?: number;
-  defaultY?: number;
+  xMultOffset?: number;
+  yMultOffset?: number;
   icon?: string;
   className?: string;
 }
@@ -27,8 +27,8 @@ export const programs: Program[] = [
     id: "readme",
     title: "README",
     defaultProgram: true,
-    defaultX: 300,
-    defaultY: 50,
+    xMultOffset: 0.1,
+    yMultOffset: 0.05,
     icon: textIcon,
     window: ReadMe,
   },
@@ -38,8 +38,8 @@ export const programs: Program[] = [
     window: F88x31,
     icon: F88x31Icon,
     defaultProgram: true,
-    defaultX: 1400,
-    defaultY: 500,
+    xMultOffset: 0.9,
+    yMultOffset: 0.8,
   },
   {
     id: "webrings",
@@ -47,8 +47,8 @@ export const programs: Program[] = [
     window: Webrings,
     icon: webringsIcon,
     defaultProgram: true,
-    defaultX: 1400,
-    defaultY: 30,
+    xMultOffset: 1,
+    yMultOffset: 0.05,
   },
   {
     id: "wallpaper",

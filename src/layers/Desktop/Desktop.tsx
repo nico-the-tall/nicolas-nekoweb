@@ -21,8 +21,8 @@ export function Desktop() {
       {openPrograms.map(
         ({
           id,
-          defaultX,
-          defaultY,
+          xMultOffset,
+          yMultOffset,
           window: ProgramWindow,
           title,
           className,
@@ -31,8 +31,8 @@ export function Desktop() {
             key={id}
             bounds="parent"
             default={{
-              x: defaultX ?? 150,
-              y: defaultY ?? 150,
+              x: window.innerWidth * 0.8 * (xMultOffset ?? 0.15),
+              y: window.innerHeight * 0.8 * (yMultOffset ?? 0.15),
               height: "auto",
               width: "auto",
             }}
