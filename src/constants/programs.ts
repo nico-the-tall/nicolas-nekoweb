@@ -75,7 +75,6 @@ export const programs: Program[] = [
     id: "atabook",
     title: "Guestbook",
     icon: atabookIcon,
-    defaultProgram: true,
     xMultOffset: 0.6,
     yMultOffset: 0.05,
     window: Atabook,
