@@ -26,6 +26,7 @@ export function Desktop() {
           window: ProgramWindow,
           title,
           className,
+          icon,
         }) => (
           <Rnd
             key={id}
@@ -40,7 +41,7 @@ export function Desktop() {
             className={sx.rnd}
             tabIndex={0}
           >
-            <WindowBase title={title} id={id} className={className}>
+            <WindowBase title={title} id={id} className={className} icon={icon}>
               <ProgramWindow />
             </WindowBase>
           </Rnd>

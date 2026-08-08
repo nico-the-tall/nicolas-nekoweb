@@ -7,15 +7,19 @@ interface Props {
   title: string;
   className?: string;
   children: React.ReactNode;
+  icon?: string;
 }
 
-export function WindowBase({ id, title, className, children }: Props) {
+export function WindowBase({ id, title, className, icon, children }: Props) {
   const close = useWindowStore((state) => state.close);
 
   return (
     <div className={clsx(sx.window_base_default, className)}>
       <div className={sx.header}>
-        <span>{title}</span>
+        <div>
+          <img src={icon} />
+          <small>{title}</small>
+        </div>
 
         <div
           onClick={() => {

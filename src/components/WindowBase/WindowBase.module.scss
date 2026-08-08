@@ -19,6 +19,17 @@
     );
     cursor: default;
 
+    div:first-child {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        min-width: 16px;
+        height: 16px;
+      }
+    }
+
     div:last-child {
       width: 36px;
       display: flex;
