@@ -41,6 +41,7 @@ export function ReadMe() {
           <li>I mix GB and US English a lot</li>
           <li>OMORI is my favourite game</li>
           <li>I find 67 unironically hilarious</li>
+          <p>Scroll down ⬇</p>
         </ul>
       </div>
 

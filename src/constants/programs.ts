@@ -53,7 +53,7 @@ export const programs: Program[] = [
     icon: F88x31Icon,
     defaultProgram: true,
     xMultOffset: 0.9,
-    yMultOffset: 0.8,
+    yMultOffset: 0.95,
   },
   {
     id: "webrings",
@@ -74,6 +74,9 @@ export const programs: Program[] = [
     id: "atabook",
     title: "Guestbook",
     icon: atabookIcon,
+    defaultProgram: true,
+    xMultOffset: 0.6,
+    yMultOffset: 0.05,
     window: Atabook,
   },
   {
