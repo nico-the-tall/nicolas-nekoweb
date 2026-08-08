@@ -10,6 +10,7 @@ import gitHubIcon from "@/assets/icons/github.png";
 import aniListIcon from "@/assets/icons/anilist.png";
 import socialsIcon from "@/assets/icons/socials.png";
 import steamIcon from "@/assets/icons/steam.png";
+import lastFmIcon from "@/assets/icons/lastfm.png";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
 import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
 import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
@@ -118,5 +119,11 @@ export const extPrograms: ExternalLink[] = [
     title: "Steam",
     href: "https://steamcommunity.com/profiles/76561199386565954/",
     icon: steamIcon,
+  },
+  {
+    id: "ext_lastfm",
+    title: "Last.fm",
+    href: "https://www.last.fm/user/nico-the-tall",
+    icon: lastFmIcon,
   },
 ];
