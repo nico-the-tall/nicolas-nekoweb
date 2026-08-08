@@ -54,7 +54,7 @@ export const programs: Program[] = [
     icon: F88x31Icon,
     defaultProgram: true,
     xMultOffset: 0.9,
-    yMultOffset: 0.95,
+    yMultOffset: 0.9,
   },
   {
     id: "webrings",
@@ -89,6 +89,7 @@ export const programs: Program[] = [
     id: "privacy",
     title: "Privacy & Legal",
     window: Privacy,
+    yMultOffset: 0.1,
     icon: textIcon,
   },
   {
