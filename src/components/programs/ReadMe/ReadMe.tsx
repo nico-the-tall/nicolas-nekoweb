@@ -25,18 +25,22 @@ export function ReadMe() {
         <h2>About me</h2>
         <ul>
           <li>I'm a software developer</li>
+          <li>I have an engineering degree</li>
           <li>I live in Germany</li>
-          <li>I'm in my late 20s</li>
+          <li>I'm almost 30 (unc)</li>
           <li>I speak English, Spanish and German</li>
           <li>I'm not very social</li>
         </ul>
 
         <ul className={sx.interests}>
-          <li>I'm into pixel art and dream/intercore</li>
+          <li>I'm into pixel art and dream/internetcore</li>
           <li>My music taste is all over the place</li>
           <li>I seldom watch anime and drama series</li>
           <li>400+ hours on Helldivers 2, 10k+ on WoW</li>
           <li>I've played every main Megaman game</li>
+          <li>I mix GB and US English a lot</li>
+          <li>OMORI is my favourite game</li>
+          <li>I find 67 unironically hilarious</li>
         </ul>
       </div>
 
