@@ -1,3 +1,4 @@
+import { DateTime } from "@/components/DateTime/DateTime";
 import { ProgramIcon } from "@/components/ProgramIcon/ProgramIcon";
 import { programs, extPrograms } from "@/constants/programs";
 import { Desktop } from "@/layers/Desktop/Desktop";
@@ -21,6 +22,16 @@ export function Index() {
         </div>
 
         <Desktop />
+      </div>
+
+      <div className={sx.task_bar}>
+        <div className={sx.left}>
+          <button>Accessibility</button>
+          <button>Mood</button>
+        </div>
+        <div className={sx.right}>
+          <DateTime />
+        </div>
       </div>
     </>
   );

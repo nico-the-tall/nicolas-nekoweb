@@ -195,15 +195,6 @@ button,
     box-shadow: -1px -1px #000;
   }
 
-  &:focus {
-    border: 2px inset #fff !important;
-    background: silver;
-    color: #424242;
-    box-shadow: -1px -1px #000 !important;
-    outline: 1px dotted;
-    background: var(--color-gr2);
-  }
-
   &:hover {
     box-shadow: -1px -1px #000 !important;
     outline: 0 !important;
