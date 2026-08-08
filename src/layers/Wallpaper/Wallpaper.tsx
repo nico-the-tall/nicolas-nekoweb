@@ -1,4 +1,4 @@
-import { useWallpaperStore } from "@/store/wallpaper";
+import { useWallpaperStore } from "@/stores/wallpaper";
 import sx from "@/layers/Wallpaper/Wallpaper.module.scss";
 
 export function Wallpaper() {

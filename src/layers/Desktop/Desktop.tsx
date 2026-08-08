@@ -1,5 +1,5 @@
 import { programs, type Program } from "@/constants/programs";
-import { useWindowStore } from "@/store/window";
+import { useWindowStore } from "@/stores/window";
 import { Rnd } from "react-rnd";
 import sx from "@/layers/Desktop/Desktop.module.scss";
 import windowBaseSx from "@/components/WindowBase/WindowBase.module.scss";

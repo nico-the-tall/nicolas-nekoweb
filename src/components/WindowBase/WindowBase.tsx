@@ -1,5 +1,5 @@
 import sx from "@/components/WindowBase/WindowBase.module.scss";
-import { useWindowStore } from "@/store/window";
+import { useWindowStore } from "@/stores/window";
 import clsx from "clsx";
 
 interface Props {

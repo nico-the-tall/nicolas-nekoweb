@@ -1,7 +1,7 @@
 import sx from "@/components/ProgramIcon/ProgramIcon.module.scss";
 import textIcon from "@/assets/icons/text.png";
 import type { Program } from "@/constants/programs";
-import { useWindowStore } from "@/store/window";
+import { useWindowStore } from "@/stores/window";
 
 interface Props {
   program: Program;

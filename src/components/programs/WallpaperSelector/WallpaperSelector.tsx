@@ -1,6 +1,6 @@
 import sx from "@/components/programs/WallpaperSelector/WallpaperSelector.module.scss";
 import { wallpapers } from "@/constants/wallpapers";
-import { useWallpaperStore } from "@/store/wallpaper";
+import { useWallpaperStore } from "@/stores/wallpaper";
 
 export function WallpaperSelector() {
   const changeWallpaper = useWallpaperStore((state) => state.changeWallpaper);
