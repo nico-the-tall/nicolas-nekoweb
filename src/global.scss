@@ -32,8 +32,10 @@ html {
   scrollbar-width: thin;
 
   /* Adapted from https://github.com/AlexBSoft/win95.css/blob/master/assets/win95.css */
-  ::-webkit-scrollbar {
-    width: 12px;
+  body:not(&.system_scrollbar) {
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
   }
   ::-webkit-scrollbar-button:end:increment,
   ::-webkit-scrollbar-button:start:decrement {
@@ -120,6 +122,10 @@ html {
   font-size: 100%;
 }
 
+body.system_font {
+  font-family: Arial, sans-serif !important;
+}
+
 img,
 picture,
 video,
@@ -155,6 +161,7 @@ small {
 input,
 button,
 textarea,
+label,
 select {
   font: inherit;
 }
@@ -213,5 +220,11 @@ button,
     border-bottom-color: #424242;
     color: grey;
     text-shadow: 1px 1px #fff;
+  }
+}
+
+.clean_wallpaper {
+  &::after {
+    display: none !important;
   }
 }

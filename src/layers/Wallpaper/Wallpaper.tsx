@@ -6,6 +6,7 @@ export function Wallpaper() {
 
   return (
     <div
+      id="wallpaper_layer"
       className={sx.wallpaper}
       style={{ backgroundImage: `url(${selectedWallpaper})` }}
     />
