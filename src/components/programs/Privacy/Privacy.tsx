@@ -12,6 +12,11 @@ export function Privacy() {
       </p>
 
       <p>
+        Bliss wallpaper is owned by Microsoft. Please don't nuke me out of
+        existence.
+      </p>
+
+      <p>
         Excluding copyrighted assets, all other content on this site is under{" "}
         <a
           href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
@@ -40,69 +45,85 @@ export function Privacy() {
       </p>
 
       <h1>Privacy Policy</h1>
+      <small>Legal yapping I'm obligated to provide</small>
       <p>
         This website does not collect personal data or use cookies. Some
         preference settings are stored locally in your browser and are never
         transmitted anywhere. This website does make use of external providers
-        and links to external sites, each with their own privacy policy.
+        and links to external sites that might track you or make use of your
+        data.
       </p>
 
-      <p>
-        This website is hosted on Nekoweb. For more information about what data
-        they collect, you can read their{" "}
-        <a
-          href="https://nekoweb.org/privacy"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Privacy Policy
-        </a>
-        .
-      </p>
+      <ul>
+        <li>
+          This website is hosted on Nekoweb:{" "}
+          <a
+            href="https://nekoweb.org/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          Guestbook is powered by Atabook:{" "}
+          <a
+            href="https://atabook.org/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          Fonts are served via Bunny.net:{" "}
+          <a
+            href="https://bunny.net/privacy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          This website uses Cloudflare as a proxy:{" "}
+          <a
+            href="https://www.cloudflare.com/privacypolicy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          The WebArchive program is powered by the Wayback Machine:{" "}
+          <a
+            href="https://archive.org/about/terms"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
+        </li>
+      </ul>
 
+      <hr />
       <p>
-        Guestbook is provided by Atabook. Personal information might be
-        recorded. For more information, check their{" "}
-        <a
-          href="https://atabook.org/privacy"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Privacy Policy
-        </a>
-        .
+        <strong>
+          For the actual serious legal document, please check the{" "}
+          <a href="/privacy" target="_blank" rel="noopener noreferrer">
+            GDPR Privacy Policy
+          </a>
+          .
+        </strong>
       </p>
       <p>
-        Fonts are served via Bunny.net in a GDPR-compliant way. For more
-        information, you can read their{" "}
-        <a
-          href="https://bunny.net/privacy/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Privacy Policy
-        </a>
-        .
+        <em>
+          I do not make money from this website, offer commercial services of
+          any kind or provide editorial content in any way. This website is for
+          personal non-commercial recreational use.
+        </em>
       </p>
-      <p>
-        This website uses Cloudflare as a reverse proxy:{" "}
-        <a
-          href="https://www.cloudflare.com/privacypolicy/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Privacy Policy
-        </a>
-        .
-      </p>
-      <p>
-        For more information, you can check the full{" "}
-        <a href="/privacy" target="_blank" rel="noopener noreferrer">
-          GDPR Privacy Policy
-        </a>
-        .
-      </p>
-
       <img
         src="/developed-by-a-human.png"
         alt="Developed by a human not by AI button"
