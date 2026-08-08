@@ -6,7 +6,8 @@ import nicosSpaceIcon from "@/assets/icons/nicos-space.png";
 import F88x31Icon from "@/assets/icons/88x31.png";
 import webringsIcon from "@/assets/icons/webrings.png";
 import atabookIcon from "@/assets/icons/atabook.png";
-import githubIcon from "@/assets/icons/github.png";
+import gitHubIcon from "@/assets/icons/github.png";
+import aniListIcon from "@/assets/icons/anilist.png";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
 import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
 import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
@@ -92,6 +93,12 @@ export const extPrograms: ExternalLink[] = [
     id: "ext_github",
     title: "GitHub",
     href: "https://github.com/nico-the-tall",
-    icon: githubIcon,
+    icon: gitHubIcon,
+  },
+  {
+    id: "ext_anilist",
+    title: "AniList",
+    href: "https://anilist.co/user/NicoTheTall/animelist",
+    icon: aniListIcon,
   },
 ];
