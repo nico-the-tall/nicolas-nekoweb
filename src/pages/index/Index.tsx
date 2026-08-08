@@ -9,6 +9,8 @@ const programsList = [...programs, ...extPrograms];
 export function Index() {
   return (
     <>
+      <div className={sx.crt} />
+
       <Wallpaper />
 
       <div className={sx.index}>
