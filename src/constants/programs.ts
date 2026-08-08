@@ -6,6 +6,7 @@ import nicosSpaceIcon from "@/assets/icons/nicos-space.png";
 import F88x31Icon from "@/assets/icons/88x31.png";
 import webringsIcon from "@/assets/icons/webrings.png";
 import atabookIcon from "@/assets/icons/atabook.png";
+import githubIcon from "@/assets/icons/github.png";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
 import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
 import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
@@ -14,15 +15,22 @@ import { Webrings } from "@/components/programs/Webrings/Webrings";
 import { Atabook } from "@/components/programs/Atabook/Atabook";
 import { Privacy } from "@/components/programs/Privacy/Privacy";
 
-export interface Program {
+export interface ProgramBase {
   id: string;
   title: string;
+  icon?: string;
+}
+
+export interface Program extends ProgramBase {
   window: React.FC;
   defaultProgram?: boolean;
   xMultOffset?: number;
   yMultOffset?: number;
-  icon?: string;
   className?: string;
+}
+
+export interface ExternalLink extends ProgramBase {
+  href: string;
 }
 
 export const programs: Program[] = [
@@ -30,7 +38,7 @@ export const programs: Program[] = [
     id: "readme",
     title: "README",
     defaultProgram: true,
-    xMultOffset: 0.1,
+    xMultOffset: 0.15,
     yMultOffset: 0.05,
     icon: omoriIcon,
     window: ReadMe,
@@ -76,5 +84,14 @@ export const programs: Program[] = [
     title: "Privacy & Legal",
     window: Privacy,
     icon: textIcon,
+  },
+];
+
+export const extPrograms: ExternalLink[] = [
+  {
+    id: "ext_github",
+    title: "GitHub",
+    href: "https://github.com/nico-the-tall",
+    icon: githubIcon,
   },
 ];
