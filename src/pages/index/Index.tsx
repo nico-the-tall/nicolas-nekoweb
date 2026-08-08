@@ -10,12 +10,12 @@ const programsList = [...programs, ...extPrograms];
 
 export function Index() {
   return (
-    <>
+    <div className={sx.index}>
       <CRT />
 
       <Wallpaper />
 
-      <div className={sx.index}>
+      <div className={sx.index_content}>
         <div className={sx.icons_area}>
           {programsList.map((program) => (
             <ProgramIcon key={program.id} program={program} />
@@ -26,6 +26,6 @@ export function Index() {
       </div>
 
       <Taskbar />
-    </>
+    </div>
   );
 }

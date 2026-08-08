@@ -1,6 +1,7 @@
 .task_bar {
   height: 48px;
   width: 100dvw;
+  min-width: 800px;
   position: fixed;
   display: flex;
   justify-content: space-between;
