@@ -3,56 +3,51 @@ import sx from "@/pages/privacy/Privacy.module.scss";
 export function Privacy() {
   return (
     <div className={sx.privacy}>
-      <a href="/">&lt;-- Click to return to the main page</a>
-      <h1>Datenschutzerklärung</h1>
-      <h2 id="m1">Präambel</h2>
+      <h1>GDPR Privacy Policy</h1>
+      <h2 id="m1">Preamble</h2>
       <p>
-        Mit der folgenden Datenschutzerklärung möchten wir Sie darüber
-        aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch
-        kurz als "Daten" bezeichnet) wir zu welchen Zwecken und in welchem
-        Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns
-        durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen
-        der Erbringung unserer Leistungen als auch insbesondere auf unseren
-        Webseiten, in mobilen Applikationen sowie innerhalb externer
-        Onlinepräsenzen, wie z.B. unserer Social-Media-Profile (nachfolgend
-        zusammenfassend bezeichnet als "Onlineangebot").
+        With the following privacy policy, we would like to inform you about
+        which types of your personal data (hereinafter also referred to as
+        "data") we process for which purposes and to what extent. This privacy
+        policy applies to all processing of personal data carried out by us,
+        both in the context of providing our services and, in particular, on our
+        websites, in mobile applications, and within external online presences,
+        such as our social media profiles (hereinafter collectively referred to
+        as the "online offer").
       </p>
 
-      <p>Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
+      <p>The terms used are not gender-specific.</p>
       <br />
       <hr />
       <br />
-      <strong>Stand: 1. April 2026</strong>
+      <strong>Last updated: August 8, 2026</strong>
       <br />
 
-      <h2>Inhaltsübersicht</h2>
+      <h2>Table of Contents</h2>
       <ul>
         <li>
-          <a href="#m1">Präambel</a>
+          <a href="#m1">Preamble</a>
         </li>
         <li>
-          <a href="#m2">Verantwortlicher</a>
+          <a href="#m2">Controller</a>
         </li>
         <li>
-          <a href="#m3">Übersicht der Verarbeitungen</a>
+          <a href="#m3">Overview of processing</a>
         </li>
         <li>
-          <a href="#m4">Maßgebliche Rechtsgrundlagen</a>
+          <a href="#m4">Relevant legal bases</a>
         </li>
         <li>
-          <a href="#m5">Rechte der betroffenen Personen</a>
+          <a href="#m5">Rights of data subjects</a>
         </li>
         <li>
-          <a href="#m6">Bereitstellung des Onlineangebots und Webhosting</a>
+          <a href="#m6">Provision of the online offer and web hosting</a>
         </li>
         <li>
-          <a href="#m7">Lokale Speicherung von Achievements</a>
-        </li>
-        <li>
-          <a href="#m8">Begriffsdefinitionen</a>
+          <a href="#m7">Definitions</a>
         </li>
       </ul>
-      <h2 id="m2">Verantwortlicher</h2>
+      <h2 id="m2">Controller</h2>
       <p>Nicolas H.</p>
       <p>
         Email:{" "}
@@ -65,209 +60,194 @@ export function Privacy() {
         </a>
       </p>
 
-      <h2 id="m3">Übersicht der Verarbeitungen</h2>
+      <h2 id="m3">Overview of processing</h2>
       <p>
-        Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und
-        die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen
-        Personen.
+        The following overview summarizes the types of data processed and the
+        purposes of their processing, and refers to the data subjects.
       </p>
-      <h3>Arten der verarbeiteten Daten</h3>
+      <h3>Types of data processed</h3>
       <ul>
-        <li>Nutzungsdaten.</li>
-        <li>Meta-, Kommunikations- und Verfahrensdaten.</li>
-        <li>Protokolldaten.</li>
+        <li>Usage data.</li>
+        <li>Meta, communication, and process data.</li>
+        <li>Log data.</li>
       </ul>
-      <h3>Kategorien betroffener Personen</h3>
+      <h3>Categories of data subjects</h3>
       <ul>
-        <li>Nutzer.</li>
+        <li>Users.</li>
       </ul>
-      <h3>Zwecke der Verarbeitung</h3>
+      <h3>Purposes of processing</h3>
       <ul>
-        <li>
-          Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.
-        </li>
-        <li>Informationstechnische Infrastruktur.</li>
+        <li>Provision of our online offer and user-friendliness.</li>
+        <li>Information technology infrastructure.</li>
       </ul>
-      <h2 id="m4">Maßgebliche Rechtsgrundlagen</h2>
+      <h2 id="m4">Relevant legal bases</h2>
       <p>
-        <strong>Maßgebliche Rechtsgrundlagen nach der DSGVO:</strong> Im
-        Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO,
-        auf deren Basis wir personenbezogene Daten verarbeiten. Bitte nehmen Sie
-        zur Kenntnis, dass neben den Regelungen der DSGVO nationale
-        Datenschutzvorgaben in Ihrem bzw. unserem Wohn- oder Sitzland gelten
-        können. Sollten ferner im Einzelfall speziellere Rechtsgrundlagen
-        maßgeblich sein, teilen wir Ihnen diese in der Datenschutzerklärung mit.
+        <strong>Relevant legal bases under the GDPR:</strong> Below you will
+        find an overview of the legal bases of the GDPR on which we process
+        personal data. Please note that, in addition to the provisions of the
+        GDPR, national data protection regulations may apply in your or our
+        country of residence. Furthermore, should more specific legal bases be
+        relevant in individual cases, we will inform you of these in this
+        privacy policy.
       </p>
       <ul>
         <li>
-          <strong>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)</strong>: Die
-          betroffene Person hat ihre Einwilligung in die Verarbeitung der sie
-          betreffenden personenbezogenen Daten für einen spezifischen Zweck oder
-          mehrere bestimmte Zwecke gegeben.
+          <strong>Consent (Art. 6 para. 1 s. 1 lit. a) GDPR)</strong>: The data
+          subject has given consent to the processing of their personal data for
+          a specific purpose or purposes.
+        </li>
+        <li>
+          <strong>Legal obligation (Art. 6 para. 1 s. 1 lit. c) GDPR):</strong>{" "}
+          Processing is necessary for compliance with a legal obligation to
+          which the controller is subject.
         </li>
         <li>
           <strong>
-            Rechtliche Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c) DSGVO):
+            Legitimate interests (Art. 6 para. 1 s. 1 lit. f) GDPR):
           </strong>{" "}
-          Die Verarbeitung ist zur Erfüllung einer rechtlichen Verpflichtung
-          erforderlich, der der Verantwortliche unterliegt.
-        </li>
-        <li>
-          <strong>
-            Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO):
-          </strong>{" "}
-          Die Verarbeitung ist zur Wahrung der berechtigten Interessen des
-          Verantwortlichen oder eines Dritten notwendig, vorausgesetzt, dass die
-          Interessen, Grundrechte und Grundfreiheiten der betroffenen Person,
-          die den Schutz personenbezogener Daten verlangen, nicht überwiegen.
+          Processing is necessary to protect the legitimate interests of the
+          controller or a third party, provided that the interests, fundamental
+          rights, and fundamental freedoms of the data subject that require the
+          protection of personal data do not override those interests.
         </li>
       </ul>
       <p>
-        <strong>Nationale Datenschutzregelungen in Deutschland:</strong>{" "}
-        Zusätzlich zu den Datenschutzregelungen der DSGVO gelten nationale
-        Regelungen zum Datenschutz in Deutschland. Hierzu gehört insbesondere
-        das Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der
-        Datenverarbeitung (Bundesdatenschutzgesetz - BDSG). Das BDSG enthält
-        insbesondere Spezialregelungen zum Recht auf Auskunft, zum Recht auf
-        Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien
-        personenbezogener Daten, zur Verarbeitung für andere Zwecke und zur
-        Übermittlung sowie automatisierten Entscheidungsfindung im Einzelfall
-        einschließlich Profiling. Ferner können Landesdatenschutzgesetze der
-        einzelnen Bundesländer zur Anwendung gelangen.
+        <strong>National data protection regulations in Germany:</strong> In
+        addition to the data protection regulations of the GDPR, national data
+        protection regulations apply in Germany. This includes, in particular,
+        the Act to Protect Against Misuse of Personal Data in Data Processing
+        (Bundesdatenschutzgesetz - BDSG). The BDSG contains special provisions
+        on the right to information, the right to erasure, the right to object,
+        the processing of special categories of personal data, processing for
+        other purposes, and transmission as well as automated decision-making in
+        individual cases, including profiling. Furthermore, the data protection
+        laws of the individual federal states may apply.
       </p>
 
-      <h2 id="m5">Rechte der betroffenen Personen</h2>
+      <h2 id="m5">Rights of data subjects</h2>
       <p>
-        Rechte der betroffenen Personen aus der DSGVO: Ihnen stehen als
-        Betroffene nach der DSGVO verschiedene Rechte zu, die sich insbesondere
-        aus Art. 15 bis 21 DSGVO ergeben:
+        Rights of data subjects under the GDPR: As a data subject, you have
+        various rights under the GDPR, which arise in particular from Art. 15 to
+        21 GDPR:
       </p>
       <ul>
         <li>
           <strong>
-            Widerspruchsrecht: Sie haben das Recht, aus Gründen, die sich aus
-            Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung
-            der Sie betreffenden personenbezogenen Daten, die aufgrund von Art.
-            6 Abs. 1 lit. e oder f DSGVO erfolgt, Widerspruch einzulegen; dies
-            gilt auch für ein auf diese Bestimmungen gestütztes Profiling.
-            Werden die Sie betreffenden personenbezogenen Daten verarbeitet, um
-            Direktwerbung zu betreiben, haben Sie das Recht, jederzeit
-            Widerspruch gegen die Verarbeitung der Sie betreffenden
-            personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen;
-            dies gilt auch für das Profiling, soweit es mit solcher
-            Direktwerbung in Verbindung steht.
+            Right to object: You have the right to object, on grounds relating
+            to your particular situation, at any time to the processing of
+            personal data concerning you which is based on Art. 6 para. 1 lit. e
+            or f GDPR; this also applies to profiling based on these provisions.
+            If personal data concerning you is processed for the purpose of
+            direct marketing, you have the right to object at any time to the
+            processing of your personal data for the purpose of such marketing;
+            this also applies to profiling, to the extent that it is related to
+            such direct marketing.
           </strong>
         </li>
         <li>
-          <strong>Widerrufsrecht bei Einwilligungen:</strong> Sie haben das
-          Recht, erteilte Einwilligungen jederzeit zu widerrufen.
+          <strong>Right to withdraw consent:</strong> You have the right to
+          withdraw any consent given at any time.
         </li>
         <li>
-          <strong>Auskunftsrecht:</strong> Sie haben das Recht, eine Bestätigung
-          darüber zu verlangen, ob betreffende Daten verarbeitet werden und auf
-          Auskunft über diese Daten sowie auf weitere Informationen und Kopie
-          der Daten entsprechend den gesetzlichen Vorgaben.
+          <strong>Right of access:</strong> You have the right to request
+          confirmation as to whether data concerning you is being processed, and
+          to receive information about this data as well as further information
+          and a copy of the data in accordance with legal requirements.
         </li>
         <li>
-          <strong>Recht auf Berichtigung:</strong> Sie haben entsprechend den
-          gesetzlichen Vorgaben das Recht, die Vervollständigung der Sie
-          betreffenden Daten oder die Berichtigung der Sie betreffenden
-          unrichtigen Daten zu verlangen.
+          <strong>Right to rectification:</strong> In accordance with legal
+          requirements, you have the right to request the completion of data
+          concerning you or the correction of inaccurate data concerning you.
+        </li>
+        <li>
+          <strong>Right to erasure and restriction of processing:</strong> In
+          accordance with legal requirements, you have the right to demand that
+          data concerning you be deleted without delay, or alternatively to
+          demand a restriction of the processing of the data in accordance with
+          legal requirements.
+        </li>
+        <li>
+          <strong>Right to data portability:</strong> You have the right to
+          receive data concerning you that you have provided to us, in
+          accordance with legal requirements, in a structured, common, and
+          machine-readable format, or to request its transmission to another
+          controller.
         </li>
         <li>
           <strong>
-            Recht auf Löschung und Einschränkung der Verarbeitung:
+            Right to lodge a complaint with a supervisory authority:
           </strong>{" "}
-          Sie haben nach Maßgabe der gesetzlichen Vorgaben das Recht, zu
-          verlangen, dass Sie betreffende Daten unverzüglich gelöscht werden,
-          bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben eine
-          Einschränkung der Verarbeitung der Daten zu verlangen.
-        </li>
-        <li>
-          <strong>Recht auf Datenübertragbarkeit:</strong> Sie haben das Recht,
-          Sie betreffende Daten, die Sie uns bereitgestellt haben, nach Maßgabe
-          der gesetzlichen Vorgaben in einem strukturierten, gängigen und
-          maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen
-          anderen Verantwortlichen zu fordern.
-        </li>
-        <li>
-          <strong>Beschwerde bei Aufsichtsbehörde:</strong> Sie haben
-          unbeschadet eines anderweitigen verwaltungsrechtlichen oder
-          gerichtlichen Rechtsbehelfs das Recht auf Beschwerde bei einer
-          Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen
-          Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen
-          Verstoßes, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie
-          betreffenden personenbezogenen Daten gegen die Vorgaben der DSGVO
-          verstößt. Zuständige Behörde für Berlin:{" "}
+          Without prejudice to any other administrative or judicial remedy, you
+          have the right to lodge a complaint with a supervisory authority, in
+          particular in the member state of your habitual residence, place of
+          work, or place of the alleged infringement, if you consider that the
+          processing of personal data concerning you violates the GDPR.
+          Competent authority for Berlin:{" "}
           <a
             href="https://www.datenschutz-berlin.de"
             target="_blank"
             rel="noopener"
           >
-            Berliner Beauftragte für Datenschutz und Informationsfreiheit
+            Berlin Commissioner for Data Protection and Freedom of Information
           </a>
         </li>
       </ul>
 
-      <h2 id="m6">Bereitstellung des Onlineangebots und Webhosting</h2>
+      <h2 id="m6">Provision of the online offer and web hosting</h2>
       <p>
-        Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste zur
-        Verfügung stellen zu können. Zu diesem Zweck verarbeiten wir die
-        IP-Adresse des Nutzers, die notwendig ist, um die Inhalte und Funktionen
-        unserer Online-Dienste an den Browser oder das Endgerät der Nutzer zu
-        übermitteln.
+        We process the data of our users in order to be able to provide them
+        with our online services. For this purpose, we process the user's IP
+        address, which is necessary to deliver the content and functions of our
+        online services to the user's browser or end device.
       </p>
       <ul>
         <li>
-          <strong>Verarbeitete Datenarten:</strong> Nutzungsdaten (z. B.
-          Seitenaufrufe und Verweildauer, Klickpfade, Nutzungsintensität und
-          -frequenz, verwendete Gerätetypen und Betriebssysteme, Interaktionen
-          mit Inhalten und Funktionen); Meta-, Kommunikations- und
-          Verfahrensdaten (z. B. IP-Adressen, Zeitangaben,
-          Identifikationsnummern, beteiligte Personen). Protokolldaten (z.B.
-          Logfiles betreffend Logins oder den Abruf von Daten oder
-          Zugriffszeiten.).
+          <strong>Types of data processed:</strong> Usage data (e.g. page views
+          and duration of visit, click paths, usage intensity and frequency,
+          device types and operating systems used, interactions with content and
+          functions); meta, communication, and process data (e.g. IP addresses,
+          timestamps, identification numbers, persons involved). Log data (e.g.
+          log files relating to logins or data retrieval or access times).
         </li>
         <li>
-          <strong>Betroffene Personen:</strong> Nutzer (z.B. Webseitenbesucher,
-          Nutzer von Onlinediensten).
+          <strong>Data subjects:</strong> Users (e.g. website visitors, users of
+          online services).
         </li>
         <li>
-          <strong>Zwecke der Verarbeitung und berechtigte Interessen:</strong>{" "}
-          Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.
-          Informationstechnische Infrastruktur (Betrieb und Bereitstellung von
-          Informationssystemen und technischen Geräten (Computer, Server etc.)).
+          <strong>Purposes of processing and legitimate interests:</strong>{" "}
+          Provision of our online offer and user-friendliness. Information
+          technology infrastructure (operation and provision of information
+          systems and technical devices such as computers, servers, etc.).
         </li>
         <li>
-          <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs.
-          1 S. 1 lit. f) DSGVO).
+          <strong>Legal bases:</strong> Legitimate interests (Art. 6 para. 1 s.
+          1 lit. f) GDPR).
         </li>
       </ul>
       <p>
         <strong>
-          Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
+          Further information on processing procedures, methods, and services:
         </strong>
       </p>
       <ul>
         <li>
-          <strong>Content-Delivery-Network:</strong> Wir setzen ein
-          "Content-Delivery-Network" (CDN) ein. Ein CDN ist ein Dienst, mit
-          dessen Hilfe Inhalte eines Onlineangebotes, insbesondere große
-          Mediendateien, wie Grafiken oder Programm-Skripte, mit Hilfe regional
-          verteilter und über das Internet verbundener Server schneller und
-          sicherer ausgeliefert werden können;
+          <strong>Content delivery network:</strong> We use a "content delivery
+          network" (CDN). A CDN is a service that helps deliver the content of
+          an online offer, in particular large media files such as graphics or
+          program scripts, faster and more securely with the help of regionally
+          distributed servers connected via the internet.
           <span>
-            <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
-            Abs. 1 S. 1 lit. f) DSGVO).
+            <strong>Legal bases:</strong> Legitimate interests (Art. 6 para. 1
+            s. 1 lit. f) GDPR).
           </span>
         </li>
         <li>
-          <strong>Cloudflare:</strong> Wir nutzen Cloudflare als Reverse Proxy
-          und CDN. Anbieter ist Cloudflare, Inc., 101 Townsend St., San
-          Francisco, CA 94107, USA. Da Cloudflare in den USA ansässig ist,
-          werden Daten in die USA übermittelt; die Übermittlung erfolgt auf
-          Grundlage von Standardvertragsklauseln (Art. 46 DSGVO).{" "}
-          <strong>Datenschutzerklärung:</strong>{" "}
+          <strong>Cloudflare:</strong> We use Cloudflare as a reverse proxy and
+          CDN. The provider is Cloudflare, Inc., 101 Townsend St., San
+          Francisco, CA 94107, USA. Since Cloudflare is based in the USA, data
+          is transferred to the USA; the transfer takes place on the basis of
+          standard contractual clauses (Art. 46 GDPR).{" "}
+          <strong>Privacy policy:</strong>{" "}
           <a
             href="https://www.cloudflare.com/privacypolicy/"
             target="_blank"
@@ -277,21 +257,19 @@ export function Privacy() {
           </a>
         </li>
         <li>
-          <strong>Nekoweb (Hosting):</strong> Diese Website wird gehostet bei
-          Nekoweb. Nekoweb kann im Rahmen des Betriebs technische Daten wie
-          IP-Adressen und Serverprotokolle verarbeiten.{" "}
-          <strong>Datenschutzerklärung:</strong>{" "}
+          <strong>Nekoweb (Hosting):</strong> This website is hosted on Nekoweb.
+          As part of its operation, Nekoweb may process technical data such as
+          IP addresses and server logs. <strong>Privacy policy:</strong>{" "}
           <a href="https://nekoweb.org/privacy" target="_blank" rel="noopener">
             https://nekoweb.org/privacy
           </a>
         </li>
         <li>
-          <strong>Bunny Fonts:</strong> Wir verwenden Schriftarten von Bunny
-          Fonts (BunnyWay d.o.o., Cesta komandanta Staneta 4A, 1215 Medvode,
-          Slowenien). Beim Laden der Schriftarten wird Ihre IP-Adresse
-          übermittelt. <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen
-          (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).{" "}
-          <strong>Datenschutzerklärung:</strong>{" "}
+          <strong>Bunny Fonts:</strong> We use fonts from Bunny Fonts (BunnyWay
+          d.o.o., Cesta komandanta Staneta 4A, 1215 Medvode, Slovenia). When the
+          fonts are loaded, your IP address is transmitted.{" "}
+          <strong>Legal bases:</strong> Legitimate interests (Art. 6 para. 1 s.
+          1 lit. f) GDPR). <strong>Privacy policy:</strong>{" "}
           <a
             href="https://fonts.bunny.net/privacy"
             target="_blank"
@@ -300,124 +278,85 @@ export function Privacy() {
             https://fonts.bunny.net/privacy
           </a>
         </li>
-      </ul>
-      <h2 id="m7">Lokale Speicherung von Achievements</h2>
-      <p>
-        Diese Website nutzt den lokalen Browserspeicher (<em>localStorage</em>
-        ), um den Fortschritt von Achievements (Errungenschaften) zu speichern.
-        Dabei werden ausschließlich Informationen darüber gespeichert, welche
-        Achievements freigeschaltet wurden - keine personenbezogenen Daten,
-        keine Identifikatoren und keine Nutzungsprofile.
-      </p>
-      <ul>
         <li>
-          <strong>Verarbeitete Daten:</strong> Ausschließlich der
-          Achievement-Status und -Fortschritt (z. B. freigeschaltet/nicht
-          freigeschaltet sowie Zwischenstände). Es werden keine
-          personenbezogenen Daten gespeichert.
-        </li>
-        <li>
-          <strong>Speicherort:</strong> Ausschließlich lokal im Browser des
-          Nutzers (localStorage). Die Daten werden nicht an Server übermittelt,
-          nicht mit Dritten geteilt und verlassen das Gerät des Nutzers nicht.
-        </li>
-        <li>
-          <strong>Zweck:</strong> Speicherung des Achievement-Fortschritts über
-          Seitenbesuche hinweg. Achievements sind eine optionale, spielerische
-          Funktion dieser Website und kein verpflichtender Bestandteil des
-          Angebots.
-        </li>
-        <li>
-          <strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TTDSG (technisch
-          notwendige Speicherung für eine vom Nutzer ausdrücklich gewünschte
-          Funktion); keine Einwilligung erforderlich.
-        </li>
-        <li>
-          <strong>Löschung:</strong> Die gespeicherten Daten können jederzeit
-          über die Browsereinstellungen (Websitedaten löschen) entfernt werden.
+          <strong>Atabook (Guestbook):</strong> Our guestbook is provided by
+          Atabook. If you use the guestbook, the information you enter,
+          including any personal information you choose to submit, may be
+          processed and stored by Atabook. <strong>Legal bases:</strong> Consent
+          (Art. 6 para. 1 s. 1 lit. a) GDPR). <strong>Privacy policy:</strong>{" "}
+          <a href="https://atabook.org/privacy" target="_blank" rel="noopener">
+            https://atabook.org/privacy
+          </a>
         </li>
       </ul>
 
-      <h2 id="m8">Begriffsdefinitionen</h2>
+      <h2 id="m7">Definitions</h2>
       <p>
-        In diesem Abschnitt erhalten Sie eine Übersicht über die in dieser
-        Datenschutzerklärung verwendeten Begrifflichkeiten. Soweit die
-        Begrifflichkeiten gesetzlich definiert sind, gelten deren gesetzliche
-        Definitionen. Die nachfolgenden Erläuterungen sollen dagegen vor allem
-        dem Verständnis dienen.
+        In this section, you will find an overview of the terms used in this
+        privacy policy. Where the terms are legally defined, their legal
+        definitions apply. The following explanations are primarily intended to
+        aid understanding.
       </p>
       <ul>
         <li>
-          <strong>Meta-, Kommunikations- und Verfahrensdaten:</strong> Meta-,
-          Kommunikations- und Verfahrensdaten sind Kategorien, die Informationen
-          über die Art und Weise enthalten, wie Daten verarbeitet, übermittelt
-          und verwaltet werden. Meta-Daten, auch bekannt als Daten über Daten,
-          umfassen Informationen, die den Kontext, die Herkunft und die Struktur
-          anderer Daten beschreiben. Sie können Angaben zur Dateigröße, dem
-          Erstellungsdatum, dem Autor eines Dokuments und den Änderungshistorien
-          beinhalten. Kommunikationsdaten erfassen den Austausch von
-          Informationen zwischen Nutzern über verschiedene Kanäle, wie
-          E-Mail-Verkehr, Anrufprotokolle, Nachrichten in sozialen Netzwerken
-          und Chat-Verläufe, inklusive der beteiligten Personen, Zeitstempel und
-          Übertragungswege. Verfahrensdaten beschreiben die Prozesse und Abläufe
-          innerhalb von Systemen oder Organisationen, einschließlich
-          Workflow-Dokumentationen, Protokolle von Transaktionen und
-          Aktivitäten, sowie Audit-Logs, die zur Nachverfolgung und Überprüfung
-          von Vorgängen verwendet werden.
+          <strong>Meta, communication, and process data:</strong> Meta,
+          communication, and process data are categories that contain
+          information about the way in which data is processed, transmitted, and
+          managed. Metadata, also known as data about data, includes information
+          that describes the context, origin, and structure of other data. It
+          can include information about file size, creation date, the author of
+          a document, and change histories. Communication data records the
+          exchange of information between users via various channels, such as
+          email traffic, call logs, messages on social networks, and chat
+          histories, including the persons involved, timestamps, and
+          transmission paths. Process data describes the processes and workflows
+          within systems or organizations, including workflow documentation,
+          transaction and activity logs, as well as audit logs used to track and
+          verify operations.
         </li>
         <li>
-          <strong>Nutzungsdaten:</strong> Nutzungsdaten beziehen sich auf
-          Informationen, die erfassen, wie Nutzer mit digitalen Produkten,
-          Dienstleistungen oder Plattformen interagieren. Diese Daten umfassen
-          eine breite Palette von Informationen, die aufzeigen, wie Nutzer
-          Anwendungen nutzen, welche Funktionen sie bevorzugen, wie lange sie
-          auf bestimmten Seiten verweilen und über welche Pfade sie durch eine
-          Anwendung navigieren. Nutzungsdaten können auch die Häufigkeit der
-          Nutzung, Zeitstempel von Aktivitäten, IP-Adressen, Geräteinformationen
-          und Standortdaten einschließen. Sie sind besonders wertvoll für die
-          Analyse des Nutzerverhaltens, die Optimierung von Benutzererfahrungen,
-          das Personalisieren von Inhalten und das Verbessern von Produkten oder
-          Dienstleistungen. Darüber hinaus spielen Nutzungsdaten eine
-          entscheidende Rolle beim Erkennen von Trends, Vorlieben und möglichen
-          Problembereichen innerhalb digitaler Angebote
+          <strong>Usage data:</strong> Usage data refers to information that
+          records how users interact with digital products, services, or
+          platforms. This data encompasses a wide range of information that
+          shows how users use applications, which features they prefer, how long
+          they stay on certain pages, and which paths they take through an
+          application. Usage data can also include frequency of use, timestamps
+          of activities, IP addresses, device information, and location data. It
+          is particularly valuable for analyzing user behavior, optimizing user
+          experience, personalizing content, and improving products or services.
+          Furthermore, usage data plays a crucial role in identifying trends,
+          preferences, and potential problem areas within digital offerings.
         </li>
         <li>
-          <strong>Personenbezogene Daten:</strong> "Personenbezogene Daten" sind
-          alle Informationen, die sich auf eine identifizierte oder
-          identifizierbare natürliche Person (im Folgenden "betroffene Person")
-          beziehen; als identifizierbar wird eine natürliche Person angesehen,
-          die direkt oder indirekt, insbesondere mittels Zuordnung zu einer
-          Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu
-          einer Online-Kennung (z.B. Cookie) oder zu einem oder mehreren
-          besonderen Merkmalen identifiziert werden kann, die Ausdruck der
-          physischen, physiologischen, genetischen, psychischen,
-          wirtschaftlichen, kulturellen oder sozialen Identität dieser
-          natürlichen Person sind.
+          <strong>Personal data:</strong> "Personal data" means any information
+          relating to an identified or identifiable natural person (hereinafter
+          "data subject"); a natural person is considered identifiable if they
+          can be identified, directly or indirectly, in particular by reference
+          to an identifier such as a name, an identification number, location
+          data, an online identifier (e.g. cookie), or one or more factors
+          specific to the physical, physiological, genetic, mental, economic,
+          cultural, or social identity of that natural person.
         </li>
         <li>
-          <strong>Protokolldaten:</strong> Protokolldaten sind Informationen
-          über Ereignisse oder Aktivitäten, die in einem System oder Netzwerk
-          protokolliert wurden. Diese Daten enthalten typischerweise
-          Informationen wie Zeitstempel, IP-Adressen, Benutzeraktionen,
-          Fehlermeldungen und andere Details über die Nutzung oder den Betrieb
-          eines Systems. Protokolldaten werden oft zur Analyse von
-          Systemproblemen, zur Sicherheitsüberwachung oder zur Erstellung von
-          Leistungsberichten verwendet.
+          <strong>Log data:</strong> Log data is information about events or
+          activities that have been logged in a system or network. This data
+          typically includes information such as timestamps, IP addresses, user
+          actions, error messages, and other details about the use or operation
+          of a system. Log data is often used to analyze system problems,
+          monitor security, or generate performance reports.
         </li>
         <li>
-          <strong>Verantwortlicher:</strong> Als "Verantwortlicher" wird die
-          natürliche oder juristische Person, Behörde, Einrichtung oder andere
-          Stelle, die allein oder gemeinsam mit anderen über die Zwecke und
-          Mittel der Verarbeitung von personenbezogenen Daten entscheidet,
-          bezeichnet.
+          <strong>Controller:</strong> "Controller" means the natural or legal
+          person, public authority, agency, or other body which, alone or
+          jointly with others, determines the purposes and means of the
+          processing of personal data.
         </li>
         <li>
-          <strong>Verarbeitung:</strong> "Verarbeitung" ist jeder mit oder ohne
-          Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche
-          Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff
-          reicht weit und umfasst praktisch jeden Umgang mit Daten, sei es das
-          Erheben, das Auswerten, das Speichern, das Übermitteln oder das
-          Löschen.
+          <strong>Processing:</strong> "Processing" means any operation or set
+          of operations performed on personal data, whether or not by automated
+          means. The term is broad and covers virtually any handling of data,
+          whether it be collection, evaluation, storage, transmission, or
+          erasure.
         </li>
       </ul>
     </div>

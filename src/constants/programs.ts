@@ -1,6 +1,6 @@
 import type React from "react";
 import omoriIcon from "@/assets/icons/omori.gif";
-//import textIcon from "@/assets/icons/text.png";
+import textIcon from "@/assets/icons/text.png";
 import imageIcon from "@/assets/icons/image.png";
 import nicosSpaceIcon from "@/assets/icons/nicos-space.png";
 import F88x31Icon from "@/assets/icons/88x31.png";
@@ -12,6 +12,7 @@ import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
 import { F88x31 } from "@/components/programs/88x31/88x31";
 import { Webrings } from "@/components/programs/Webrings/Webrings";
 import { Atabook } from "@/components/programs/Atabook/Atabook";
+import { Privacy } from "@/components/programs/Privacy/Privacy";
 
 export interface Program {
   id: string;
@@ -69,5 +70,11 @@ export const programs: Program[] = [
     title: "WebArchive",
     window: WebArchive,
     icon: nicosSpaceIcon,
+  },
+  {
+    id: "privacy",
+    title: "Privacy & Legal",
+    window: Privacy,
+    icon: textIcon,
   },
 ];

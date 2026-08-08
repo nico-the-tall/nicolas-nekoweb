@@ -1,7 +1,6 @@
 :global {
   html,
   body {
-    background: var(--color-k) !important;
     margin: 24px 4px;
   }
 }
@@ -10,9 +9,4 @@
   width: 100%;
   max-width: 1000px;
   margin: auto;
-  color: var(--color-w);
-
-  a {
-    color: var(--color-y);
-  }
 }
