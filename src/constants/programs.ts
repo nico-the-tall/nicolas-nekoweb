@@ -1,5 +1,6 @@
 import type React from "react";
-import textIcon from "@/assets/icons/text.png";
+import omoriIcon from "@/assets/icons/omori.gif";
+//import textIcon from "@/assets/icons/text.png";
 import imageIcon from "@/assets/icons/image.png";
 import nicosSpaceIcon from "@/assets/icons/nicos-space.png";
 import F88x31Icon from "@/assets/icons/88x31.png";
@@ -30,7 +31,7 @@ export const programs: Program[] = [
     defaultProgram: true,
     xMultOffset: 0.1,
     yMultOffset: 0.05,
-    icon: textIcon,
+    icon: omoriIcon,
     window: ReadMe,
   },
   {

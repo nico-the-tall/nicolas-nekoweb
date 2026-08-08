@@ -23,7 +23,9 @@ export function Wavy() {
           <div className={sx.space} />
           {wavy("like", 13)}
           <div className={sx.space} />
-          {wavy("-->", 17)}
+          {wavy("(not)", 17)}
+          <div className={sx.space} />
+          {wavy("-->", 22)}
         </strong>
       </div>
     </div>
