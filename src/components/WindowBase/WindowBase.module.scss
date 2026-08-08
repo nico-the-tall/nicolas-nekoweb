@@ -46,6 +46,7 @@
   .content {
     padding: 8px;
     overflow-y: auto;
+    overflow-x: hidden;
     max-height: 800px;
     background-image:
       repeating-linear-gradient(
@@ -84,6 +85,10 @@
         transparent 11px,
         transparent 30px
       );
+
+    @media (max-height: 800px) {
+      max-height: 500px;
+    }
   }
 }
 
