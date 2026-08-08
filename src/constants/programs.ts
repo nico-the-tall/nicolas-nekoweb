@@ -8,6 +8,7 @@ import webringsIcon from "@/assets/icons/webrings.png";
 import atabookIcon from "@/assets/icons/atabook.png";
 import gitHubIcon from "@/assets/icons/github.png";
 import aniListIcon from "@/assets/icons/anilist.png";
+import socialsIcon from "@/assets/icons/socials.png";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
 import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
 import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
@@ -15,6 +16,7 @@ import { F88x31 } from "@/components/programs/88x31/88x31";
 import { Webrings } from "@/components/programs/Webrings/Webrings";
 import { Atabook } from "@/components/programs/Atabook/Atabook";
 import { Privacy } from "@/components/programs/Privacy/Privacy";
+import { Socials } from "@/components/programs/Socials/Socials";
 
 export interface ProgramBase {
   id: string;
@@ -85,6 +87,12 @@ export const programs: Program[] = [
     title: "Privacy & Legal",
     window: Privacy,
     icon: textIcon,
+  },
+  {
+    id: "socials",
+    title: "Contact Me",
+    window: Socials,
+    icon: socialsIcon,
   },
 ];
 
