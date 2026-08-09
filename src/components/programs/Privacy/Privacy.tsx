@@ -210,8 +210,7 @@ export function Privacy() {
           )
         </li>
         <li>
-          <em>space1</em>, <em>space2</em> and <em>space3</em> by{" "}
-          <em>u/No_Manner4271</em> (
+          <em>space1</em> and <em>space3</em> by <em>u/No_Manner4271</em> (
           <a
             href="https://www.reddit.com/r/dreamcoreaesthetic/comments/1n7qlst/a_space_ive_been_working_on_that_feels_like_a/"
             rel="noopener noreferrer"
