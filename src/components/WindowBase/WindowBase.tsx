@@ -17,7 +17,7 @@ export function WindowBase({ id, title, className, icon, children }: Props) {
     <div className={clsx(sx.window_base_default, className)}>
       <div className={sx.header}>
         <div>
-          <img src={icon} />
+          {icon && <img src={icon} />}
           <small>{title}</small>
         </div>
 
