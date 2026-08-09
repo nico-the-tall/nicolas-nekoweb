@@ -59,7 +59,7 @@ export const programs: Program[] = [
     window: F88x31,
     icon: F88x31Icon,
     defaultProgram: true,
-    xMultOffset: 0.9,
+    xMultOffset: 0.6,
     yMultOffset: 0.8,
   },
   {

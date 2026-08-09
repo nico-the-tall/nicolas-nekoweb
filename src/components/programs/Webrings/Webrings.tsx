@@ -3,6 +3,7 @@ import { Bisexual } from "@/components/webrings/Bisexual";
 import { Euro } from "@/components/webrings/Euro";
 import { Hotline } from "@/components/webrings/Hotline";
 import { NoAI } from "@/components/webrings/NoAI";
+import { Omori } from "@/components/webrings/Omori";
 import { Online } from "@/components/webrings/Online";
 import { Retronaut } from "@/components/webrings/Retronaut";
 import { Webmastery } from "@/components/webrings/Webmastery";
@@ -26,6 +27,7 @@ export function Webrings() {
       <Retronaut />
       <Euro />
       <NoAI />
+      <Omori />
 
       <div className={sx.metadata}>
         <em>
