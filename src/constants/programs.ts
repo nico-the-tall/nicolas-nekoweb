@@ -13,6 +13,7 @@ import steamIcon from "@/assets/icons/steam.png";
 import lastFmIcon from "@/assets/icons/lastfm.png";
 import spotifyIcon from "@/assets/icons/spotify.png";
 import nekoIcon from "@/assets/icons/neko.png";
+import notepadIcon from "@/assets/icons/notepad.png";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
 import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
 import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
@@ -22,6 +23,7 @@ import { Atabook } from "@/components/programs/Atabook/Atabook";
 import { Privacy } from "@/components/programs/Privacy/Privacy";
 import { Socials } from "@/components/programs/Socials/Socials";
 import { FollowMe } from "@/components/programs/FollowMe/FollowMe";
+import { RantJournal } from "@/components/programs/RantJournal/RantJournal";
 
 export interface ProgramBase {
   id: string;
@@ -103,10 +105,17 @@ export const programs: Program[] = [
     icon: socialsIcon,
   },
   {
-    id: "ext_nekoweb",
+    id: "nekoweb",
     title: "Follow Me!",
     window: FollowMe,
     icon: nekoIcon,
+  },
+  {
+    id: "journal",
+    title: "Rant journal",
+    window: RantJournal,
+    yMultOffset: 0.05,
+    icon: notepadIcon,
   },
 ];
 
