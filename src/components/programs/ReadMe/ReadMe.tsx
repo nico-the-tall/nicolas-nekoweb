@@ -39,8 +39,8 @@ export function ReadMe() {
           <li>400+ hours on Helldivers 2, 10k+ on WoW</li>
           <li>I've played every main Megaman game</li>
           <li>I mix GB and US English a lot</li>
-          <li>OMORI is my favourite game</li>
           <li>I find 67 unironically hilarious</li>
+          <li>I'm rather lazy</li>
           <p>Scroll down ⬇</p>
         </ul>
       </div>
