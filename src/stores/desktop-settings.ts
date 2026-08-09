@@ -33,7 +33,6 @@ const createCrtSettingsSlice: StateCreator<
   isCrtOverlayEnabled: true,
   toggleCrtOverlay: () =>
     set((state) => ({
-      ...state,
       isCrtOverlayEnabled: !state.isCrtOverlayEnabled,
     })),
 });
@@ -50,7 +49,6 @@ const createSystemFontSettingsSlice: StateCreator<
   isSystemFontEnabled: false,
   toggleSystemFont: () =>
     set((state) => ({
-      ...state,
       isSystemFontEnabled: !state.isSystemFontEnabled,
     })),
 });
@@ -67,7 +65,6 @@ const createSystemScrollbarSlice: StateCreator<
   isSystemScrollbarEnabled: false,
   toggleSystemScrollbar: () =>
     set((state) => ({
-      ...state,
       isSystemScrollbarEnabled: !state.isSystemScrollbarEnabled,
     })),
 });
@@ -84,7 +81,6 @@ const createWallpaperSettingsSlice: StateCreator<
   isCleanWallpaperModeEnabled: false,
   toggleCleanWallpaperMode: () =>
     set((state) => ({
-      ...state,
       isCleanWallpaperModeEnabled: !state.isCleanWallpaperModeEnabled,
     })),
 });
