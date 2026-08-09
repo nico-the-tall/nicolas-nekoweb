@@ -12,6 +12,7 @@ import socialsIcon from "@/assets/icons/socials.png";
 import steamIcon from "@/assets/icons/steam.png";
 import lastFmIcon from "@/assets/icons/lastfm.png";
 import spotifyIcon from "@/assets/icons/spotify.png";
+import nekoIcon from "@/assets/icons/neko.png";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
 import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
 import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
@@ -20,6 +21,7 @@ import { Webrings } from "@/components/programs/Webrings/Webrings";
 import { Atabook } from "@/components/programs/Atabook/Atabook";
 import { Privacy } from "@/components/programs/Privacy/Privacy";
 import { Socials } from "@/components/programs/Socials/Socials";
+import { FollowMe } from "@/components/programs/FollowMe/FollowMe";
 
 export interface ProgramBase {
   id: string;
@@ -99,6 +101,12 @@ export const programs: Program[] = [
     title: "Contact Me",
     window: Socials,
     icon: socialsIcon,
+  },
+  {
+    id: "ext_nekoweb",
+    title: "Follow Me!",
+    window: FollowMe,
+    icon: nekoIcon,
   },
 ];
 
