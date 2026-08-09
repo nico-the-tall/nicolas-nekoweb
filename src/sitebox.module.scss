@@ -1,0 +1,59 @@
+.sitebox {
+  background: var(--color-gr);
+  height: 100vh;
+  font-family: "Lucida Console";
+
+  .inner {
+    background: var(--color-b);
+    width: 800px;
+    height: 412px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+
+    .bsod {
+      position: absolute;
+      z-index: 0;
+      color: var(--color-w);
+
+      p {
+        margin-bottom: 1rem;
+        font-size: 16px;
+      }
+    }
+
+    img {
+      width: 400px;
+      position: relative;
+      left: 10px;
+      z-index: 1;
+    }
+
+    h1 {
+      animation: shake 0.1s ease-in-out infinite;
+    }
+
+    .box {
+      p:nth-child(3) {
+        animation: shake 0.1s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-1px, 1px);
+  }
+  25% {
+    transform: translate(-1px, -1px);
+  }
+  75% {
+    transform: translate(1px, 1px);
+  }
+}
