@@ -4,7 +4,8 @@
   height: 100%;
   z-index: -1;
   background-size: cover;
-  background-position: 0, 0;
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
   filter: contrast(1.15) saturate(0.7) brightness(0.9);
 
   &::after {

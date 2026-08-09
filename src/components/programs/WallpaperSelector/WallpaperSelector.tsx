@@ -7,6 +7,9 @@ export function WallpaperSelector() {
 
   return (
     <div className={sx.wallpaper_selector}>
+      <small>
+        For copyright information, please open the Privacy & Legal program.
+      </small>
       {wallpapers.map(({ title, wallpaper }) => (
         <div
           key={title}

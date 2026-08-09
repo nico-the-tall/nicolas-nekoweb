@@ -91,7 +91,7 @@ export const programs: Program[] = [
     id: "privacy",
     title: "Privacy & Legal",
     window: Privacy,
-    yMultOffset: 0.1,
+    yMultOffset: 0.05,
     icon: textIcon,
   },
   {

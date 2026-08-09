@@ -7,7 +7,8 @@ interface WallpaperStore {
 }
 
 export const useWallpaperStore = create<WallpaperStore>((set) => ({
-  wallpaper: wallpapers[0].wallpaper,
+  wallpaper:
+    wallpapers[Math.floor(Math.random() * wallpapers.length)].wallpaper,
   changeWallpaper: (wallpaper) => {
     set(() => ({ wallpaper }));
   },
