@@ -6,13 +6,13 @@ export function Privacy() {
       <h1>GDPR Privacy Policy</h1>
       <h2 id="m1">Preamble</h2>
       <p>
-        With the following privacy policy, we would like to inform you about
+        With the following privacy policy, I would like to inform you about
         which types of your personal data (hereinafter also referred to as
-        "data") we process for which purposes and to what extent. This privacy
-        policy applies to all processing of personal data carried out by us,
-        both in the context of providing our services and, in particular, on our
+        "data") I process for which purposes and to what extent. This privacy
+        policy applies to all processing of personal data carried out by me,
+        both in the context of providing my services and, in particular, on my
         websites, in mobile applications, and within external online presences,
-        such as our social media profiles (hereinafter collectively referred to
+        such as my social media profiles (hereinafter collectively referred to
         as the "online offer").
       </p>
 
@@ -20,7 +20,7 @@ export function Privacy() {
       <br />
       <hr />
       <br />
-      <strong>Last updated: August 8, 2026</strong>
+      <strong>Last updated: August 9, 2026</strong>
       <br />
 
       <h2>Table of Contents</h2>
@@ -77,18 +77,18 @@ export function Privacy() {
       </ul>
       <h3>Purposes of processing</h3>
       <ul>
-        <li>Provision of our online offer and user-friendliness.</li>
+        <li>Provision of my online offer and user-friendliness.</li>
         <li>Information technology infrastructure.</li>
       </ul>
       <h2 id="m4">Relevant legal bases</h2>
       <p>
         <strong>Relevant legal bases under the GDPR:</strong> Below you will
-        find an overview of the legal bases of the GDPR on which we process
+        find an overview of the legal bases of the GDPR on which I process
         personal data. Please note that, in addition to the provisions of the
-        GDPR, national data protection regulations may apply in your or our
+        GDPR, national data protection regulations may apply in your or my
         country of residence. Furthermore, should more specific legal bases be
-        relevant in individual cases, we will inform you of these in this
-        privacy policy.
+        relevant in individual cases, I will inform you of these in this privacy
+        policy.
       </p>
       <ul>
         <li>
@@ -168,7 +168,7 @@ export function Privacy() {
         </li>
         <li>
           <strong>Right to data portability:</strong> You have the right to
-          receive data concerning you that you have provided to us, in
+          receive data concerning you that you have provided to me, in
           accordance with legal requirements, in a structured, common, and
           machine-readable format, or to request its transmission to another
           controller.
@@ -195,10 +195,10 @@ export function Privacy() {
 
       <h2 id="m6">Provision of the online offer and web hosting</h2>
       <p>
-        We process the data of our users in order to be able to provide them
-        with our online services. For this purpose, we process the user's IP
-        address, which is necessary to deliver the content and functions of our
-        online services to the user's browser or end device.
+        I process the data of my users in order to be able to provide them with
+        my online services. For this purpose, I process the user's IP address,
+        which is necessary to deliver the content and functions of my online
+        services to the user's browser or end device.
       </p>
       <ul>
         <li>
@@ -215,7 +215,7 @@ export function Privacy() {
         </li>
         <li>
           <strong>Purposes of processing and legitimate interests:</strong>{" "}
-          Provision of our online offer and user-friendliness. Information
+          Provision of my online offer and user-friendliness. Information
           technology infrastructure (operation and provision of information
           systems and technical devices such as computers, servers, etc.).
         </li>
@@ -231,7 +231,7 @@ export function Privacy() {
       </p>
       <ul>
         <li>
-          <strong>Content delivery network:</strong> We use a "content delivery
+          <strong>Content delivery network:</strong> I use a "content delivery
           network" (CDN). A CDN is a service that helps deliver the content of
           an online offer, in particular large media files such as graphics or
           program scripts, faster and more securely with the help of regionally
@@ -242,12 +242,11 @@ export function Privacy() {
           </span>
         </li>
         <li>
-          <strong>Cloudflare:</strong> We use Cloudflare as a reverse proxy and
-          CDN. The provider is Cloudflare, Inc., 101 Townsend St., San
-          Francisco, CA 94107, USA. Since Cloudflare is based in the USA, data
-          is transferred to the USA; the transfer takes place on the basis of
-          standard contractual clauses (Art. 46 GDPR).{" "}
-          <strong>Privacy policy:</strong>{" "}
+          <strong>Cloudflare:</strong> I use Cloudflare as a proxy and CDN. The
+          provider is Cloudflare, Inc., 101 Townsend St., San Francisco, CA
+          94107, USA. Since Cloudflare is based in the USA, data is transferred
+          to the USA; the transfer takes place on the basis of standard
+          contractual clauses (Art. 46 GDPR). <strong>Privacy policy:</strong>{" "}
           <a
             href="https://www.cloudflare.com/privacypolicy/"
             target="_blank"
@@ -265,7 +264,7 @@ export function Privacy() {
           </a>
         </li>
         <li>
-          <strong>Bunny Fonts:</strong> We use fonts from Bunny Fonts (BunnyWay
+          <strong>Bunny Fonts:</strong> I use fonts from Bunny Fonts (BunnyWay
           d.o.o., Cesta komandanta Staneta 4A, 1215 Medvode, Slovenia). When the
           fonts are loaded, your IP address is transmitted.{" "}
           <strong>Legal bases:</strong> Legitimate interests (Art. 6 para. 1 s.
@@ -279,7 +278,18 @@ export function Privacy() {
           </a>
         </li>
         <li>
-          <strong>Atabook (Guestbook):</strong> Our guestbook is provided by
+          <strong>Local storage (accessibility settings):</strong> To improve
+          usability, I store your accessibility preferences (e.g. disabling the
+          CRT overlay, using the system font, native scrollbars, or clean
+          wallpapers) in your browser's local storage. This data remains on your
+          device, is not transmitted to me, and persists across visits until you
+          clear your browser data. <strong>Legal bases:</strong> Legitimate
+          interests (Art. 6 para. 1 s. 1 lit. f) GDPR); this storage is
+          technically necessary within the meaning of § 25 para. 2 no. 2 TTDSG
+          and therefore does not require separate consent.
+        </li>
+        <li>
+          <strong>Atabook (Guestbook):</strong> My guestbook is provided by
           Atabook. If you use the guestbook, the information you enter,
           including any personal information you choose to submit, may be
           processed and stored by Atabook. <strong>Legal bases:</strong> Consent
