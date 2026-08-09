@@ -1,12 +1,10 @@
 import { ProgramIcon } from "@/components/ProgramIcon/ProgramIcon";
 import { Taskbar } from "@/components/Taskbar/Taskbar";
-import { programs, extPrograms } from "@/constants/programs";
+import { programs } from "@/constants/programs";
 import { CRT } from "@/layers/CRT/CRT";
 import { Desktop } from "@/layers/Desktop/Desktop";
 import { Wallpaper } from "@/layers/Wallpaper/Wallpaper";
 import sx from "@/pages/index/Index.module.scss";
-
-const programsList = [...programs, ...extPrograms];
 
 export function Index() {
   return (
@@ -17,7 +15,7 @@ export function Index() {
 
       <div className={sx.index_content}>
         <div className={sx.icons_area}>
-          {programsList.map((program) => (
+          {programs.map((program) => (
             <ProgramIcon key={program.id} program={program} />
           ))}
         </div>

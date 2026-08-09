@@ -44,7 +44,7 @@ export const programs: Program[] = [
     id: "readme",
     title: "README",
     defaultProgram: true,
-    xMultOffset: 0.25,
+    xMultOffset: 0.15,
     yMultOffset: 0.05,
     icon: omoriIcon,
     window: ReadMe,

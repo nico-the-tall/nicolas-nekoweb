@@ -15,6 +15,23 @@
     display: flex;
     align-items: center;
     gap: 8px;
+
+    .ext_program {
+      width: fit-content;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      @media (max-width: 1080px) {
+        font-size: 0;
+        gap: 0;
+      }
+
+      img {
+        width: 20px;
+      }
+    }
   }
 
   .right {
