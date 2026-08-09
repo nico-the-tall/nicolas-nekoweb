@@ -31,10 +31,10 @@
     }
 
     div:last-child {
-      width: 36px;
-      display: flex;
-      justify-content: center;
-      background: var(--color-gr);
+      button {
+        width: 36px;
+        font-size: var(--text-sm);
+      }
     }
 
     div:last-child:hover {

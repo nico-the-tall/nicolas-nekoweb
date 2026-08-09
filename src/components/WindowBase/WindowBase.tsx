@@ -26,7 +26,7 @@ export function WindowBase({ id, title, className, icon, children }: Props) {
             close(id);
           }}
         >
-          <span>X</span>
+          <button>X</button>
         </div>
       </div>
       <hr />
