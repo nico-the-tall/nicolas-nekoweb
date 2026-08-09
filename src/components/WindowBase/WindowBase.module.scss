@@ -1,0 +1,95 @@
+.window_base_default {
+  background: var(--color-gr2);
+  border: 1px solid black;
+  position: relative;
+  pointer-events: auto;
+  min-width: 250px;
+  box-shadow: 4px 4px 16px var(--color-gr);
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    background: linear-gradient(
+      90deg,
+      var(--color-gr) 25%,
+      var(--color-gr2) 75%,
+      var(--color-w) 100%
+    );
+    cursor: default;
+
+    div:first-child {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        min-width: 16px;
+        height: 16px;
+      }
+    }
+
+    div:last-child {
+      button {
+        width: 36px;
+        font-size: var(--text-sm);
+      }
+    }
+
+    div:last-child:hover {
+      background: var(--color-b);
+      color: var(--color-w);
+    }
+  }
+
+  .content {
+    padding: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 800px;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 5px,
+        var(--color-window-base-bg) 5px,
+        var(--color-window-base-bg) 6px,
+        transparent 6px,
+        transparent 15px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 5px,
+        var(--color-window-base-bg) 5px,
+        var(--color-window-base-bg) 6px,
+        transparent 6px,
+        transparent 15px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 10px,
+        var(--color-window-base-bg) 10px,
+        var(--color-window-base-bg) 11px,
+        transparent 11px,
+        transparent 30px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 10px,
+        var(--color-window-base-bg) 10px,
+        var(--color-window-base-bg) 11px,
+        transparent 11px,
+        transparent 30px
+      );
+
+    @media (max-height: 800px) {
+      max-height: 500px;
+    }
+  }
+}
+
+/* Keep other custom classes for WindowBase here. Import on programs.ts */

@@ -1,0 +1,36 @@
+.wavy {
+  display: flex;
+
+  .text {
+    strong {
+      display: flex;
+    }
+
+    .space {
+      display: inline-block;
+      width: 8px;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      span {
+        display: inline-block;
+        font-size: 1rem;
+        animation: wave 1.2s ease-in-out infinite;
+        animation-delay: calc(var(--i) * 0.08s);
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          color: var(--color-k);
+          transform: translateY(0);
+        }
+
+        50% {
+          color: var(--color-r);
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}

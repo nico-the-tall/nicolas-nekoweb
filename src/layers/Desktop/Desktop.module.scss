@@ -1,0 +1,45 @@
+.desktop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+
+  .small_screen_warning {
+    width: 100vw;
+    height: 100vh;
+    padding: 8px;
+    background: var(--color-k);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    color: var(--color-w);
+    pointer-events: auto;
+
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+
+      p {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .rnd {
+    cursor: auto !important;
+  }
+
+  .rnd:focus-within {
+    /* TODO: Due to DOM stacking this doesn't quite work as I want. Should come up with a smarter way. */
+    z-index: 1;
+  }
+}

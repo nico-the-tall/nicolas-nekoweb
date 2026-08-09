@@ -1,0 +1,51 @@
+.not_found {
+  background: var(--color-k);
+  width: 100vw;
+  height: 100vh;
+  color: var(--color-w);
+
+  .content {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--text-title-xl);
+
+    img {
+      width: 100px;
+      margin: 24px 0;
+    }
+
+    p {
+      font-weight: 700;
+    }
+
+    strong,
+    a {
+      color: var(--color-r);
+    }
+
+    div {
+      width: 100%;
+
+      p:last-child {
+        color: var(--color-r);
+      }
+    }
+
+    .title {
+      font-weight: 700;
+      background-color: var(--color-gr);
+      padding: 0 8px;
+      width: fit-content;
+    }
+  }
+
+  .qr_wrapper {
+    display: flex;
+    align-items: center;
+  }
+}

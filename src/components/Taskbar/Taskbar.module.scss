@@ -1,0 +1,62 @@
+.task_bar {
+  height: 48px;
+  width: 100dvw;
+  min-width: 800px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  background: var(--color-gr2);
+  font-size: var(--text-sm);
+  padding: 4px 20px;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .ext_program {
+      width: fit-content;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      @media (max-width: 1080px) {
+        font-size: 0;
+        gap: 0;
+      }
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+
+    .music {
+      margin-top: 24px;
+      display: flex;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        margin-top: -24px;
+
+        a {
+          font-size: var(--font-sm);
+          text-decoration: none;
+          color: var(--color-k);
+        }
+      }
+    }
+  }
+}

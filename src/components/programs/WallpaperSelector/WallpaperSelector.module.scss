@@ -1,0 +1,25 @@
+.wallpaper_selector {
+  max-width: 400px;
+  max-height: 500px;
+
+  .wallpaper_selector_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    padding: 0 16px;
+    gap: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--color-b);
+      color: var(--color-w);
+    }
+
+    img {
+      width: 180px;
+      height: 100px;
+      object-fit: fill;
+    }
+  }
+}

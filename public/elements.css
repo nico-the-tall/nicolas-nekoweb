@@ -1,16 +1,16 @@
 .site-box {
   text-align: center;
   background-image: none;
-  background: black;
+  background: #0000aa;
   font-size: 12px;
   border-radius: 30px;
 }
 
 .site-box .sitefeature {
   background-image: url(https://nicolas.nekoweb.org/nicolas.nekoweb.org/sitebox.gif);
-  background-size: cover;
+  background-size: 320px;
   background-repeat: no-repeat;
-  background-position-x: -10px;
+  background-position: -26px -10px;
   border: none;
 }
 
@@ -47,6 +47,7 @@
   0% {
     filter: hue-rotate(0deg);
   }
+
   100% {
     filter: hue-rotate(360deg);
   }

@@ -6,8 +6,12 @@ interface Thought {
 
 const thoughts: Thought[] = [
   {
+    timestamp: 1786257561140,
+    text: "Got the revamp developed to a point where I can share it. I'm really happy with the results, even if it isn't perfect. Also moved it back to GitHub. I have a bunch of ideas for this place, let's see if my motivation lasts long enough for it.",
+  },
+  {
     timestamp: 1786077929560,
-    text: "I'm currently updating this website. A total revamp with a new idea. Check it out later!"
+    text: "I'm currently updating this website. A total revamp with a new idea. Check it out later!",
   },
   {
     timestamp: 1777312800000,

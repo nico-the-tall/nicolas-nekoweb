@@ -1,0 +1,22 @@
+.index {
+  min-width: 800px;
+  position: relative;
+
+  .index_content {
+    padding: 48px 24px;
+    box-sizing: border-box;
+
+    @media (min-width: 800px) {
+      height: 100dvh;
+    }
+
+    .icons_area {
+      height: 100%;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.socials {
+  p {
+    margin-bottom: 12px;
+  }
+
+  .buttons {
+    margin-bottom: 20px;
+
+    div {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  .reasons {
+    display: flex;
+    gap: 16px;
+  }
+}
