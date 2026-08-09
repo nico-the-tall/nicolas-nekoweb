@@ -25,7 +25,10 @@ export function ProgramIcon({ program }: Props) {
       }}
     >
       {icon ? <img src={icon} /> : <img src={textIcon} alt="" />}
-      <span>{title}</span>
+
+      <span>
+        <strong>{title}</strong>
+      </span>
     </div>
   );
 }
