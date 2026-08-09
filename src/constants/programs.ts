@@ -11,6 +11,7 @@ import aniListIcon from "@/assets/icons/anilist.png";
 import socialsIcon from "@/assets/icons/socials.png";
 import steamIcon from "@/assets/icons/steam.png";
 import lastFmIcon from "@/assets/icons/lastfm.png";
+import spotifyIcon from "@/assets/icons/spotify.png";
 import { ReadMe } from "@/components/programs/ReadMe/ReadMe";
 import { WallpaperSelector } from "@/components/programs/WallpaperSelector/WallpaperSelector";
 import { WebArchive } from "@/components/programs/WebArchive/WebArchive";
@@ -43,7 +44,7 @@ export const programs: Program[] = [
     id: "readme",
     title: "README",
     defaultProgram: true,
-    xMultOffset: 0.15,
+    xMultOffset: 0.25,
     yMultOffset: 0.05,
     icon: omoriIcon,
     window: ReadMe,
@@ -125,5 +126,11 @@ export const extPrograms: ExternalLink[] = [
     title: "Last.fm",
     href: "https://www.last.fm/user/nico-the-tall",
     icon: lastFmIcon,
+  },
+  {
+    id: "spotify",
+    title: "Spotify",
+    href: "https://open.spotify.com/user/31r2mixb4pcher7645pt6xhhklum",
+    icon: spotifyIcon,
   },
 ];
