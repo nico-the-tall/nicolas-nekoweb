@@ -11,6 +11,11 @@ import r2rButton from "@/assets/88x31/r2r.png";
 import linuxButton from "@/assets/88x31/linux.gif";
 import firefoxButton from "@/assets/88x31/firefox.gif";
 import euroRingButton from "@/assets/88x31/euroring.png";
+import antiNftButton from "@/assets/88x31/antinft.gif";
+import bestViewedOnDesktopButton from "@/assets/88x31/bestvieweddesktop.png";
+import getGayerButton from "@/assets/88x31/getgayer.png";
+import iLikeComputerButton from "@/assets/88x31/ilikecomputer.png";
+import parentalAdvisoryButton from "@/assets/88x31/parentaladvisory.png";
 import { useRef } from "react";
 
 export function F88x31() {
@@ -110,6 +115,19 @@ export function F88x31() {
         <a href="https://v0idspace.nekoweb.org/" target="_blank">
           <img src="https://v0idspace.nekoweb.org/stamps/v0idbutton.gif" />
         </a>
+      </div>
+      <div>
+        <img src={antiNftButton} alt="Anti NFT 88x31 button" />
+        <img
+          src={bestViewedOnDesktopButton}
+          alt="Best Viewed on Desktop 88x31 button"
+        />
+        <img src={getGayerButton} alt="Get Gayer 88x31 button" />
+        <img src={iLikeComputerButton} alt="I Like Computer 88x31 button" />
+        <img
+          src={parentalAdvisoryButton}
+          alt="Parental Advisory 88x31 button"
+        />
       </div>
     </div>
   );

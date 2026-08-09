@@ -60,7 +60,7 @@ export const programs: Program[] = [
     icon: F88x31Icon,
     defaultProgram: true,
     xMultOffset: 0.9,
-    yMultOffset: 0.9,
+    yMultOffset: 0.8,
   },
   {
     id: "webrings",
