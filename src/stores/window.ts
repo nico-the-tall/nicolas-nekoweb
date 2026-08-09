@@ -12,9 +12,16 @@ export const useWindowStore = create<WindowStore>((set) => ({
     .filter((program) => program.defaultProgram)
     .map((program) => program.id),
   open: (id) => {
-    set((state) =>
-      state.openIds.includes(id) ? state : { openIds: [...state.openIds, id] },
-    );
+    set((state) => {
+      const programIndex = state.openIds.findIndex((openId) => openId === id);
+
+      if (programIndex < 0) {
+        return { openIds: [...state.openIds, id] };
+      }
+
+      const copy = state.openIds.toSpliced(programIndex, 1);
+      return { openIds: [...copy, id] };
+    });
   },
   close: (id) => {
     set((state) => ({

@@ -4,7 +4,7 @@ import { Rnd } from "react-rnd";
 import sx from "@/layers/Desktop/Desktop.module.scss";
 import windowBaseSx from "@/components/WindowBase/WindowBase.module.scss";
 import { WindowBase } from "@/components/WindowBase/WindowBase";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const isSmallScreen = window.innerWidth <= 960 || window.innerHeight <= 800;
 
@@ -20,6 +20,14 @@ export function Desktop() {
 
     return acc;
   }, []);
+
+  useEffect(() => {
+    const lastOpenedId = openWindowIds.at(-1);
+
+    if (lastOpenedId) {
+      document.getElementById(`window-${lastOpenedId}`)?.focus();
+    }
+  });
 
   return (
     <div className={sx.desktop}>
@@ -72,6 +80,7 @@ export function Desktop() {
         }) => (
           <Rnd
             key={id}
+            id={`window-${id}`}
             bounds={isSmallScreen ? undefined : "parent"}
             default={{
               x: window.innerWidth * 0.8 * (xMultOffset ?? 0.15),
