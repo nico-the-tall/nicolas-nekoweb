@@ -24,6 +24,7 @@ import { Privacy } from "@/components/programs/Privacy/Privacy";
 import { Socials } from "@/components/programs/Socials/Socials";
 import { FollowMe } from "@/components/programs/FollowMe/FollowMe";
 import { RantJournal } from "@/components/programs/RantJournal/RantJournal";
+import { Musik } from "@/components/programs/Musik/Musik";
 
 export interface ProgramBase {
   id: string;
@@ -102,6 +103,12 @@ export const programs: Program[] = [
     id: "socials",
     title: "Contact Me",
     window: Socials,
+    icon: socialsIcon,
+  },
+  {
+    id: "musik",
+    title: "Musik",
+    window: Musik,
     icon: socialsIcon,
   },
   {
