@@ -8,12 +8,6 @@ import { Online } from "@/components/webrings/Online";
 import { Retronaut } from "@/components/webrings/Retronaut";
 import { Webmastery } from "@/components/webrings/Webmastery";
 
-const views = document.querySelector("#nekoweb_ssi_views")?.textContent;
-const updates = document.querySelector("#nekoweb_ssi_updates")?.textContent;
-const lastUpdate = document.querySelector(
-  "#nekoweb_ssi_last_update",
-)?.textContent;
-
 export function Webrings() {
   return (
     <div className={sx.webrings}>
@@ -28,18 +22,6 @@ export function Webrings() {
       <Euro />
       <NoAI />
       <Omori />
-
-      <div className={sx.metadata}>
-        <em>
-          <small>{views} visitors so far.</small>
-        </em>
-        <em>
-          <small>I've updated this site {updates} times</small>
-        </em>
-        <em>
-          <small>Last update: {lastUpdate}</small>
-        </em>
-      </div>
     </div>
   );
 }

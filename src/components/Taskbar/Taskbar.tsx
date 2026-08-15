@@ -27,7 +27,7 @@ export function Taskbar() {
         <div className={sx.music}>
           <div>
             <small>
-              <strong>Current/Last song:</strong>
+              <strong>Last thing I listened to:</strong>
             </small>
             <small>
               Powered by{" "}

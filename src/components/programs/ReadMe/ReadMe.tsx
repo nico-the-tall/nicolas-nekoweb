@@ -2,6 +2,12 @@ import sx from "@/components/programs/ReadMe/ReadMe.module.scss";
 import profileImg from "@/assets/profile.gif";
 import { Wavy } from "@/components/Wavy/Wavy";
 
+const views = document.querySelector("#nekoweb_ssi_views")?.textContent;
+const updates = document.querySelector("#nekoweb_ssi_updates")?.textContent;
+const lastUpdate = document.querySelector(
+  "#nekoweb_ssi_last_update",
+)?.textContent;
+
 export function ReadMe() {
   return (
     <div className={sx.readme}>
@@ -22,23 +28,55 @@ export function ReadMe() {
       <hr />
 
       <div className={sx.lower}>
-        <h2>About me</h2>
+        <h2>Information you didn't ask for:</h2>
         <ul>
-          <li>I'm a software developer</li>
-          <li>I have an engineering degree</li>
-          <li>I live in Germany</li>
-          <li>I'm almost 30 (unc)</li>
+          <li>Software developer</li>
+          <li>Engineering graduate</li>
+          <li>Live in Germany</li>
+          <li>
+            Born in the late 90s{" "}
+            <small>
+              (
+              <a
+                href="https://en.wikipedia.org/wiki/Zillennials"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <small>Zillennial</small>
+              </a>{" "}
+              gang)
+            </small>
+          </li>
           <li>I speak English, Spanish and German</li>
-          <li>I'm not very social</li>
+          <li>Probably autistic</li>
         </ul>
 
         <ul className={sx.interests}>
+          <h2>Maybe you care about these:</h2>
           <li>I'm into pixel art and dream/internetcore</li>
+          <small>
+            <a
+              href="https://waneella.tumblr.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <small>Waneella</small>
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://1041uuu.tumblr.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <small>Toyoi Yuuta</small>
+            </a>{" "}
+            are some of my favourite artists{" "}
+          </small>
           <li>My music taste is all over the place</li>
           <li>I seldom watch anime and drama series</li>
+          <small>I love Law and Order</small>
           <li>400+ hours on Helldivers 2, 10k+ on WoW</li>
-          <li>I've played every main Megaman game</li>
-          <li>I mix GB and US English a lot</li>
+          <small>Healer boy, paladin and monk</small>
           <li>I find 67 unironically hilarious</li>
           <li>I'm rather lazy</li>
           <p>Scroll down ⬇</p>
@@ -47,28 +85,28 @@ export function ReadMe() {
 
       <div>
         <h2>About this website</h2>
+        <p>This is my personal corner on the web.</p>
         <p>
           During my vacations I got the <em>totally amazing</em> idea to rework
           this website. I got rather ambitious and wanted to do a simulation of
-          an old PC desktop, something you'd find back in the 90s.
+          an old PC desktop, something you'd find back in the 90s. I didn't
+          quite get the exact feeling, but I'm happy with the results.
         </p>
         <p>
-          That being said, my childhood experience with computers was with
-          Windows XP, so I'm not even sure what feeling I was going for. Aiming
-          for lost nostalgia I actually never experienced.
+          This is entirely powered up by late-night motivation and caffeine.
         </p>
-        <p>
-          I think it ended up looking ok. It also gives me extra opportunity to
-          experiment with new "programs". Fitting some ideas in the old website
-          would have been difficult, but here the sky is the limit. If you want
-          to see how the old website looked like, open the "WebArchive" program!
-        </p>
-        <small>
+
+        <div className={sx.metadata}>
           <em>
-            All the icons for the programs (except spinning Omori) are made by
-            me. I'm not that good at pixel art, but I'm happy with the results.
+            <small>{views} visitors so far.</small>
           </em>
-        </small>
+          <em>
+            <small>I've updated this site {updates} times</small>
+          </em>
+          <em>
+            <small>Last update: {lastUpdate}</small>
+          </em>
+        </div>
       </div>
     </div>
   );
