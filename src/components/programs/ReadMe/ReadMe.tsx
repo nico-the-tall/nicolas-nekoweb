@@ -54,29 +54,9 @@ export function ReadMe() {
         <ul className={sx.interests}>
           <h2>Maybe you care about these:</h2>
           <li>I'm into pixel art and dream/internetcore</li>
-          <small>
-            <a
-              href="https://waneella.tumblr.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <small>Waneella</small>
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://1041uuu.tumblr.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <small>Toyoi Yuuta</small>
-            </a>{" "}
-            are some of my favourite artists{" "}
-          </small>
           <li>My music taste is all over the place</li>
           <li>I seldom watch anime and drama series</li>
-          <small>I love Law and Order</small>
           <li>400+ hours on Helldivers 2, 10k+ on WoW</li>
-          <small>Healer boy, paladin and monk</small>
           <li>I find 67 unironically hilarious</li>
           <li>I'm rather lazy</li>
           <p>Scroll down ⬇</p>
