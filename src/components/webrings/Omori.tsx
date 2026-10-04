@@ -24,6 +24,12 @@ export function Omori() {
           img {
             animation: none !important;
           }
+
+          a {
+            img {
+              margin: 0 !important;
+            }
+          }
         }
       `}</style>
 
