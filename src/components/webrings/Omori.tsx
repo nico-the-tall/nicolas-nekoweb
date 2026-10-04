@@ -10,17 +10,30 @@ export function Omori() {
     const script = document.createElement("script");
     script.src = src;
     script.async = false;
-    script.setAttribute("data-char", "mewo");
-    script.setAttribute("data-theme", "headspace");
+    script.setAttribute("data-char", "omori");
+    script.setAttribute("data-theme", "white");
     container.appendChild(script);
   }, []);
 
   return (
-    <div
-      style={{
-        maxWidth: "300px",
-      }}
-      ref={ref}
-    />
+    <>
+      <style>{`
+        .omori_webring {
+          width: 100%;
+
+          img {
+            animation: none !important;
+          }
+        }
+      `}</style>
+
+      <div
+        className="omori_webring"
+        style={{
+          overflowX: "scroll",
+        }}
+        ref={ref}
+      />
+    </>
   );
 }

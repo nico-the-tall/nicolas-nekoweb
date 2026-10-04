@@ -16,7 +16,7 @@
   --color-k: #030303;
   --color-k2: #1f1f1f;
   --color-w: #ffffff;
-  --color-y: #ffff00;
+  --color-y: #d5d571;
   --color-b: #0000aa;
   --color-p: #7d169c;
   --color-gr: #676565;
@@ -97,4 +97,12 @@ p {
 em {
   color: var(--color-gr);
   font-style: normal;
+}
+
+a {
+  color: var(--color-y);
+
+  &:visited {
+    color: var(--color-y);
+  }
 }

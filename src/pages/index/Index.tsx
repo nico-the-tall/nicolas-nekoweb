@@ -3,6 +3,14 @@ import { Title } from "@/components/Title/Title";
 import { useRef } from "react";
 import sx from "@/pages/index/Index.module.scss";
 import omori from "@/assets/profile.gif";
+import { Bisexual } from "@/components/webrings/Bisexual";
+import { Hotline } from "@/components/webrings/Hotline";
+import { Euro } from "@/components/webrings/Euro";
+import { NoAI } from "@/components/webrings/NoAI";
+import { Omori } from "@/components/webrings/Omori";
+import { Online } from "@/components/webrings/Online";
+import { Retronaut } from "@/components/webrings/Retronaut";
+import { Webmastery } from "@/components/webrings/Webmastery";
 
 export function Index() {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
@@ -105,6 +113,45 @@ export function Index() {
                 <em>Click to copy code</em>
               </small>
             </div>
+          </ContentBlock>
+
+          <ContentBlock className={sx.widgets}>
+            <p>Widgets</p>
+          </ContentBlock>
+
+          <ContentBlock className={sx.webrings}>
+            <p>Webrings section</p>
+
+            <div className={sx.webrings_inner}>
+              <Bisexual />
+              <Online />
+              <Euro />
+              <Hotline />
+              <Retronaut />
+              <Webmastery />
+              <NoAI />
+              <Omori />
+            </div>
+          </ContentBlock>
+
+          <ContentBlock className={sx.projects}>
+            <p>Indie web projects</p>
+          </ContentBlock>
+
+          <ContentBlock className={sx.buttons}>
+            <p>Button gallery</p>
+            <div>
+              <small>
+                <em>Sites I find awesome</em>
+              </small>
+            </div>
+          </ContentBlock>
+
+          <ContentBlock className={sx.ramblings}>
+            <p>Latest ramblings</p>
+            <small>
+              <em>I don't write very often</em>
+            </small>
           </ContentBlock>
         </div>
       </main>

@@ -37,7 +37,7 @@ export function Online() {
       </map>
       <img
         useMap="#onlinewidget"
-        src="https://ghostk.id/i/onlinegray.gif"
+        src="https://ghostk.id/i/onlinepurple.gif"
         width={200}
         height={40}
         style={{
