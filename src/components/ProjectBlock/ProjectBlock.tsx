@@ -12,7 +12,7 @@ export function ProjectBlock({ title, description, getUrl, codeUrl }: Props) {
     <div className={sx.project_block}>
       <div className={sx.top}>
         <p>
-          <em>&gt;</em> {title}
+          <em>♦</em> {title}
         </p>
 
         <div className={sx.links}>
