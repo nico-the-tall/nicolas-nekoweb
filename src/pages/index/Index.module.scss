@@ -114,6 +114,10 @@
 
       .projects {
         grid-area: projects;
+
+        .projects_inner {
+          margin-top: 24px;
+        }
       }
 
       .ramblings {

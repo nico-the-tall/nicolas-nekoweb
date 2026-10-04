@@ -11,6 +11,7 @@ import { Omori } from "@/components/webrings/Omori";
 import { Online } from "@/components/webrings/Online";
 import { Retronaut } from "@/components/webrings/Retronaut";
 import { Webmastery } from "@/components/webrings/Webmastery";
+import { ProjectBlock } from "@/components/ProjectBlock/ProjectBlock";
 
 export function Index() {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
@@ -120,7 +121,7 @@ export function Index() {
           </ContentBlock>
 
           <ContentBlock className={sx.webrings}>
-            <p>Webrings section</p>
+            <p>I'm in these webrings</p>
 
             <div className={sx.webrings_inner}>
               <Bisexual />
@@ -136,6 +137,25 @@ export function Index() {
 
           <ContentBlock className={sx.projects}>
             <p>Indie web projects</p>
+
+            <div className={sx.projects_inner}>
+              <ProjectBlock
+                title="Musik"
+                description="Play music on your site"
+                getUrl="https://widget.st/widget/musik"
+                codeUrl="https://github.com/nico-the-tall/widget-st-musik"
+              />
+              <ProjectBlock
+                title="deploy2nekoweb"
+                description="Codeberg wrapper for deploy2nekoweb"
+                codeUrl="https://codeberg.org/nico-the-tall/deploy2nekoweb"
+              />
+              <ProjectBlock
+                title="Nico's Space"
+                description="The code for this website!"
+                codeUrl="https://github.com/nico-the-tall/nicolas-nekoweb"
+              />
+            </div>
           </ContentBlock>
 
           <ContentBlock className={sx.buttons}>
