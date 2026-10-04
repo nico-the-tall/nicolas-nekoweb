@@ -1,9 +1,113 @@
+import { ContentBlock } from "@/components/ContentBlock/ContentBlock";
+import { Title } from "@/components/Title/Title";
+import { useRef } from "react";
 import sx from "@/pages/index/Index.module.scss";
+import omori from "@/assets/profile.gif";
 
 export function Index() {
+  const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
+
   return (
-    <main className={sx.index}>
-      <h1>Hello World</h1>
-    </main>
+    <div className={sx.index}>
+      <main>
+        <div className={sx.main_grid}>
+          <ContentBlock className={sx.about}>
+            <h1>
+              <Title />
+            </h1>
+            <p>
+              You have stumbled upon my home on the Internet. This is a place
+              powered by 3AM inspiration and caffeine.{" "}
+              <em>
+                This is version 3 of this website. I remake the thing from
+                scratch every once in a while.
+              </em>
+            </p>
+            <p>
+              I'm an engineer and software developer living in Germany since
+              2021, working for the auto industry.
+            </p>
+
+            <div className={sx.about_me}>
+              <p>The fact sheet:</p>
+              <ul>
+                <li>I'm an autumn and parks kind of guy</li>
+                <li>
+                  I'm into pixel art, liminal spaces and dreamcore aesthetic
+                </li>
+                <li>I seldom watch anime and drama series</li>
+                <li>I like any music genre as long as it's fast and loud</li>
+              </ul>
+            </div>
+          </ContentBlock>
+
+          <ContentBlock className={sx.status}>
+            <div>
+              <div className={sx.img_wrapper}>
+                <div className={sx.glitch_overlay} />
+                <img src={omori} alt="profile picture" />
+              </div>
+
+              <div>
+                <div className={sx.information}>
+                  <div>
+                    <h2>Status</h2>
+                    <span>Online</span>
+                  </div>
+
+                  <div>
+                    <h2>Mood</h2>
+                    <span>Peachy</span>
+                  </div>
+                </div>
+
+                <div className={sx.information}>
+                  <div>
+                    <h2>Anxiety</h2>
+                    <span>15%</span>
+                  </div>
+
+                  <div>
+                    <h2>Energy</h2>
+                    <span>100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={sx.button} ref={nicosSpaceButtonWrapper}>
+              <h2>Get my button:</h2>
+              <img
+                id="nicos_space_gif"
+                src="/88x31.gif"
+                alt="Nico's Space 88x31 gif"
+                style={{
+                  width: "88px",
+                  height: "31px",
+                }}
+                onClick={async () => {
+                  const toCopy = `<a href="https://nicolas.nekoweb.org/"><img src="https://nicolas.nekoweb.org/88x31.gif" width="88" height="31" alt="Nico's Space 88x31 button"/></a>`;
+                  await navigator.clipboard.writeText(toCopy);
+
+                  if (nicosSpaceButtonWrapper.current) {
+                    const highlight = document.createElement("span");
+                    highlight.className = sx.nicosSpaceButtonHighlight;
+                    highlight.textContent = "COPIED";
+                    nicosSpaceButtonWrapper.current.appendChild(highlight);
+                    highlight.addEventListener("animationend", () =>
+                      highlight.remove(),
+                    );
+                  }
+                }}
+              />
+
+              <small>
+                <em>Click to copy code</em>
+              </small>
+            </div>
+          </ContentBlock>
+        </div>
+      </main>
+    </div>
   );
 }

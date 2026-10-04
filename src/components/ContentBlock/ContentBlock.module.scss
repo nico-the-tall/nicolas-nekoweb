@@ -1,0 +1,16 @@
+@keyframes border-pulse {
+  0%,
+  100% {
+    border-color: var(--color-gr);
+  }
+  50% {
+    border-color: var(--color-gr2);
+  }
+}
+
+.content_block {
+  border: 4px ridge var(--color-k2);
+  border-radius: 5px;
+  padding: 8px 16px;
+  animation: border-pulse 3s infinite;
+}

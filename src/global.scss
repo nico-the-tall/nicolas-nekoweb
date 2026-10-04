@@ -10,13 +10,15 @@
 
 :root {
   --text-sm: 0.85rem;
-  --text-base: 1.125rem;
-  --text-title: 1.75rem;
-  --text-title-xl: 2.25rem;
+  --text-base: 1.05rem;
+  --text-title: 1.5rem;
+  --text-title-xl: 2.5rem;
   --color-k: #030303;
+  --color-k2: #1f1f1f;
   --color-w: #ffffff;
   --color-y: #ffff00;
   --color-b: #0000aa;
+  --color-p: #7d169c;
   --color-gr: #676565;
   --color-gr2: #c6b5c1;
   --color-r: #ff1818;
@@ -79,11 +81,20 @@ ul {
   list-style: none;
 
   li {
-    margin-left: -1rem;
+    margin-left: -2rem;
   }
 
   li::before {
-    content: "* ";
-    color: var(--color-r);
+    content: "♦ ";
+    color: var(--color-p);
   }
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+em {
+  color: var(--color-gr);
+  font-style: normal;
 }

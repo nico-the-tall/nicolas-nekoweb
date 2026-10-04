@@ -1,29 +1,29 @@
-import sx from "@/components/Wavy/Wavy.module.scss";
+import sx from "@/components/Title/Title.module.scss";
 
 function wavy(string: string, offset: number = 0) {
   return string.split("").map((char, i) => (
-    <span key={i} style={{ "--i": i + offset } as React.CSSProperties}>
+    <h1 key={i} style={{ "--i": i + offset } as React.CSSProperties}>
       {char}
-    </span>
+    </h1>
   ));
 }
 
-export function Wavy() {
+export function Title() {
   return (
     <div className={sx.wavy}>
       <div className={sx.text}>
         <strong>
-          {wavy("100%")}
+          {wavy("(>'.')>")}
           <div className={sx.space} />
-          {wavy("what", 4)}
           <div className={sx.space} />
-          <span style={{ "--i": 8 } as React.CSSProperties}>I</span>
           <div className={sx.space} />
-          {wavy("look", 9)}
+          {wavy("Welcome", 7)}
           <div className={sx.space} />
-          {wavy("like", 13)}
+          {wavy("to", 14)}
           <div className={sx.space} />
-          {wavy("-->", 17)}
+          {wavy("Nico's", 16)}
+          <div className={sx.space} />
+          {wavy("Space", 22)}
         </strong>
       </div>
     </div>

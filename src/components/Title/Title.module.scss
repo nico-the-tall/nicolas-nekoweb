@@ -1,5 +1,6 @@
 .wavy {
   display: flex;
+  margin: 20px 0;
 
   .text {
     strong {
@@ -12,9 +13,8 @@
     }
 
     @media (prefers-reduced-motion: no-preference) {
-      span {
+      h1 {
         display: inline-block;
-        font-size: 1rem;
         animation: wave 1.2s ease-in-out infinite;
         animation-delay: calc(var(--i) * 0.08s);
       }
@@ -22,12 +22,12 @@
       @keyframes wave {
         0%,
         100% {
-          color: var(--color-k);
+          color: var(--color-w);
           transform: translateY(0);
         }
 
         50% {
-          color: var(--color-r);
+          color: var(--color-p);
           transform: translateY(-5px);
         }
       }
