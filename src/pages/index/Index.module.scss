@@ -32,7 +32,7 @@
     .main_grid {
       padding: 80px 0;
       display: grid;
-      grid-template-areas: "about about about status" "webrings projects buttons widgets" "webrings ramblings ramblings widgets";
+      grid-template-areas: "about about about status" "about about about my-button" "webrings projects buttons widgets" "webrings ramblings ramblings widgets" ". ramblings ramblings .";
       grid-template-columns: repeat(4, 250px);
       gap: 16px;
 
@@ -85,6 +85,10 @@
             text-align: end;
           }
         }
+      }
+
+      .my_button {
+        grid-area: my-button;
 
         .button {
           position: relative;

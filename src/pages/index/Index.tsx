@@ -12,6 +12,7 @@ import { Online } from "@/components/webrings/Online";
 import { Retronaut } from "@/components/webrings/Retronaut";
 import { Webmastery } from "@/components/webrings/Webmastery";
 import { ProjectBlock } from "@/components/ProjectBlock/ProjectBlock";
+import { F88x31 } from "@/components/88x31/88x31";
 
 export function Index() {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
@@ -83,7 +84,9 @@ export function Index() {
                 </div>
               </div>
             </div>
+          </ContentBlock>
 
+          <ContentBlock className={sx.my_button}>
             <div className={sx.button} ref={nicosSpaceButtonWrapper}>
               <h2>Get my button:</h2>
               <img
@@ -95,7 +98,7 @@ export function Index() {
                   height: "31px",
                 }}
                 onClick={async () => {
-                  const toCopy = `<a href="https://nicolas.nekoweb.org/"><img src="https://nicolas.nekoweb.org/88x31.gif" width="88" height="31" alt="Nico's Space 88x31 button"/></a>`;
+                  const toCopy = `<a href="https://nicolas.nekoweb.org/"><img src="https://nicolas.nekoweb.org/88x31.gif" width="88" height="31" alt="Nico's Space 88x31 button"></img></a>`;
                   await navigator.clipboard.writeText(toCopy);
 
                   if (nicosSpaceButtonWrapper.current) {
@@ -160,11 +163,7 @@ export function Index() {
 
           <ContentBlock className={sx.buttons}>
             <p>Button gallery</p>
-            <div>
-              <small>
-                <em>Sites I find awesome</em>
-              </small>
-            </div>
+            <F88x31 />
           </ContentBlock>
 
           <ContentBlock className={sx.ramblings}>
