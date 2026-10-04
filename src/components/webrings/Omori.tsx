@@ -1,14 +1,16 @@
 import { useEffect, useRef } from "react";
+import { webringSrc } from "./webringSrc";
 
 export function Omori() {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const container = ref.current!;
+    if (container.childElementCount) return;
     const src = "https://aviatorlaw.neocities.org/webring.js";
 
     const script = document.createElement("script");
-    script.src = src;
+    script.src = webringSrc(src);
     script.async = false;
     script.setAttribute("data-char", "omori");
     script.setAttribute("data-theme", "white");
@@ -19,8 +21,6 @@ export function Omori() {
     <>
       <style>{`
         .omori_webring {
-          width: 100%;
-
           img {
             animation: none !important;
           }

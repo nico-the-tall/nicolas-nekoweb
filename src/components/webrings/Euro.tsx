@@ -1,10 +1,13 @@
 import { useEffect, useRef } from "react";
+import { webringSrc } from "./webringSrc";
 
 export function Euro() {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const container = ref.current!;
+    if (container.childElementCount) return;
+
     const sources = [
       "https://euroring.neocities.org/scripts/onionring-variables.js",
       "https://euroring.neocities.org/scripts/euroring_large_butt.js",
@@ -12,11 +15,11 @@ export function Euro() {
 
     sources.forEach((src) => {
       const script = document.createElement("script");
-      script.src = src;
+      script.src = webringSrc(src);
       script.async = false;
       container.appendChild(script);
     });
   }, []);
 
-  return <div id="euroring" ref={ref} style={{ fontSize: "0.6rem" }} />;
+  return <div id="euroring" ref={ref} />;
 }

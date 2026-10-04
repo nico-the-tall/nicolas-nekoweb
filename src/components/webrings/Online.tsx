@@ -1,7 +1,13 @@
 export function Online() {
   return (
     <>
-      <map name="onlinewidget">
+      <style>{`
+        .online_webring {
+          display: none;
+        }
+      `}</style>
+
+      <map className="online_webring" name="onlinewidget">
         <area
           href="https://webring.ghostk.id/online/"
           target="_blank"
