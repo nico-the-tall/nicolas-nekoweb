@@ -10,7 +10,7 @@ export function Euro() {
 
     const sources = [
       "https://euroring.neocities.org/scripts/onionring-variables.js",
-      "https://euroring.neocities.org/scripts/euroring_large_butt.js",
+      "https://euroring.neocities.org/scripts/euroring_button.js",
     ];
 
     sources.forEach((src) => {

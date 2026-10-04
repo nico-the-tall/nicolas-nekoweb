@@ -26,13 +26,17 @@
   background-color: var(--color-k);
 
   main {
-    max-width: 1000px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
 
     .main_grid {
       padding: 80px 0;
       display: grid;
-      grid-template-areas: "about about about status" "about about about my-button" "webrings projects buttons widgets" "webrings ramblings ramblings widgets" ". ramblings ramblings .";
+      grid-template-areas:
+        "about      about     about     status"
+        "about      about     about     my-button"
+        "widgets    widgets   widgets   widgets"
+        "webrings   projects  buttons   ramblings";
       grid-template-columns: repeat(4, 250px);
       gap: 16px;
 
@@ -126,6 +130,14 @@
 
       .ramblings {
         grid-area: ramblings;
+
+        p {
+          margin-bottom: 0;
+        }
+
+        .ramblings_inner {
+          margin-top: 18px;
+        }
       }
 
       .buttons {

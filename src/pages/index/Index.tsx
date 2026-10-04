@@ -168,9 +168,12 @@ export function Index() {
 
           <ContentBlock className={sx.ramblings}>
             <p>Latest ramblings</p>
-            <small>
-              <em>I don't write very often</em>
-            </small>
+
+            <div className={sx.ramblings_inner}>
+              <small>
+                <em>Updates once every aeon</em>
+              </small>
+            </div>
           </ContentBlock>
         </div>
       </main>
