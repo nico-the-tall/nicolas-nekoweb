@@ -21,13 +21,15 @@ export function Omori() {
     <>
       <style>{`
         .omori_webring {
+          overflow: hidden;
+
           img {
             animation: none !important;
           }
 
           a {
             img {
-              margin: 0 !important;
+              margin-bottom: -4px !important;
             }
           }
         }

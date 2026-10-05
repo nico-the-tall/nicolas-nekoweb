@@ -29,18 +29,19 @@ export function Index() {
               You have stumbled upon my home on the Internet. This is a place
               powered by 3AM inspiration and caffeine.{" "}
               <em>
-                This is version 3 of this website. I remake the thing from
-                scratch every once in a while.
+                I remake this place every once in a while, don't be surprised if
+                you visit again and it's completely different &lt;'(o.o)'&gt;
               </em>
             </p>
             <p>
-              I'm an engineer and software developer living in Germany since
-              2021, working for the auto industry.
+              I'm a software developer living in Germany since 2021, working for
+              the auto industry.
             </p>
 
             <div className={sx.about_me}>
               <p>The fact sheet:</p>
               <ul>
+                <li>I have an engineering degree</li>
                 <li>I'm an autumn and parks kind of guy</li>
                 <li>
                   I'm into pixel art, liminal spaces and dreamcore aesthetic
@@ -144,7 +145,7 @@ export function Index() {
             <div className={sx.projects_inner}>
               <ProjectBlock
                 title="Musik"
-                description="Play music on your site"
+                description="Widget.st app to play music on your site"
                 getUrl="https://widget.st/widget/musik"
                 codeUrl="https://github.com/nico-the-tall/widget-st-musik"
               />
