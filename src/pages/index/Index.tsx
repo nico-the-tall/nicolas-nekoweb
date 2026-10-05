@@ -13,6 +13,7 @@ import { Retronaut } from "@/components/webrings/Retronaut";
 import { Webmastery } from "@/components/webrings/Webmastery";
 import { ProjectBlock } from "@/components/ProjectBlock/ProjectBlock";
 import { F88x31 } from "@/components/88x31/88x31";
+import projects from "~/content/projects/projects";
 
 export function Index() {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
@@ -143,22 +144,14 @@ export function Index() {
             <p>Indie web projects</p>
 
             <div className={sx.projects_inner}>
-              <ProjectBlock
-                title="Musik"
-                description="Widget.st app to play music on your site"
-                getUrl="https://widget.st/widget/musik"
-                codeUrl="https://github.com/nico-the-tall/widget-st-musik"
-              />
-              <ProjectBlock
-                title="deploy2nekoweb"
-                description="Codeberg wrapper for deploy2nekoweb"
-                codeUrl="https://codeberg.org/nico-the-tall/deploy2nekoweb"
-              />
-              <ProjectBlock
-                title="Nico's Space"
-                description="The code for this website!"
-                codeUrl="https://github.com/nico-the-tall/nicolas-nekoweb"
-              />
+              {projects.map(({ title, description, getUrl, codeUrl }) => (
+                <ProjectBlock
+                  title={title}
+                  description={description}
+                  getUrl={getUrl}
+                  codeUrl={codeUrl}
+                />
+              ))}
             </div>
           </ContentBlock>
 

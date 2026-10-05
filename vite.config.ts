@@ -45,6 +45,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fromRoot("./src"),
+      "~": fromRoot("./"),
     },
   },
   build: {

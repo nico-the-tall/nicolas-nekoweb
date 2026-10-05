@@ -1,11 +1,5 @@
 import sx from "@/components/ProjectBlock/ProjectBlock.module.scss";
-
-interface Props {
-  title: string;
-  description: string;
-  getUrl?: string;
-  codeUrl?: string;
-}
+import type { Project as Props } from "~/content/projects/projects";
 
 export function ProjectBlock({ title, description, getUrl, codeUrl }: Props) {
   return (
