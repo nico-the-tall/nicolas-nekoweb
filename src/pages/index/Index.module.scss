@@ -1,22 +1,234 @@
+.nicosSpaceButtonHighlight {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  pointer-events: none;
+  font-weight: bold;
+  color: var(--color-y);
+  animation: float-up-fade 1s ease-out forwards;
+
+  @keyframes float-up-fade {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-48px);
+    }
+  }
+}
+
 .index {
-  min-width: 800px;
-  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  margin: auto;
+  background-color: var(--color-k);
 
-  .index_content {
-    padding: 48px 24px;
-    box-sizing: border-box;
+  main {
+    display: flex;
+    justify-content: center;
 
-    @media (min-width: 800px) {
-      height: 100dvh;
+    .main_grid {
+      padding: 80px 0;
+      display: grid;
+      grid-template-areas:
+        "about      about     about     status"
+        "about      about     about     my-button"
+        "widgets    widgets   widgets   widgets"
+        "webrings   projects  buttons   ramblings";
+      grid-template-columns: repeat(4, 250px);
+      gap: 16px;
+
+      .about {
+        grid-area: about;
+
+        .about_me {
+          margin-top: 20px;
+        }
+
+        .mood_block {
+          margin-top: 20px;
+        }
+
+        .title {
+          color: var(--color-p);
+        }
+      }
+
+      .status {
+        grid-area: status;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .img_wrapper {
+          background-color: var(--color-k2);
+          border-radius: 5%;
+          position: relative;
+
+          img {
+            width: 150px;
+            padding: 4px;
+            margin: auto;
+          }
+        }
+
+        .information {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 8px;
+
+          div {
+            span {
+              color: var(--color-p);
+            }
+          }
+
+          div:nth-child(2) {
+            text-align: end;
+          }
+        }
+      }
+
+      .my_button {
+        grid-area: my-button;
+
+        .button {
+          position: relative;
+          margin-top: auto;
+
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .widgets {
+        grid-area: widgets;
+      }
+
+      .webrings {
+        grid-area: webrings;
+
+        .webrings_inner {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+          margin-top: 24px;
+        }
+      }
+
+      .projects {
+        grid-area: projects;
+
+        .projects_inner {
+          margin-top: 24px;
+        }
+      }
+
+      .ramblings {
+        grid-area: ramblings;
+
+        p {
+          margin-bottom: 0;
+        }
+
+        .ramblings_inner {
+          margin-top: 18px;
+        }
+      }
+
+      .buttons {
+        grid-area: buttons;
+      }
     }
+  }
+}
 
-    .icons_area {
-      height: 100%;
-      width: 200px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 20px;
+.glitch_overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  animation: crt-scroll 0.5s linear infinite;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0 2px,
+    rgb(0 0 0 / 0.5) 2px 3px
+  );
+
+  @keyframes crt-scroll {
+    from {
+      background-position: 0 0;
     }
+    to {
+      background-position: 0 5px;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    clip-path: inset(0 0 100% 0);
+  }
+
+  &::before {
+    backdrop-filter: invert(1);
+    animation: glitch-band-a 2s infinite steps(1);
+  }
+
+  &::after {
+    background: #ab04043d;
+    animation: glitch-band-b 2s infinite steps(1);
+  }
+}
+
+@keyframes glitch-band-a {
+  0%,
+  80% {
+    clip-path: inset(0 0 100% 0);
+  }
+  85% {
+    clip-path: inset(12% 0 80% 0);
+  }
+  90% {
+    clip-path: inset(55% 0 38% 0);
+  }
+  95% {
+    clip-path: inset(30% 0 66% 0);
+  }
+  100% {
+    clip-path: inset(78% 0 12% 0);
+  }
+}
+
+@keyframes glitch-band-b {
+  0%,
+  90%,
+  100% {
+    clip-path: inset(0 0 100% 0);
+    transform: none;
+  }
+  90% {
+    clip-path: inset(80% 0 12% 0);
+  }
+  93% {
+    clip-path: inset(68% 0 25% 0);
+  }
+  96% {
+    clip-path: inset(5% 0 90% 0);
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch_overlay::before,
+  .glitch_overlay::after,
+  .glitch_overlay {
+    animation: none;
   }
 }

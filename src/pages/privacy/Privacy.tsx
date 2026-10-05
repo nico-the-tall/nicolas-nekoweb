@@ -20,7 +20,7 @@ export function Privacy() {
       <br />
       <hr />
       <br />
-      <strong>Last updated: August 9, 2026</strong>
+      <strong>Last updated: October 3, 2026</strong>
       <br />
 
       <h2>Table of Contents</h2>
@@ -275,27 +275,6 @@ export function Privacy() {
             rel="noopener"
           >
             https://fonts.bunny.net/privacy
-          </a>
-        </li>
-        <li>
-          <strong>Local storage (accessibility settings):</strong> To improve
-          usability, I store your accessibility preferences (e.g. disabling the
-          CRT overlay, using the system font, native scrollbars, or clean
-          wallpapers) in your browser's local storage. This data remains on your
-          device, is not transmitted to me, and persists across visits until you
-          clear your browser data. <strong>Legal bases:</strong> Legitimate
-          interests (Art. 6 para. 1 s. 1 lit. f) GDPR); this storage is
-          technically necessary within the meaning of § 25 para. 2 no. 2 TTDSG
-          and therefore does not require separate consent.
-        </li>
-        <li>
-          <strong>Atabook (Guestbook):</strong> My guestbook is provided by
-          Atabook. If you use the guestbook, the information you enter,
-          including any personal information you choose to submit, may be
-          processed and stored by Atabook. <strong>Legal bases:</strong> Consent
-          (Art. 6 para. 1 s. 1 lit. a) GDPR). <strong>Privacy policy:</strong>{" "}
-          <a href="https://atabook.org/privacy" target="_blank" rel="noopener">
-            https://atabook.org/privacy
           </a>
         </li>
       </ul>

@@ -1,0 +1,23 @@
+.project_block {
+  line-height: 1;
+  margin-bottom: 24px;
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      margin-bottom: 0;
+
+      em {
+        color: var(--color-p);
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 16px;
+  }
+}
