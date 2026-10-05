@@ -14,6 +14,7 @@ import { Webmastery } from "@/components/webrings/Webmastery";
 import { ProjectBlock } from "@/components/ProjectBlock/ProjectBlock";
 import { F88x31 } from "@/components/88x31/88x31";
 import projects from "~/content/projects/projects";
+import { ramblings } from "@/utils/ramblings";
 
 export function Index() {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
@@ -167,6 +168,10 @@ export function Index() {
               <small>
                 <em>Updates once every aeon</em>
               </small>
+
+              {ramblings.map((rambling) => (
+                <p>{rambling.title}</p>
+              ))}
             </div>
           </ContentBlock>
         </div>

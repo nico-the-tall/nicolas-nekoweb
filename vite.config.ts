@@ -2,6 +2,7 @@ import { defineConfig, type Plugin } from "vite";
 import react, { reactCompilerPreset } from "@vitejs/plugin-react";
 import { fileURLToPath, URL } from "node:url";
 import babel from "@rolldown/plugin-babel";
+import mdx from "@mdx-js/rollup";
 
 const fromRoot = (path: string) =>
   fileURLToPath(new URL(path, import.meta.url));
@@ -37,7 +38,8 @@ function webringDevProxy(): Plugin {
 export default defineConfig({
   plugins: [
     webringDevProxy(),
-    react(),
+    { enforce: "pre", ...mdx() },
+    react({ include: /\.(mdx|tsx|ts)$/ }),
     babel({
       presets: [reactCompilerPreset()],
     }),
