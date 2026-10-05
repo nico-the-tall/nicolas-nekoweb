@@ -11,9 +11,10 @@ import { Omori } from "@/components/webrings/Omori";
 import { Online } from "@/components/webrings/Online";
 import { Retronaut } from "@/components/webrings/Retronaut";
 import { Webmastery } from "@/components/webrings/Webmastery";
-import { ProjectBlock } from "@/components/ProjectBlock/ProjectBlock";
+import { LinkingBlock } from "@/components/LinkingBlock/LinkingBlock";
 import { F88x31 } from "@/components/88x31/88x31";
 import projects from "~/content/projects/projects";
+import { ramblings } from "@/utils/ramblings";
 
 export function Index() {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
@@ -63,7 +64,7 @@ export function Index() {
               <div>
                 <div className={sx.information}>
                   <div>
-                    <h2>Status</h2>
+                    <h2>Activity</h2>
                     <span>Online</span>
                   </div>
 
@@ -144,14 +145,16 @@ export function Index() {
             <p>Indie web projects</p>
 
             <div className={sx.projects_inner}>
-              {projects.map(({ title, description, getUrl, codeUrl }) => (
-                <ProjectBlock
-                  title={title}
-                  description={description}
-                  getUrl={getUrl}
-                  codeUrl={codeUrl}
-                />
-              ))}
+              {projects
+                .slice(0, 7)
+                .map(({ title, description, getUrl, codeUrl }) => (
+                  <LinkingBlock
+                    title={title}
+                    description={description}
+                    getUrl={getUrl}
+                    codeUrl={codeUrl}
+                  />
+                ))}
             </div>
           </ContentBlock>
 
@@ -167,6 +170,19 @@ export function Index() {
               <small>
                 <em>Updates once every aeon</em>
               </small>
+
+              <div className={sx.ramblings_list}>
+                {ramblings
+                  .slice(0, 4)
+                  .map(({ title, description, slug, date }) => (
+                    <LinkingBlock
+                      title={title}
+                      description={description}
+                      ramblingSlug={slug}
+                      date={date}
+                    />
+                  ))}
+              </div>
             </div>
           </ContentBlock>
         </div>

@@ -1,4 +1,4 @@
-.project_block {
+.linking_block {
   line-height: 1;
   margin-bottom: 24px;
 
@@ -9,6 +9,10 @@
 
     p {
       margin-bottom: 0;
+      max-width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-wrap: nowrap;
 
       em {
         color: var(--color-p);
@@ -19,5 +23,9 @@
   .links {
     display: flex;
     gap: 16px;
+
+    a {
+      text-wrap: nowrap;
+    }
   }
 }

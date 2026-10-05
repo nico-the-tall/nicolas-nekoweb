@@ -1,9 +1,18 @@
-import sx from "@/components/ProjectBlock/ProjectBlock.module.scss";
-import type { Project as Props } from "~/content/projects/projects";
+import sx from "@/components/LinkingBlock/LinkingBlock.module.scss";
+import type { Project } from "~/content/projects/projects";
 
-export function ProjectBlock({ title, description, getUrl, codeUrl }: Props) {
+type Props = Project & { ramblingSlug?: string; date?: string };
+
+export function LinkingBlock({
+  title,
+  description,
+  getUrl,
+  codeUrl,
+  ramblingSlug,
+  date,
+}: Props) {
   return (
-    <div className={sx.project_block}>
+    <div className={sx.linking_block}>
       <div className={sx.top}>
         <p>
           <em>♦</em> {title}
@@ -21,12 +30,18 @@ export function ProjectBlock({ title, description, getUrl, codeUrl }: Props) {
               <small>Code</small>
             </a>
           )}
+
+          {ramblingSlug && (
+            <a href={`?yapping=${ramblingSlug}`}>
+              <small>Read it</small>
+            </a>
+          )}
         </div>
       </div>
 
       <span>
         <small>
-          <em>{description}</em>
+          <em>{date ? `${date} - ${description}` : description}</em>
         </small>
       </span>
     </div>
