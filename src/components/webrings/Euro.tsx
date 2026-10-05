@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { webringSrc } from "./webringSrc";
+import { webringSrc } from "@/utils/webringSrc";
 
 export function Euro() {
   const ref = useRef<HTMLDivElement>(null);
