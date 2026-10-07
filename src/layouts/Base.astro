@@ -1,5 +1,11 @@
+---
+import "@/global.scss";
+
+const { title, description } = Astro.props;
+---
+
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +13,7 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/android-chrome-192x192.png" />
 
     <link rel="preconnect" href="https://fonts.bunny.net" />
     <link
@@ -14,11 +21,17 @@
       rel="stylesheet"
     />
 
-    <title>GDPR Privacy Policy - Nico's space</title>
-    <meta name="robots" content="noindex" />
+    <title>{title ? `Nico's Space · ${title}` : "Nico's Space"}</title>
+    <meta name="description" content={description} />
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/privacy.tsx"></script>
+    <slot />
+
+    <div><!--# views --></div>
+    <div><!--# updates --></div>
+    <div>
+      <!--# flastmod file="index.html" fmt="%Y-%MM-%dd" timezone="Europe/Berlin" -->
+    </div>
   </body>
 </html>

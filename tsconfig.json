@@ -1,9 +1,10 @@
 {
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "target": "es2023",
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "module": "esnext",
-    "types": ["vite/client", "node"],
+    "types": ["node"],
     "allowArbitraryExtensions": true,
     "skipLibCheck": true,
     "moduleResolution": "bundler",
@@ -23,6 +24,13 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "content/projects", "vite.config.ts", "eslint.config.mjs"],
+  "include": [
+    "src",
+    "content/projects",
+    ".astro/types.d.ts",
+    "**/*.astro",
+    "eslint.config.mjs",
+    "plugins"
+  ],
   "exclude": ["dist"]
 }

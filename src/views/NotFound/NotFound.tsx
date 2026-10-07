@@ -1,4 +1,4 @@
-import sx from "@/pages/not-found/NotFound.module.scss";
+import sx from "@/views/NotFound/NotFound.module.scss";
 import sadMac from "@/assets/dead-mac.webp";
 import qr from "@/assets/qr.svg";
 import { useEffect } from "react";
@@ -15,7 +15,7 @@ export function NotFound() {
       <div className={sx.content}>
         <span className={sx.title}>FATAL SYSTEM ERROR</span>
 
-        <img src={sadMac} alt="Picture of a sad Mac computer" />
+        <img src={sadMac.src} alt="Picture of a sad Mac computer" />
 
         <div>
           <p>An error has occurred. To continue:</p>
@@ -31,7 +31,7 @@ export function NotFound() {
           <p>This incident has been recorded.</p>
 
           <div className={sx.qr_wrapper}>
-            <img src={qr} alt="This is a QR code" />
+            <img src={qr.src} alt="This is a QR code" />
             <p>Error: 404_PAGE_NOT_FOUND</p>
           </div>
         </div>

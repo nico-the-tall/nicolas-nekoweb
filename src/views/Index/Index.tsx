@@ -1,7 +1,7 @@
 import { ContentBlock } from "@/components/ContentBlock/ContentBlock";
 import { Title } from "@/components/Title/Title";
 import { useRef } from "react";
-import sx from "@/pages/index/Index.module.scss";
+import sx from "@/views/Index/Index.module.scss";
 import omori from "@/assets/profile.gif";
 import { Bisexual } from "@/components/webrings/Bisexual";
 import { Hotline } from "@/components/webrings/Hotline";
@@ -14,9 +14,17 @@ import { Webmastery } from "@/components/webrings/Webmastery";
 import { LinkingBlock } from "@/components/LinkingBlock/LinkingBlock";
 import { F88x31 } from "@/components/88x31/88x31";
 import projects from "~/content/projects/projects";
-import { ramblings } from "@/utils/ramblings";
 
-export function Index() {
+export type RamblingSummary = {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+};
+
+type Props = { ramblings: RamblingSummary[] };
+
+export function Index({ ramblings }: Props) {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
 
   return (
@@ -58,7 +66,7 @@ export function Index() {
             <div>
               <div className={sx.img_wrapper}>
                 <div className={sx.glitch_overlay} />
-                <img src={omori} alt="profile picture" />
+                <img src={omori.src} alt="profile picture" />
               </div>
 
               <div>
@@ -172,16 +180,15 @@ export function Index() {
               </small>
 
               <div className={sx.ramblings_list}>
-                {ramblings
-                  .slice(0, 4)
-                  .map(({ title, description, slug, date }) => (
-                    <LinkingBlock
-                      title={title}
-                      description={description}
-                      ramblingSlug={slug}
-                      date={date}
-                    />
-                  ))}
+                {ramblings.map(({ title, description, slug, date }) => (
+                  <LinkingBlock
+                    key={slug}
+                    title={title}
+                    description={description}
+                    ramblingSlug={slug}
+                    date={date}
+                  />
+                ))}
               </div>
             </div>
           </ContentBlock>

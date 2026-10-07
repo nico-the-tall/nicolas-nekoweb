@@ -1,4 +1,4 @@
-import sx from "@/pages/privacy/Privacy.module.scss";
+import sx from "@/views/Privacy/Privacy.module.scss";
 
 export function Privacy() {
   return (

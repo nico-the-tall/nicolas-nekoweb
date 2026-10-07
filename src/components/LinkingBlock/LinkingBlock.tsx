@@ -32,7 +32,7 @@ export function LinkingBlock({
           )}
 
           {ramblingSlug && (
-            <a href={`?yapping=${ramblingSlug}`}>
+            <a href={`/ramblings/${ramblingSlug}`}>
               <small>Read it</small>
             </a>
           )}

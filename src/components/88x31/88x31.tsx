@@ -20,18 +20,18 @@ import parentalAdvisoryButton from "@/assets/88x31/parentaladvisory.png";
 export function F88x31() {
   return (
     <div className={sx.f88x31}>
-      <img src={responsiveButton} alt="Responsive website 88x31 button" />
-      <img src={rainbowButton} alt="LGBT pride 88x31 button" />
-      <img src={bisexualButton} alt="Bisexual pride 88x31 button" />
+      <img src={responsiveButton.src} alt="Responsive website 88x31 button" />
+      <img src={rainbowButton.src} alt="LGBT pride 88x31 button" />
+      <img src={bisexualButton.src} alt="Bisexual pride 88x31 button" />
       <a
         className={sx.link_88x31}
         href="https://ashk.au/2024/02/18/human-made-web-button/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={humanMadeButton} alt="Human-made 88x31 button" />
+        <img src={humanMadeButton.src} alt="Human-made 88x31 button" />
       </a>
-      <img src={uBlockOriginButton} alt="uBlock Origin 88x31 button" />
+      <img src={uBlockOriginButton.src} alt="uBlock Origin 88x31 button" />
       <a
         className={sx.link_88x31}
         href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -41,23 +41,26 @@ export function F88x31() {
         <img
           height={31}
           width={88}
-          src={ByNcSaButton}
+          src={ByNcSaButton.src}
           alt="Creative Commons BY-NC-SA 88x31 button"
         />
       </a>
-      <img src={emulateNowButton} alt="Emulate now 88x31 button" />
-      <img src={r2rButton} alt="Right to Repair 88x31 button" />
-      <img src={linuxButton} alt="Made on Linux 88x31 button" />
-      <img src={firefoxButton} alt="Tested on Firefox 88x31 button" />
-      <img src={euroRingButton} alt="Euroring 88x31 button " />
-      <img src={antiNftButton} alt="Anti NFT 88x31 button" />
+      <img src={emulateNowButton.src} alt="Emulate now 88x31 button" />
+      <img src={r2rButton.src} alt="Right to Repair 88x31 button" />
+      <img src={linuxButton.src} alt="Made on Linux 88x31 button" />
+      <img src={firefoxButton.src} alt="Tested on Firefox 88x31 button" />
+      <img src={euroRingButton.src} alt="Euroring 88x31 button " />
+      <img src={antiNftButton.src} alt="Anti NFT 88x31 button" />
       <img
-        src={bestViewedOnDesktopButton}
+        src={bestViewedOnDesktopButton.src}
         alt="Best Viewed on Desktop 88x31 button"
       />
-      <img src={getGayerButton} alt="Get Gayer 88x31 button" />
-      <img src={iLikeComputerButton} alt="I Like Computer 88x31 button" />
-      <img src={parentalAdvisoryButton} alt="Parental Advisory 88x31 button" />
+      <img src={getGayerButton.src} alt="Get Gayer 88x31 button" />
+      <img src={iLikeComputerButton.src} alt="I Like Computer 88x31 button" />
+      <img
+        src={parentalAdvisoryButton.src}
+        alt="Parental Advisory 88x31 button"
+      />
 
       <div className={sx.f88x31}>
         <small>
@@ -87,7 +90,7 @@ export function F88x31() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={nekowebButton} alt="Nekoweb 88x31 button" />
+          <img src={nekowebButton.src} alt="Nekoweb 88x31 button" />
         </a>
         <a href="https://dimden.dev/" target="_blank" rel="noopener noreferrer">
           <img src="https://dimden.dev/services/images/88x31.gif" />
