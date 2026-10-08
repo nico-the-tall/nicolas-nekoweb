@@ -23,6 +23,8 @@ const { title, description } = Astro.props;
 
     <title>{title ? `Nico's Space · ${title}` : "Nico's Space"}</title>
     <meta name="description" content={description} />
+
+    <slot name="head" />
   </head>
 
   <body>

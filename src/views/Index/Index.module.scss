@@ -4,7 +4,6 @@
   left: 0;
   pointer-events: none;
   font-weight: bold;
-  color: var(--color-y);
   animation: float-up-fade 1s ease-out forwards;
 
   @keyframes float-up-fade {
@@ -23,7 +22,6 @@
   width: 100%;
   min-height: 100dvh;
   margin: auto;
-  background-color: var(--color-k);
 
   main {
     display: flex;

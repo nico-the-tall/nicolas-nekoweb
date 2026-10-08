@@ -1,15 +1,88 @@
 ---
 import Base from "@/layouts/Base.astro";
-import { NotFound } from "@/views/NotFound/NotFound";
+import sadMac from "@/assets/dead-mac.webp";
+import qr from "@/assets/qr.svg";
 ---
 
 <Base title="404" description="404 page">
-  <NotFound client:load />
+  <meta slot="head" http-equiv="refresh" content="10;url=/" />
 
-  <noscript>
-    <p>404 - this page does not exist.</p>
-    <p>
-      <a href="/">Back to the desktop</a>
-    </p>
-  </noscript>
+  <div class="not_found">
+    <div class="content">
+      <span class="title">FATAL SYSTEM ERROR</span>
+
+      <img src={sadMac.src} alt="Picture of a sad Mac computer" />
+
+      <div>
+        <p>An error has occurred. To continue:</p>
+        <p>
+          <strong>
+            Click <a href="/">HERE</a> to return to the Desktop
+          </strong>
+          , or
+        </p>
+        <p>
+          <strong>wait 10 seconds</strong> for the system to restart.
+        </p>
+        <p>This incident has been recorded.</p>
+
+        <div class="qr_wrapper">
+          <img src={qr.src} alt="This is a QR code" />
+          <p>Error: 404_PAGE_NOT_FOUND</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </Base>
+
+<style lang="scss">
+  .not_found {
+    width: 100vw;
+    height: 100vh;
+
+    .content {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      flex-direction: column;
+      align-items: center;
+      font-size: var(--text-title-xl);
+
+      img {
+        width: 100px;
+        margin: 24px 0;
+      }
+
+      p {
+        font-weight: 700;
+      }
+
+      strong,
+      a {
+        color: var(--color-r);
+      }
+
+      div {
+        width: 100%;
+
+        p:last-child {
+          color: var(--color-r);
+        }
+      }
+
+      .title {
+        font-weight: 700;
+        background-color: var(--color-gr);
+        padding: 0 8px;
+        width: fit-content;
+      }
+    }
+
+    .qr_wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+</style>
