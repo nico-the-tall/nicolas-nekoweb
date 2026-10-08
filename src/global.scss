@@ -11,6 +11,7 @@
 :root {
   --text-sm: 0.85rem;
   --text-base: 1.05rem;
+  --text-subtitle: 1.25rem;
   --text-title: 1.5rem;
   --text-title-xl: 2.5rem;
   --color-k: #030303;
@@ -58,12 +59,15 @@ h1 {
   font-size: var(--text-title-xl);
 }
 
-h2,
+h2 {
+  font-size: var(--text-title);
+}
+
 h3,
 h4,
 h5,
 h6 {
-  font-size: var(--text-title);
+  font-size: var(--text-subtitle);
 }
 
 small {

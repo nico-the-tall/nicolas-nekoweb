@@ -1,16 +1,9 @@
 ---
-import { getCollection } from "astro:content";
 import Base from "@/layouts/Base.astro";
 import { Index } from "@/views/Index/Index";
+import { getRamblings } from "@/utils/getRamblings";
 
-const ramblings = (await getCollection("ramblings"))
-  .slice(0, 4)
-  .map(({ id, data }) => ({
-    slug: id,
-    title: data.title,
-    description: data.description,
-    date: data.date.toISOString().slice(0, 10),
-  }));
+const ramblings = (await getRamblings()).slice(0, 4);
 ---
 
 <Base description="Nico's personal corner on the web.">

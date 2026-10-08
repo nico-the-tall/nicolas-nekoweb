@@ -1,9 +1,10 @@
 import type { JSX } from "react/jsx-runtime";
 import sx from "./ContentBlock.module.scss";
 import clsx from "clsx";
+import type { ReactNode } from "react";
 
 interface Props {
-  children: JSX.Element | JSX.Element[];
+  children: JSX.Element | JSX.Element[] | ReactNode;
   className?: string;
 }
 

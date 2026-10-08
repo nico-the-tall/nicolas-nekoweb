@@ -157,6 +157,7 @@ export function Index({ ramblings }: Props) {
                 .slice(0, 7)
                 .map(({ title, description, getUrl, codeUrl }) => (
                   <LinkingBlock
+                    key={title}
                     title={title}
                     description={description}
                     getUrl={getUrl}

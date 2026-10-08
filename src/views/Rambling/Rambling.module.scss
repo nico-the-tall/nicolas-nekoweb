@@ -1,0 +1,45 @@
+.rambling {
+  max-width: 1048px;
+  display: flex;
+  margin: auto;
+  gap: 24px;
+  padding: 80px 0;
+
+  .list {
+    width: 300px;
+
+    .return_home {
+      margin-bottom: 32px;
+    }
+
+    .link_wrapper {
+      margin-bottom: 8px;
+
+      small {
+        display: block;
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+
+    hr {
+      margin: 32px;
+    }
+
+    .metadata {
+      margin-bottom: 24px;
+
+      h1 {
+        text-align: center;
+      }
+
+      small {
+        display: block;
+        text-align: right;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
