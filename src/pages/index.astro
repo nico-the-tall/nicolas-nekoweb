@@ -7,5 +7,31 @@ const ramblings = (await getRamblings()).slice(0, 4);
 ---
 
 <Base description="Nico's personal corner on the web.">
-  <Index ramblings={ramblings} client:load />
+  <Index ramblings={ramblings} client:load>
+    <ws-widget
+      slot="anilist"
+      type="anilist-activity"
+      iid="19129"
+      embed="script"
+    />
+    <ws-widget slot="lastfm" type="lastfm" iid="3282" embed="script" />
+  </Index>
+
+  <div class="musik">
+    <ws-widget type="musik" iid="5224" embed="script" />
+  </div>
 </Base>
+
+<style lang="scss">
+  .musik {
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+    opacity: 0.15;
+    transition: opacity 1s ease-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+</style>

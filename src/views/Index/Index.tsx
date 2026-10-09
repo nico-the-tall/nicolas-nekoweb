@@ -1,6 +1,6 @@
 import { ContentBlock } from "@/components/ContentBlock/ContentBlock";
 import { Title } from "@/components/Title/Title";
-import { useRef } from "react";
+import { useRef, type ReactNode } from "react";
 import sx from "@/views/Index/Index.module.scss";
 import omori from "@/assets/profile.gif";
 import { Bisexual } from "@/components/webrings/Bisexual";
@@ -22,9 +22,13 @@ export type RamblingSummary = {
   date: string;
 };
 
-type Props = { ramblings: RamblingSummary[] };
+type Props = {
+  ramblings: RamblingSummary[];
+  anilist?: ReactNode;
+  lastfm?: ReactNode;
+};
 
-export function Index({ ramblings }: Props) {
+export function Index({ ramblings, anilist, lastfm }: Props) {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
 
   return (
@@ -131,7 +135,25 @@ export function Index({ ramblings }: Props) {
           </ContentBlock>
 
           <ContentBlock className={sx.widgets}>
-            <p>Widgets</p>
+            <div>
+              <em>Currently watching</em>
+              {anilist}
+            </div>
+
+            <div>
+              <em>Last Spotify activity</em>
+              {lastfm}
+            </div>
+
+            <div>
+              <em>Last played on Steam</em>
+              <p>PLACEHOLDER</p>
+            </div>
+
+            <div>
+              <em>Nekogotchi</em>
+              <p>PLACEHOLDER</p>
+            </div>
           </ContentBlock>
 
           <ContentBlock className={sx.webrings}>

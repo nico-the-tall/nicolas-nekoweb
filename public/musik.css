@@ -1,0 +1,34 @@
+#widget_st_musik {
+  background: linear-gradient(270deg, var(--color-b) 15%, var(--color-p) 100%);
+  box-shadow: -4px -4px 4px var(--color-k2);
+  font-family: "Share Tech Mono", monospace !important;
+
+  .widget_st_musik_header {
+    background: transparent;
+  }
+
+  .widget_st_musik {
+    #widget_st_musik_top {
+      background: transparent;
+      color: var(--color-w) !important;
+    }
+
+    #widget_st_musik_bottom {
+      margin-top: -1px;
+    }
+
+    button {
+      border: none;
+      box-shadow: none;
+
+      &:hover {
+        transform: none;
+        background-color: var(--color-gr2);
+      }
+
+      &.btn_controlled {
+        background-color: var(--color-y);
+      }
+    }
+  }
+}

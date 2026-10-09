@@ -104,6 +104,21 @@
 
       .widgets {
         grid-area: widgets;
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        gap: 16px;
+        height: 188px;
+
+        div:first-child {
+          ws-widget {
+            margin-top: 9px;
+            display: block;
+          }
+        }
+
+        div {
+          width: calc(100% - 16px);
+        }
       }
 
       .webrings {
