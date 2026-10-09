@@ -160,9 +160,12 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
             <p>I'm in these webrings</p>
 
             <div className={sx.webrings_inner}>
-              <Bisexual />
+              <div className={sx.dual}>
+                <Bisexual />
+                <Euro />
+              </div>
+
               <Online />
-              <Euro />
               <Hotline />
               <Retronaut />
               <Webmastery />

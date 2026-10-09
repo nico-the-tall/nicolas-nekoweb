@@ -130,6 +130,12 @@
           align-items: center;
           gap: 16px;
           margin-top: 24px;
+
+          .dual {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+          }
         }
       }
 
