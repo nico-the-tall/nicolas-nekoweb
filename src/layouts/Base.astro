@@ -1,7 +1,8 @@
 ---
 import "@/global.scss";
+import sx from "@/views/Index/Index.module.scss";
 
-const { title, description } = Astro.props;
+const { title, description, hideFooter } = Astro.props;
 ---
 
 <!doctype html>
@@ -30,12 +31,33 @@ const { title, description } = Astro.props;
   <body>
     <slot />
 
-    <div><!--# views --></div>
-    <div><!--# updates --></div>
-    <div>
-      <!--# flastmod file="index.html" fmt="%Y-%MM-%dd" timezone="Europe/Berlin" -->
-    </div>
-
     <script src="https://u.widget.st/ar.js" />
+    {!hideFooter && (
+      <footer class={sx.footer}>
+        <p>
+          Coded lazily and (mostly) by hand using{" "}
+          <a
+            href="https://astro.build"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Astro
+          </a>
+          .
+        </p>
+
+        <p>Updated <!--# updates --> times. Viewed <!--# views --> times.</p>
+
+        <p>
+          Last update:{" "}
+          <!--# flastmod file="index.html" fmt="%Y-%MM-%dd" timezone="Europe/Berlin" -->
+        </p>
+
+        <p>
+          For information about copyright, data handling and privacy, please
+          check the <a href="/privacy">Privacy & Copyright</a>.
+        </p>
+      </footer>
+    )}
   </body>
 </html>

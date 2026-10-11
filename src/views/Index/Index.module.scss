@@ -28,7 +28,7 @@
     justify-content: center;
 
     .main_grid {
-      padding: 80px 0;
+      padding: 80px 0 40px 0;
       display: grid;
       grid-template-areas:
         "about      about     about     status"
@@ -253,5 +253,15 @@
   .glitch_overlay::after,
   .glitch_overlay {
     animation: none;
+  }
+}
+
+.footer {
+  max-width: 1000px;
+  margin: auto;
+
+  * {
+    text-align: center;
+    font-size: var(--text-sm);
   }
 }
