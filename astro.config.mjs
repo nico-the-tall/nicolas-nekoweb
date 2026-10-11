@@ -7,5 +7,12 @@ export default defineConfig({
   site: "https://nicolas.nekoweb.org",
   integrations: [react({ compiler: true }), mdx()],
   build: { format: "preserve" },
-  vite: { plugins: [webringDevProxy()] },
+  vite: {
+    plugins: [webringDevProxy()],
+    css: {
+      modules: {
+        generateScopedName: "_[local]_[hash:base64:5]",
+      },
+    },
+  },
 });
