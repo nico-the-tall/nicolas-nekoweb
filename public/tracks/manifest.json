@@ -1,0 +1,24 @@
+{
+  "tracks": [
+    {
+      "src": "dnb1-watermello.mp3",
+      "title": "Drum & Bass - Watermello"
+    },
+    {
+      "src": "breakbeat-audiodollar.mp3",
+      "title": "Breakbeat so Breakbeat - AudioDollar"
+    },
+    {
+      "src": "glass-buildings-musinova.mp3",
+      "title": "Glass Buildings - Musinova"
+    },
+    {
+      "src": "hyper-garden-musinova.mp3",
+      "title": "Hyper Garden - Musinova"
+    },
+    {
+      "src": "information-flow-musinova.mp3",
+      "title": "Information Flow - Musinova"
+    }
+  ]
+}
