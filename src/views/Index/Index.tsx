@@ -32,6 +32,7 @@ type Props = {
 export function Index({ ramblings, anilist, lastfm }: Props) {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
   const [guestbookOpen, setGuestbookOpen] = useState(false);
+  const [followOpen, setFollowOpen] = useState(false);
 
   return (
     <div className={sx.index}>
@@ -137,10 +138,6 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
             </div>
           </ContentBlock>
 
-          <div className={sx.divider_1}>
-            <em>d(^o^)b¸¸♬·¯·♩¸¸♪·¯·♫¸¸</em>
-          </div>
-
           <div className={sx.guestbook}>
             <button
               className={sx.modal_button}
@@ -154,7 +151,7 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
           <Modal
             open={guestbookOpen}
             onClose={() => setGuestbookOpen(false)}
-            className={sx.guestbook_modal}
+            className={sx.modal}
           >
             <iframe src="https://nico-the-tall.atabook.org" title="Guestbook" />
           </Modal>
@@ -180,6 +177,63 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
               <p>PLACEHOLDER</p>
             </div>
           </ContentBlock>
+
+          <div className={sx.follow}>
+            <button
+              className={sx.modal_button}
+              onClick={() => setFollowOpen(true)}
+            >
+              <span>(´・ω・)っ</span> <span>猫 FOLLOW ME ON NEKOWEB</span>
+            </button>
+          </div>
+
+          <Modal
+            open={followOpen}
+            onClose={() => setFollowOpen(false)}
+            className={sx.modal}
+          >
+            <h2>Do you like this website?</h2>
+            <p>
+              Help me become the strongest fighter in the multiverse by clicking
+              the button below:
+            </p>
+
+            <div style={{ height: "100px" }}>
+              <iframe
+                src="https://nekoweb.org/frame/follow"
+                width="170"
+                height="40"
+                style={{
+                  border: 0,
+                }}
+              />
+            </div>
+
+            <p>
+              <small>Possible side-effects of pressing the button:</small>
+            </p>
+
+            <ul>
+              <li>
+                <small>You become awesome(r)</small>
+              </li>
+              <li>
+                <small>Money spawns in your bank account</small>
+              </li>
+              <li>
+                <small>You get nice dreams today</small>
+              </li>
+              <li>
+                <small>That person you like texts you</small>
+              </li>
+              <li>
+                <small>m̶̧̝̱͉͊̐ǫ̸̯̺̞͎̌͘r̸̜̞̓̃̒́ẓ̸̧̈́̕a̸̢̮̳̔̋̕͠ţ̷͎̍̔̏ ̴̧͔̙̰̈́͝ṯ̷͕̪̦̗͝ḩ̴̤̟̪̋̔e̶̞̓̈̕ ̷̺̱͎̳̈́̎͛̈́̾͜ḍ̴̌͗̑e̶̦͖͒͗͂s̴̗̲̑̀̄̂t̸̜̤̫͙͋ŗ̶̻͋̈͗͛̌ǫ̵͎̋͊̈́͋̌y̴̠̩̣͗̈̉̅̕e̵̲̊r̴̘̤͒̑̀ visits you</small>
+              </li>
+              <li>
+                <small>Spontaneuous combustion</small>
+              </li>
+            </ul>
+          </Modal>
 
           <ContentBlock className={sx.webrings}>
             <p>I'm in these webrings</p>
@@ -243,12 +297,6 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
               </div>
             </div>
           </ContentBlock>
-
-          <div className={sx.divider_2}>
-            <small>
-              <em>(*・‿・)ノ⌒*:･ﾟ✧</em>
-            </small>
-          </div>
         </div>
       </main>
     </div>

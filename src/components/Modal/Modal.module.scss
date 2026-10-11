@@ -5,11 +5,12 @@
   max-width: 100dvw;
   max-height: 100dvh;
   overflow: visible;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: modal-fade-in 0.25s ease-out forwards;
+  color: inherit;
 
   &::backdrop {
     background-color: rgb(0 0 0 / 70%);

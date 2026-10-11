@@ -33,9 +33,9 @@
       grid-template-areas:
         "about      about     about     status"
         "about      about     about     my-button"
-        "divider_1  .         guestbook guestbook"
+        ".          .         guestbook guestbook"
         "widgets    widgets   widgets   widgets"
-        ".          .         .         divider_2"
+        ".          .         follow    follow"
         "webrings   projects  buttons   ramblings";
       grid-template-columns: repeat(4, 250px);
       gap: 16px;
@@ -56,26 +56,26 @@
         }
       }
 
-      .divider_1 {
-        grid-area: divider_1;
-        align-self: center;
-      }
-
-      .divider_2 {
-        grid-area: divider_2;
+      .follow {
+        grid-area: follow;
         justify-self: flex-end;
       }
 
       .guestbook {
         grid-area: guestbook;
         justify-self: flex-end;
+      }
 
-        span:nth-child(2) {
-          text-decoration: underline;
+      .guestbook,
+      .follow {
+        button {
+          span:nth-child(2) {
+            text-decoration: underline;
+          }
         }
       }
 
-      .guestbook_modal {
+      .modal {
         width: min(600px, 90dvw);
 
         iframe {
@@ -331,6 +331,17 @@
   &:hover {
     opacity: 1;
   }
+
+  em {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 1336px) {
+  .musik {
+    bottom: 32px;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -340,9 +351,9 @@
         grid-template-areas:
           "about      about       status"
           "about      about       my-button"
-          "divider_1  guestbook   guestbook"
+          ".          guestbook   guestbook"
           "widgets    widgets     widgets"
-          ".          .           divider_2"
+          ".          follow      follow"
           "webrings   projects    buttons"
           "ramblings  .           .";
         grid-template-columns: repeat(3, 250px);
@@ -364,9 +375,10 @@
     position: static;
     opacity: 1;
     display: flex;
-    justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
     transition: none;
+    flex-direction: column;
   }
 }
 
@@ -379,18 +391,16 @@
           "status"
           "about"
           "my-button"
-          "divider_1"
           "guestbook"
           "widgets"
-          "divider_2"
+          "follow"
           "webrings"
           "projects"
           "buttons"
           "ramblings";
         grid-template-columns: 400px;
 
-        .divider_1,
-        .divider_2,
+        .follow,
         .guestbook {
           margin: auto;
         }
@@ -446,6 +456,14 @@
           button {
             span:first-child,
             span:last-child {
+              display: none;
+            }
+          }
+        }
+
+        .follow {
+          button {
+            span:first-child {
               display: none;
             }
           }
