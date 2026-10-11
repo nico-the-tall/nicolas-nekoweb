@@ -1,6 +1,6 @@
 .nicosSpaceButtonHighlight {
   position: absolute;
-  top: 40px;
+  top: 0;
   left: 0;
   pointer-events: none;
   font-weight: bold;
@@ -70,7 +70,7 @@
         grid-area: guestbook;
         justify-self: flex-end;
 
-        span {
+        span:nth-child(2) {
           text-decoration: underline;
         }
       }
@@ -144,10 +144,12 @@
 
       .my_button {
         grid-area: my-button;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         .button {
           position: relative;
-          margin-top: auto;
 
           img {
             cursor: pointer;
@@ -328,5 +330,127 @@
 
   &:hover {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1080px) {
+  .index {
+    main {
+      .main_grid {
+        grid-template-areas:
+          "about      about       status"
+          "about      about       my-button"
+          "divider_1  guestbook   guestbook"
+          "widgets    widgets     widgets"
+          ".          .           divider_2"
+          "webrings   projects    buttons"
+          "ramblings  .           .";
+        grid-template-columns: repeat(3, 250px);
+
+        .widgets {
+          grid-area: widgets;
+          display: grid;
+          grid-template-columns: repeat(2, 250px);
+          grid-template-rows: auto auto;
+          justify-content: center;
+          gap: 16px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .musik {
+    position: static;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    transition: none;
+  }
+}
+
+@media (max-width: 796px) {
+  .index {
+    main {
+      .main_grid {
+        padding: 8px 0 40px 0;
+        grid-template-areas:
+          "status"
+          "about"
+          "my-button"
+          "divider_1"
+          "guestbook"
+          "widgets"
+          "divider_2"
+          "webrings"
+          "projects"
+          "buttons"
+          "ramblings";
+        grid-template-columns: 400px;
+
+        .divider_1,
+        .divider_2,
+        .guestbook {
+          margin: auto;
+        }
+
+        .widgets {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+          }
+        }
+
+        .buttons {
+          small {
+            display: block;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .index {
+    main {
+      .main_grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        padding-inline: 16px;
+      }
+
+      .status {
+        order: -1;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .index {
+    main {
+      .main_grid {
+        .guestbook {
+          button {
+            span:first-child,
+            span:last-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
 }

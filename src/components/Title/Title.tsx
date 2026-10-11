@@ -12,8 +12,8 @@ export function Title() {
   return (
     <div className={sx.wavy}>
       <div className={sx.text}>
-        <strong>
-          {wavy("(>'.')>")}
+        <div>{wavy("(>'.')>")}</div>
+        <div>
           <div className={sx.space} />
           <div className={sx.space} />
           <div className={sx.space} />
@@ -24,7 +24,7 @@ export function Title() {
           {wavy("Nico's", 16)}
           <div className={sx.space} />
           {wavy("Space", 22)}
-        </strong>
+        </div>
       </div>
     </div>
   );

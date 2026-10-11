@@ -3,9 +3,8 @@
   margin: 20px 0;
 
   .text {
-    strong {
-      display: flex;
-    }
+    display: flex;
+    align-items: center;
 
     .space {
       display: inline-block;
@@ -29,6 +28,43 @@
         50% {
           color: var(--color-p);
           transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .wavy {
+    .text {
+      h1 {
+        font-size: var(--text-title);
+      }
+    }
+  }
+}
+
+@media (max-width: 796px) {
+  .wavy {
+    .text {
+      h1 {
+        font-size: var(--text-subtitle);
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .wavy {
+    .text {
+      flex-direction: column;
+      margin: auto;
+
+      div:nth-child(2) {
+        .space:nth-child(1),
+        .space:nth-child(2),
+        .space:nth-child(3) {
+          display: none;
         }
       }
     }

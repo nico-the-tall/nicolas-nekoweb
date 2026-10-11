@@ -104,8 +104,9 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
           </ContentBlock>
 
           <ContentBlock className={sx.my_button}>
+            <h2>Get my button:</h2>
+
             <div className={sx.button} ref={nicosSpaceButtonWrapper}>
-              <h2>Get my button:</h2>
               <img
                 id="nicos_space_gif"
                 src="/88x31.gif"
@@ -145,7 +146,8 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
               className={sx.modal_button}
               onClick={() => setGuestbookOpen(true)}
             >
-              (/._.)/ <span>新 SIGN MY GUESTBOOK</span> \(._.\)
+              <span>(/._.)/</span> <span>新 SIGN MY GUESTBOOK</span>{" "}
+              <span>\(._.\)</span>
             </button>
           </div>
 
