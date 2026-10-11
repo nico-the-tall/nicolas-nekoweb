@@ -2,6 +2,7 @@
 import Base from "@/layouts/Base.astro";
 import { Index } from "@/views/Index/Index";
 import { getRamblings } from "@/utils/getRamblings";
+import sx from "@/views/Index/Index.module.scss";
 
 const ramblings = (await getRamblings()).slice(0, 4);
 ---
@@ -17,21 +18,7 @@ const ramblings = (await getRamblings()).slice(0, 4);
     <ws-widget slot="lastfm" type="lastfm" iid="3282" embed="script" />
   </Index>
 
-  <div class="musik">
+  <div class={sx.musik}>
     <ws-widget type="musik" iid="5224" embed="script" />
   </div>
 </Base>
-
-<style lang="scss">
-  .musik {
-    position: fixed;
-    right: 8px;
-    bottom: 8px;
-    opacity: 0.15;
-    transition: opacity 1s ease-out;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-</style>

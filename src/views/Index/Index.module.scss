@@ -33,7 +33,9 @@
       grid-template-areas:
         "about      about     about     status"
         "about      about     about     my-button"
+        "divider_1  .         guestbook guestbook"
         "widgets    widgets   widgets   widgets"
+        ".          .         .         divider_2"
         "webrings   projects  buttons   ramblings";
       grid-template-columns: repeat(4, 250px);
       gap: 16px;
@@ -51,6 +53,57 @@
 
         .title {
           color: var(--color-p);
+        }
+      }
+
+      .divider_1 {
+        grid-area: divider_1;
+        align-self: center;
+      }
+
+      .divider_2 {
+        grid-area: divider_2;
+        justify-self: flex-end;
+      }
+
+      .guestbook {
+        grid-area: guestbook;
+        justify-self: flex-end;
+
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      .guestbook_modal {
+        width: min(600px, 90dvw);
+
+        iframe {
+          display: block;
+          width: 100%;
+          height: min(600px, 75dvh);
+          border: none;
+        }
+      }
+
+      .modal_button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: var(--color-r);
+
+        @media (prefers-reduced-motion: no-preference) {
+          animation: modal-button-hue 5s linear infinite;
+        }
+
+        @keyframes modal-button-hue {
+          from {
+            filter: hue-rotate(0deg);
+          }
+
+          to {
+            filter: hue-rotate(360deg);
+          }
         }
       }
 
@@ -263,5 +316,17 @@
   * {
     text-align: center;
     font-size: var(--text-sm);
+  }
+}
+
+.musik {
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  opacity: 0.15;
+  transition: opacity 1s ease-out;
+
+  &:hover {
+    opacity: 1;
   }
 }

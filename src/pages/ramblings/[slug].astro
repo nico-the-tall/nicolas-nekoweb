@@ -18,7 +18,11 @@ const { Content } = await render(rambling);
 const ramblings = await getRamblings();
 ---
 
-<Base title={rambling.data.title} description={rambling.data.description}>
+<Base
+  title={rambling.data.title}
+  description={rambling.data.description}
+  hideFooter
+>
   <article>
     <Rambling
       title={rambling.data.title}

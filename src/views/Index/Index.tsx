@@ -1,6 +1,6 @@
 import { ContentBlock } from "@/components/ContentBlock/ContentBlock";
 import { Title } from "@/components/Title/Title";
-import { useRef, type ReactNode } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import sx from "@/views/Index/Index.module.scss";
 import omori from "@/assets/profile.gif";
 import { Bisexual } from "@/components/webrings/Bisexual";
@@ -13,6 +13,7 @@ import { Retronaut } from "@/components/webrings/Retronaut";
 import { Webmastery } from "@/components/webrings/Webmastery";
 import { LinkingBlock } from "@/components/LinkingBlock/LinkingBlock";
 import { F88x31 } from "@/components/88x31/88x31";
+import { Modal } from "@/components/Modal/Modal";
 import projects from "~/content/projects/projects";
 
 export type RamblingSummary = {
@@ -30,6 +31,7 @@ type Props = {
 
 export function Index({ ramblings, anilist, lastfm }: Props) {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
+  const [guestbookOpen, setGuestbookOpen] = useState(false);
 
   return (
     <div className={sx.index}>
@@ -134,6 +136,27 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
             </div>
           </ContentBlock>
 
+          <div className={sx.divider_1}>
+            <em>d(^o^)b¸¸♬·¯·♩¸¸♪·¯·♫¸¸</em>
+          </div>
+
+          <div className={sx.guestbook}>
+            <button
+              className={sx.modal_button}
+              onClick={() => setGuestbookOpen(true)}
+            >
+              (/._.)/ <span>新 SIGN MY GUESTBOOK</span> \(._.\)
+            </button>
+          </div>
+
+          <Modal
+            open={guestbookOpen}
+            onClose={() => setGuestbookOpen(false)}
+            className={sx.guestbook_modal}
+          >
+            <iframe src="https://nico-the-tall.atabook.org" title="Guestbook" />
+          </Modal>
+
           <ContentBlock className={sx.widgets}>
             <div>
               <em>Currently watching</em>
@@ -218,6 +241,12 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
               </div>
             </div>
           </ContentBlock>
+
+          <div className={sx.divider_2}>
+            <small>
+              <em>(*・‿・)ノ⌒*:･ﾟ✧</em>
+            </small>
+          </div>
         </div>
       </main>
     </div>
