@@ -1,7 +1,9 @@
 import { ContentBlock } from "@/components/ContentBlock/ContentBlock";
 import { Title } from "@/components/Title/Title";
 import { useRef, useState, type ReactNode } from "react";
+import clsx from "clsx";
 import sx from "@/views/Index/Index.module.scss";
+import ssx from "@/shared.module.scss";
 import omori from "@/assets/profile.gif";
 import { Bisexual } from "@/components/webrings/Bisexual";
 import { Hotline } from "@/components/webrings/Hotline";
@@ -72,7 +74,7 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
           <ContentBlock className={sx.status}>
             <div>
               <div className={sx.img_wrapper}>
-                <div className={sx.glitch_overlay} />
+                <div className={clsx(ssx.crt_overlay, sx.glitch_overlay)} />
                 <img src={omori.src} alt="profile picture" />
               </div>
 

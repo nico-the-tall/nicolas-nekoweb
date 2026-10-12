@@ -226,26 +226,6 @@
 }
 
 .glitch_overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  animation: crt-scroll 0.5s linear infinite;
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent 0 2px,
-    rgb(0 0 0 / 0.5) 2px 3px
-  );
-
-  @keyframes crt-scroll {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 0 5px;
-    }
-  }
-
   &::before,
   &::after {
     content: "";
@@ -305,8 +285,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .glitch_overlay::before,
-  .glitch_overlay::after,
-  .glitch_overlay {
+  .glitch_overlay::after {
     animation: none;
   }
 }
@@ -325,6 +304,29 @@
   em {
     display: block;
     margin-bottom: 8px;
+  }
+}
+
+.dream_tv {
+  position: fixed;
+  left: 8px;
+  top: 48px;
+
+  em {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .dream_tv {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 40px;
   }
 }
 

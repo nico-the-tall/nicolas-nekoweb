@@ -1,6 +1,7 @@
 ---
 import Base from "@/layouts/Base.astro";
 import { Index } from "@/views/Index/Index";
+import { DreamTV } from "@/components/DreamTV/DreamTV";
 import { getRamblings } from "@/utils/getRamblings";
 import sx from "@/views/Index/Index.module.scss";
 
@@ -17,6 +18,11 @@ const ramblings = (await getRamblings()).slice(0, 4);
     />
     <ws-widget slot="lastfm" type="lastfm" iid="3282" embed="script" />
   </Index>
+
+  <div class={sx.dream_tv}>
+    <em>ଘ(੭*ˊᵕˋ)੭* Dreamcore TV</em>
+    <DreamTV client:load />
+  </div>
 
   <div class={sx.musik}>
     <em>d(^o^)b¸¸♬·¯·♩¸¸♪·¯·♫¸¸</em>
