@@ -1,7 +1,13 @@
 export function Online() {
   return (
     <>
-      <map name="onlinewidget">
+      <style>{`
+        .online_webring {
+          display: none;
+        }
+      `}</style>
+
+      <map className="online_webring" name="onlinewidget">
         <area
           href="https://webring.ghostk.id/online/"
           target="_blank"
@@ -37,7 +43,7 @@ export function Online() {
       </map>
       <img
         useMap="#onlinewidget"
-        src="https://ghostk.id/i/onlinegray.gif"
+        src="https://ghostk.id/i/onlinepurple.gif"
         width={200}
         height={40}
         style={{

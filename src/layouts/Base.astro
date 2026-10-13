@@ -1,0 +1,63 @@
+---
+import "@/global.scss";
+import sx from "@/shared.module.scss";
+
+const { title, description, hideFooter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/android-chrome-192x192.png" />
+
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=share-tech-mono:400"
+      rel="stylesheet"
+    />
+
+    <title>{title ? `Nico's Space · ${title}` : "Nico's Space"}</title>
+    <meta name="description" content={description} />
+
+    <slot name="head" />
+  </head>
+
+  <body>
+    <slot />
+
+    <script src="https://u.widget.st/ar.js" />
+    {!hideFooter && (
+      <footer class={sx.footer}>
+        <p>
+          Coded lazily and (mostly) by hand using{" "}
+          <a
+            href="https://astro.build"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Astro
+          </a>
+          .
+        </p>
+
+        <p>Updated <!--# updates --> times. Viewed <!--# views --> times.</p>
+
+        <p>
+          Last update:{" "}
+          <!--# flastmod file="index.html" fmt="%Y-%MM-%dd" timezone="Europe/Berlin" -->
+        </p>
+
+        <p>
+          For information about copyright, data handling and privacy, please
+          check the <a href="/privacy">Privacy & Copyright</a> page.
+        </p>
+      </footer>
+    )}
+  </body>
+</html>

@@ -1,0 +1,72 @@
+.wavy {
+  display: flex;
+  margin: 20px 0;
+
+  .text {
+    display: flex;
+    align-items: center;
+
+    .space {
+      display: inline-block;
+      width: 8px;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      h1 {
+        display: inline-block;
+        animation: wave 1.2s ease-in-out infinite;
+        animation-delay: calc(var(--i) * 0.08s);
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          color: var(--color-w);
+          transform: translateY(0);
+        }
+
+        50% {
+          color: var(--color-p);
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .wavy {
+    .text {
+      h1 {
+        font-size: var(--text-title);
+      }
+    }
+  }
+}
+
+@media (max-width: 796px) {
+  .wavy {
+    .text {
+      h1 {
+        font-size: var(--text-subtitle);
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .wavy {
+    .text {
+      flex-direction: column;
+      margin: auto;
+
+      div:nth-child(2) {
+        .space:nth-child(1),
+        .space:nth-child(2),
+        .space:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+}

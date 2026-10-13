@@ -1,0 +1,37 @@
+.footer {
+  max-width: 1000px;
+  margin: auto;
+
+  * {
+    text-align: center;
+    font-size: var(--text-sm);
+  }
+}
+
+.crt_overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  animation: crt-scroll 0.5s linear infinite;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0 2px,
+    rgb(0 0 0 / 0.5) 2px 3px
+  );
+
+  @keyframes crt-scroll {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 5px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .crt_overlay {
+    animation: none;
+  }
+}

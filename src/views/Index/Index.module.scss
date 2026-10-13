@@ -1,0 +1,481 @@
+.nicosSpaceButtonHighlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  font-weight: bold;
+  animation: float-up-fade 1s ease-out forwards;
+
+  @keyframes float-up-fade {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-48px);
+    }
+  }
+}
+
+.index {
+  width: 100%;
+  min-height: 100dvh;
+  margin: auto;
+
+  main {
+    display: flex;
+    justify-content: center;
+
+    .main_grid {
+      padding: 80px 0 40px 0;
+      display: grid;
+      grid-template-areas:
+        "about      about     about     status"
+        "about      about     about     my-button"
+        ".          .         guestbook guestbook"
+        "widgets    widgets   widgets   widgets"
+        ".          .         follow    follow"
+        "webrings   projects  buttons   ramblings"
+        "webrings   projects  buttons   contact";
+      grid-template-columns: repeat(4, 250px);
+      gap: 16px;
+
+      .about {
+        grid-area: about;
+
+        .about_me {
+          margin-top: 20px;
+        }
+
+        .mood_block {
+          margin-top: 20px;
+        }
+
+        .title {
+          color: var(--color-p);
+        }
+      }
+
+      .follow {
+        grid-area: follow;
+        justify-self: flex-end;
+      }
+
+      .guestbook {
+        grid-area: guestbook;
+        justify-self: flex-end;
+      }
+
+      .guestbook,
+      .follow {
+        button {
+          span:nth-child(2) {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .modal {
+        width: min(600px, 90dvw);
+
+        iframe {
+          display: block;
+          width: 100%;
+          height: min(600px, 75dvh);
+          border: none;
+        }
+      }
+
+      .modal_button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: var(--color-r);
+
+        @media (prefers-reduced-motion: no-preference) {
+          animation: modal-button-hue 5s linear infinite;
+        }
+
+        @keyframes modal-button-hue {
+          from {
+            filter: hue-rotate(0deg);
+          }
+
+          to {
+            filter: hue-rotate(360deg);
+          }
+        }
+      }
+
+      .status {
+        grid-area: status;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .img_wrapper {
+          background-color: var(--color-k2);
+          border-radius: 5%;
+          position: relative;
+
+          img {
+            width: 150px;
+            padding: 4px;
+            margin: auto;
+          }
+        }
+
+        .information {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 8px;
+
+          div {
+            span {
+              color: var(--color-p);
+            }
+          }
+
+          div:nth-child(2) {
+            text-align: end;
+          }
+        }
+      }
+
+      .my_button {
+        grid-area: my-button;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .button {
+          position: relative;
+
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .widgets {
+        grid-area: widgets;
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        gap: 16px;
+        height: 188px;
+
+        div:first-child {
+          ws-widget {
+            margin-top: 9px;
+            display: block;
+          }
+        }
+
+        div {
+          width: calc(100% - 16px);
+        }
+      }
+
+      .webrings {
+        grid-area: webrings;
+
+        .webrings_inner {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+          margin-top: 24px;
+
+          .dual {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+          }
+        }
+      }
+
+      .projects {
+        grid-area: projects;
+
+        .projects_inner {
+          margin-top: 24px;
+        }
+      }
+
+      .ramblings {
+        grid-area: ramblings;
+
+        p {
+          margin-bottom: 0;
+        }
+
+        .ramblings_inner {
+          margin-top: 18px;
+
+          .ramblings_list {
+            margin-top: 18px;
+          }
+        }
+      }
+
+      .buttons {
+        grid-area: buttons;
+      }
+
+      .contact {
+        grid-area: contact;
+        display: grid;
+        gap: 8px;
+        max-height: 170px;
+
+        div {
+          em {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.glitch_overlay {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    clip-path: inset(0 0 100% 0);
+  }
+
+  &::before {
+    backdrop-filter: invert(1);
+    animation: glitch-band-a 2s infinite steps(1);
+  }
+
+  &::after {
+    background: #ab04043d;
+    animation: glitch-band-b 2s infinite steps(1);
+  }
+}
+
+@keyframes glitch-band-a {
+  0%,
+  80% {
+    clip-path: inset(0 0 100% 0);
+  }
+  85% {
+    clip-path: inset(12% 0 80% 0);
+  }
+  90% {
+    clip-path: inset(55% 0 38% 0);
+  }
+  95% {
+    clip-path: inset(30% 0 66% 0);
+  }
+  100% {
+    clip-path: inset(78% 0 12% 0);
+  }
+}
+
+@keyframes glitch-band-b {
+  0%,
+  90%,
+  100% {
+    clip-path: inset(0 0 100% 0);
+    transform: none;
+  }
+  90% {
+    clip-path: inset(80% 0 12% 0);
+  }
+  93% {
+    clip-path: inset(68% 0 25% 0);
+  }
+  96% {
+    clip-path: inset(5% 0 90% 0);
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch_overlay::before,
+  .glitch_overlay::after {
+    animation: none;
+  }
+}
+
+.musik {
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  opacity: 0.15;
+  transition: opacity 1s ease-out;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  em {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+.dream_tv {
+  position: fixed;
+  left: 8px;
+  top: 48px;
+
+  em {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .dream_tv {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1336px) {
+  .musik {
+    bottom: 32px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .index {
+    main {
+      .main_grid {
+        grid-template-areas:
+          "about      about       status"
+          "about      about       my-button"
+          ".          guestbook   guestbook"
+          "widgets    widgets     widgets"
+          ".          follow      follow"
+          "webrings   projects    buttons"
+          "ramblings  contact     .";
+        grid-template-columns: repeat(3, 250px);
+
+        .widgets {
+          grid-area: widgets;
+          display: grid;
+          grid-template-columns: repeat(2, 250px);
+          grid-template-rows: auto auto;
+          justify-content: center;
+          gap: 16px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .musik {
+    position: static;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    transition: none;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 796px) {
+  .index {
+    main {
+      .main_grid {
+        padding: 8px 0 40px 0;
+        grid-template-areas:
+          "status"
+          "about"
+          "my-button"
+          "guestbook"
+          "widgets"
+          "follow"
+          "webrings"
+          "projects"
+          "buttons"
+          "ramblings"
+          "contact";
+        grid-template-columns: 400px;
+
+        .follow,
+        .guestbook {
+          margin: auto;
+        }
+
+        .widgets {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+          }
+        }
+
+        .buttons {
+          small {
+            display: block;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .index {
+    main {
+      .main_grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        padding-inline: 16px;
+      }
+
+      .status {
+        order: -1;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .index {
+    main {
+      .main_grid {
+        .guestbook {
+          button {
+            span:first-child,
+            span:last-child {
+              display: none;
+            }
+          }
+        }
+
+        .follow {
+          button {
+            span:first-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
