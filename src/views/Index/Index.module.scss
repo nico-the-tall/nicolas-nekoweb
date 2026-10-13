@@ -37,7 +37,7 @@
         "widgets    widgets   widgets   widgets"
         ".          .         follow    follow"
         "webrings   projects  buttons   ramblings"
-        ".          .         .         contact";
+        "webrings   projects  buttons   contact";
       grid-template-columns: repeat(4, 250px);
       gap: 16px;
 
@@ -227,6 +227,7 @@
         grid-area: contact;
         display: grid;
         gap: 8px;
+        max-height: 170px;
 
         div {
           em {

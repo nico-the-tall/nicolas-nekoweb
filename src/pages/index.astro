@@ -2,14 +2,16 @@
 import Base from "@/layouts/Base.astro";
 import { Index } from "@/views/Index/Index";
 import { DreamTV } from "@/components/DreamTV/DreamTV";
-import { getRamblings } from "@/utils/getRamblings";
 import sx from "@/views/Index/Index.module.scss";
-
-const ramblings = (await getRamblings()).slice(0, 4);
 ---
 
 <Base description="Nico's personal corner on the web.">
-  <Index ramblings={ramblings} client:load>
+  <p>
+    Whoops! You're here too soon. I'm still working on v3 and some things are
+    out of place.
+  </p>
+
+  <Index client:load>
     <ws-widget
       slot="anilist"
       type="anilist-activity"

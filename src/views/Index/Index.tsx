@@ -18,20 +18,12 @@ import { F88x31 } from "@/components/88x31/88x31";
 import { Modal } from "@/components/Modal/Modal";
 import projects from "~/content/projects/projects";
 
-export type RamblingSummary = {
-  slug: string;
-  title: string;
-  description: string;
-  date: string;
-};
-
 type Props = {
-  ramblings: RamblingSummary[];
   anilist?: ReactNode;
   lastfm?: ReactNode;
 };
 
-export function Index({ ramblings, anilist, lastfm }: Props) {
+export function Index({ anilist, lastfm }: Props) {
   const nicosSpaceButtonWrapper = useRef<HTMLDivElement | null>(null);
   const [guestbookOpen, setGuestbookOpen] = useState(false);
   const [followOpen, setFollowOpen] = useState(false);
@@ -175,8 +167,8 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
             </div>
 
             <div>
-              <em>Nekogotchi</em>
-              <p>PLACEHOLDER</p>
+              <em>COMING SOON</em>
+              <p>---</p>
             </div>
           </ContentBlock>
 
@@ -279,25 +271,9 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
           </ContentBlock>
 
           <ContentBlock className={sx.ramblings}>
-            <p>Latest ramblings</p>
+            <p>COMING SOON</p>
 
-            <div className={sx.ramblings_inner}>
-              <small>
-                <em>Updates once every aeon</em>
-              </small>
-
-              <div className={sx.ramblings_list}>
-                {ramblings.map(({ title, description, slug, date }) => (
-                  <LinkingBlock
-                    key={slug}
-                    title={title}
-                    description={description}
-                    ramblingSlug={slug}
-                    date={date}
-                  />
-                ))}
-              </div>
-            </div>
+            <div className={sx.ramblings_inner}></div>
           </ContentBlock>
 
           <ContentBlock className={sx.contact}>
