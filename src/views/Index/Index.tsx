@@ -299,6 +299,30 @@ export function Index({ ramblings, anilist, lastfm }: Props) {
               </div>
             </div>
           </ContentBlock>
+
+          <ContentBlock className={sx.contact}>
+            <p>Contact me</p>
+
+            <div>
+              <em>Discord</em>
+
+              <a
+                href="https://discord.com/users/907441653760032839"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @nico.the.tall
+              </a>
+            </div>
+
+            <div>
+              <em>Email</em>
+
+              <a href="mailto:nico.the.tall@proton.me">
+                nico.the.tall@proton.me
+              </a>
+            </div>
+          </ContentBlock>
         </div>
       </main>
     </div>

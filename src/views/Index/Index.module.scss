@@ -36,7 +36,8 @@
         ".          .         guestbook guestbook"
         "widgets    widgets   widgets   widgets"
         ".          .         follow    follow"
-        "webrings   projects  buttons   ramblings";
+        "webrings   projects  buttons   ramblings"
+        ".          .         .         contact";
       grid-template-columns: repeat(4, 250px);
       gap: 16px;
 
@@ -221,6 +222,18 @@
       .buttons {
         grid-area: buttons;
       }
+
+      .contact {
+        grid-area: contact;
+        display: grid;
+        gap: 8px;
+
+        div {
+          em {
+            display: block;
+          }
+        }
+      }
     }
   }
 }
@@ -347,7 +360,7 @@
           "widgets    widgets     widgets"
           ".          follow      follow"
           "webrings   projects    buttons"
-          "ramblings  .           .";
+          "ramblings  contact     .";
         grid-template-columns: repeat(3, 250px);
 
         .widgets {
@@ -389,7 +402,8 @@
           "webrings"
           "projects"
           "buttons"
-          "ramblings";
+          "ramblings"
+          "contact";
         grid-template-columns: 400px;
 
         .follow,
